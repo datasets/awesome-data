@@ -42,7 +42,7 @@
       }
     ], 
     "name": "cofog", 
-    "source": [
+    "sources": [
       {
         "name": "United Nations", 
         "web": "http://unstats.un.org/unsd/class/family/family2.asp?Cl=4"
@@ -194,7 +194,7 @@
       }
     ], 
     "name": "gdp", 
-    "source": [
+    "sources": [
       {
         "name": "World Bank and OECD", 
         "web": "http://data.worldbank.org/indicator/NY.GDP.MKTP.CD"
@@ -244,7 +244,7 @@
       }
     ], 
     "name": "population", 
-    "source": [
+    "sources": [
       {
         "name": "World Bank", 
         "web": "http://data.worldbank.org/indicator/SP.POP.TOTL"
