@@ -13,3 +13,10 @@ To **propose a new dataset for inclusion**, please create a [new issue](https://
 There is also an existing spreadsheet list of [proposed datasets for inclusion in the Datasets Project]
 
 [issues]: https://github.com/datasets/register/issues
+
+# For Maintainers
+
+To build the index.json (consolidating cache):
+
+    python build.py
+

@@ -12,7 +12,7 @@ def load_dataset(id_):
         print('Failed to load %s from %s' % (id_, url))
         return None
     datapackage['github_url'] = 'https://github.com/datasets/' + datapackage['name']
-    for info in datapackage['data']:
+    for info in datapackage['files']:
         if (not info.get('url') and info.get('path')):
             info['url'] = datapackage['github_url'].replace('github.com',
                     'raw.github.com') + '/master/' + info['path']
