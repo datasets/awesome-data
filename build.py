@@ -1,27 +1,48 @@
 import json
-import urllib
+import urllib2
 
 def load_dataset(id_):
     print('Processing: %s' % id_)
-    url = 'https://raw.github.com/datasets/' + id_ + '/master/' + \
-        'datapackage.json'
+    base = 'https://raw.github.com/datasets/' + id_ + '/master/'
+    url = base + 'datapackage.json'
     # TODO: deal with 404s gracefully
     try:
-        datapackage = json.load(urllib.urlopen(url))
+        datapackage = json.load(urllib2.urlopen(url))
     except:
         print('Failed to load %s from %s' % (id_, url))
         return None
+
+    # ensure certain fields exist
+    if not 'description' in datapackage:
+        datapackage['description'] = ''
+
+    # get the readme
+    readme_url = base + 'README.md'
+    try:
+        readmefo = urllib2.urlopen(readme_url)
+        datapackage['readme'] = readmefo.read().replace('\r\n', '\n')
+    except:
+        datapackage['readme'] = datapackage['description']
+        pass
+    # set description as first paragraph of readme if we no description
+    if not datapackage['description'] and 'readme' in datapackage:
+        datapackage['description'] = datapackage['readme'].split('\n\n')[0]
+
+    # some final tidying up
     datapackage['github_url'] = 'https://github.com/datasets/' + datapackage['name']
     for info in datapackage['files']:
         if (not info.get('url') and info.get('path')):
             info['url'] = datapackage['github_url'].replace('github.com',
                     'raw.github.com') + '/master/' + info['path']
+
     return datapackage
+
 
 def load(dataset_names):
     out = [ load_dataset(name) for name in dataset_names if name ]
     out = dict([ (x['name'], x) for x in out ])
     return out
+
 
 def build_index():
     dataset_list_url = 'list.txt'
