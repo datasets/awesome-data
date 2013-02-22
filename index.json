@@ -42,6 +42,7 @@
       }
     ], 
     "name": "cofog", 
+    "readme": "Classification of the Functions of Government (COFOG) is a classification defined by the United Nations Statistics Division. Its purpose is to \"classify the purpose of transactions such as outlays on final consumption expenditure, intermediate consumption, gross capital formation and capital and current transfers, by general government\" (from home page).\n\nThese functions are designed to be general enough to apply to the government of different countries. The accounts of each country in the United Nations are presented under these categories. The value of this is that the accounts of different countries can be compared.\n\n## Data\n\nData was sourced from the [UN site][un-cofog] ([raw access database from the UN][accessdb]) and extracted using the scripts found in the scripts directory of the source data package. In addition to the UN site, versions of COFOG can also be [found on Eurostat](http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_CLS_DLD&StrNom=CL_COFOG99&StrLanguageCode=EN&StrLayoutCode=HIERARCHIC) with one advantage of the Eurostat data being the availability of additional languages (e.g. German).\n\n[un-cofog]: http://unstats.un.org/unsd/cr/registry/regcst.asp?Cl=4&Lg=1\n[accessdb]: http://unstats.un.org/unsd/cr/registry/regdntransfer.asp?f=186\n\n## License\n\nNo license specified but factual data and extraction and normalization of the csv file has been done by the Maintainer who places the material in the Public Domain under the PDDL.\n\n", 
     "sources": [
       {
         "name": "United Nations", 
@@ -52,6 +53,7 @@
     "version": "1999"
   }, 
   "country-codes": {
+    "description": "ISO 3166-1-alpha-2 English country names and code elements. This list states\nthe country names (official short names in English) in alphabetical order as\ngiven in [ISO 3166-1][] and the corresponding ISO 3166-1-alpha-2 code elements.", 
     "files": [
       {
         "fields": [
@@ -68,6 +70,7 @@
     ], 
     "github_url": "https://github.com/datasets/country-codes", 
     "name": "country-codes", 
+    "readme": "ISO 3166-1-alpha-2 English country names and code elements. This list states\nthe country names (official short names in English) in alphabetical order as\ngiven in [ISO 3166-1][] and the corresponding ISO 3166-1-alpha-2 code elements.\n\n[ISO 3166-1]: http://www.iso.org/iso/home/standards/country_codes.htm\n\nThis list is updated whenever a change to the official code list in ISO 3166-1\nis effected by the ISO 3166/MA.\n\nIt lists 250 official short names and code elements as of Dec 2012.\n\n## License\n\nThis material is licensed by its maintainers under the Public Domain Dedication\nand License.\n\nNevertheless, it should be noted that this material is ultimately sourced from\nISO and their rights and licensing policy is somewhat unclear. As this is a\nshort, simple database of facts there is a strong argument that no rights can\nsubsist in this collection. However, ISO state on [their\nsite](http://www.iso.org/iso/home/standards/country_codes.htm): \n\n> ISO makes the list of alpha-2 country codes available for internal use and\n> non-commercial purposes free of charge. \n\nThis carries the implication (though not spelled out) that other uses are not\npermitted and that, therefore, there may be rights preventing further general\nuse and reuse.\n\n", 
     "sources": [
       {
         "name": "ISO", 
@@ -77,6 +80,7 @@
     "title": "ISO 2 digit country codes"
   }, 
   "currency-codes": {
+    "description": "List of currencies and their 3 digit codes as defined by [ISO 4217][iso-4217]. The data\nprovided here is the consolidation of Table A.1 Current currency & funds code list", 
     "files": [
       {
         "fields": [
@@ -142,6 +146,7 @@
       }
     ], 
     "name": "currency-codes", 
+    "readme": "List of currencies and their 3 digit codes as defined by [ISO 4217][iso-4217]. The data\nprovided here is the consolidation of Table A.1 Current currency & funds code list\n\nNote that the [ISO page][iso-4217] offers pay-for PDFs but also links to\n<http://www.currency-iso.org/iso_index/> which does provide them in machine\nreadable form freely.\n\n[iso-4217]: http://www.iso.org/iso/currency_codes\n\n## Data\n\nThe data provided (see data/codes.csv) in this data package provides a\nconsolidated list of currency (and funds) codes by combining these two\nseparate tables: \n\n* [ISO Tables A.1 - Current Currencies and Funds][a1]\n* [ISO Tables A.3 - List of codes for historic denominations of currencies & funds][a3]\n\nSpecifically the steps taken are:\n\n* Obtain the XLS files for Table A.1 and A.3\n* Convert to CSV\n* Concatenate (merging headings)\n\n[a1]: http://www.currency-iso.org/iso_index/iso_tables/iso_tables_a1.htm\n[a3]: http://www.currency-iso.org/iso_index/iso_tables/iso_tables_a3.htm\n\n## License\n\nPlacing in the Public Domain under the Public Domain Dedication and License.\nThe original site states no restriction on use and the data is small and\ncompletely factual.\n\n", 
     "sources": [
       {
         "email": "office@currency-iso.org", 
@@ -194,6 +199,7 @@
       }
     ], 
     "name": "gdp", 
+    "readme": "Country, regional and world GDP in current US Dollars ($). Regional means\ncollections of countries e.g. Europe & Central Asia. Data is sourced from the\nWorld Bank and turned into a standard normalized CSV (code can be found in\nprocess.py of data package repository).\n\n## Source\n\nThe data is sourced from the World Bank (specifically [this dataset][wb]) which\nin turn lists as sources: *World Bank national accounts data, and OECD National\nAccounts data files*.\n\n\n[wb]: http://data.worldbank.org/indicator/NY.GDP.MKTP.CD\n\n", 
     "sources": [
       {
         "name": "World Bank and OECD", 
@@ -244,6 +250,7 @@
       }
     ], 
     "name": "population", 
+    "readme": "Population figures for countries, regions (e.g. Asia) and the world. Data comes originally from World Bank and has been converted into standard CSV.\n\n## Source\n\nThe data is sourced from this [World Bank dataset][wb]) which\nin turn lists as sources: *(1) United Nations Population Division. World Population Prospects, (2) United Nations Statistical Division. Population and Vital Statistics Reprot (various years), (3) Census reports and other statistical publications from national statistical offices, (4) Eurostat: Demographic Statistics, (5) Secretariat of the Pacific Community: Statistics and Demography Programme, and (6) U.S. Census Bureau: International Database.*\n\n[wb]: http://data.worldbank.org/indicator/SP.POP.TOTL\n", 
     "sources": [
       {
         "name": "World Bank", 
