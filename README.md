@@ -18,5 +18,7 @@ There is also an existing spreadsheet list of [proposed datasets for inclusion i
 
 To build the index.json (consolidating cache):
 
+    # install markdown library if you have not already
+    # then
     python build.py
 

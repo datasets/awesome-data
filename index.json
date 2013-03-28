@@ -53,7 +53,7 @@
     "version": "1999"
   }, 
   "country-codes": {
-    "description": "ISO 3166-1-alpha-2 English country names and code elements. This list states\nthe country names (official short names in English) in alphabetical order as\ngiven in [ISO 3166-1][] and the corresponding ISO 3166-1-alpha-2 code elements.", 
+    "description": "ISO 3166-1-alpha-2 English country names and code elements. This list states the country names (official short names in English) in alphabetical order as given in ISO 3166-1 and the corresponding ISO 3166-1-alpha-2 code elements.", 
     "files": [
       {
         "fields": [
@@ -80,7 +80,7 @@
     "title": "ISO 2 digit country codes"
   }, 
   "currency-codes": {
-    "description": "List of currencies and their 3 digit codes as defined by [ISO 4217][iso-4217]. The data\nprovided here is the consolidation of Table A.1 Current currency & funds code list", 
+    "description": "List of currencies and their 3 digit codes as defined by ISO 4217. The data provided here is the consolidation of Table A.1 Current currency  funds code list", 
     "files": [
       {
         "fields": [

@@ -26,7 +26,12 @@ def load_dataset(id_):
         pass
     # set description as first paragraph of readme if we no description
     if not datapackage['description'] and 'readme' in datapackage:
-        datapackage['description'] = datapackage['readme'].split('\n\n')[0]
+        # first extract plain text ...
+        import markdown
+        html = markdown.markdown(datapackage['readme'])
+        plain = strip_tags(html).split('\n\n')[0].replace(' \n', '').replace('\n', ' ')
+        print plain
+        datapackage['description'] = plain
 
     # some final tidying up
     datapackage['github_url'] = 'https://github.com/datasets/' + datapackage['name']
@@ -37,6 +42,24 @@ def load_dataset(id_):
 
     return datapackage
 
+from HTMLParser import HTMLParser
+
+class MLStripper(HTMLParser):
+    def __init__(self):
+        self.reset()
+        self.fed = []
+    def handle_endtag(self, tag):
+        if tag == 'p':
+            self.fed.append('\n\n')
+    def handle_data(self, d):
+        self.fed.append(d)
+    def get_data(self):
+        return ''.join(self.fed)
+
+def strip_tags(html):
+    s = MLStripper()
+    s.feed(html)
+    return s.get_data()
 
 def load(dataset_names):
     out = [ load_dataset(name) for name in dataset_names if name ]
