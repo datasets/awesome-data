@@ -56,15 +56,17 @@
     "description": "ISO 3166-1-alpha-2 English country names and code elements. This list states the country names (official short names in English) in alphabetical order as given in ISO 3166-1 and the corresponding ISO 3166-1-alpha-2 code elements.", 
     "files": [
       {
-        "fields": [
-          {
-            "id": "Code"
-          }, 
-          {
-            "id": "Country"
-          }
-        ], 
         "path": "country-codes.csv", 
+        "schema": {
+          "fields": [
+            {
+              "id": "Code"
+            }, 
+            {
+              "id": "Country"
+            }
+          ]
+        }, 
         "url": "https://raw.github.com/datasets/country-codes/master/country-codes.csv"
       }
     ], 
@@ -159,27 +161,29 @@
     "description": "Country, regional and world GDP in current US Dollars ($). Regional means collections of countries e.g. Europe & Central Asia. Data is sourced from the World Bank and turned into a standard normalized CSV.", 
     "files": [
       {
-        "fields": [
-          {
-            "id": "Country Name", 
-            "type": "string"
-          }, 
-          {
-            "foreignkey": "iso-3-geo-codes/id", 
-            "id": "Country Code", 
-            "type": "string"
-          }, 
-          {
-            "fulltype": "date/year", 
-            "id": "Year", 
-            "type": "date"
-          }, 
-          {
-            "id": "Value", 
-            "type": "float"
-          }
-        ], 
         "path": "data/gdp.csv", 
+        "schema": {
+          "fields": [
+            {
+              "id": "Country Name", 
+              "type": "string"
+            }, 
+            {
+              "foreignkey": "iso-3-geo-codes/id", 
+              "id": "Country Code", 
+              "type": "string"
+            }, 
+            {
+              "fulltype": "date/year", 
+              "id": "Year", 
+              "type": "date"
+            }, 
+            {
+              "id": "Value", 
+              "type": "float"
+            }
+          ]
+        }, 
         "url": "https://raw.github.com/datasets/gdp/master/data/gdp.csv"
       }
     ], 
@@ -208,6 +212,117 @@
     ], 
     "title": "Country, Regional and World GDP (Gross Domestic Product)", 
     "version": "2011"
+  }, 
+  "gdp-uk": {
+    "description": "UK Real GDP since 1948 from the Office of National Statistics including percentage change and index versions.", 
+    "files": [
+      {
+        "path": "annual.csv", 
+        "schema": {
+          "fields": [
+            {
+              "format": "yyyy", 
+              "id": "Year", 
+              "type": "date"
+            }, 
+            {
+              "description": "Gross Value Added at basic prices: chained volume measures: Seasonally adjusted. Millions of GBP in base period money. Base period=2009. ABMI variable in ONS source.", 
+              "id": "GDP", 
+              "type": "number"
+            }, 
+            {
+              "description": "Gross Domestic Product: Year on Year growth: CVM SA. IHYP variable in ONS source.", 
+              "format": "percentage", 
+              "id": "GDP_Change", 
+              "type": "number"
+            }, 
+            {
+              "description": "Gross domestic product index. Base period=2009. YBEZ variable in ONS source.", 
+              "id": "GDP_Index", 
+              "type": "number"
+            }
+          ]
+        }, 
+        "sources": [
+          {
+            "web": "http://www.ons.gov.uk/ons/datasets-and-tables/data-selector.html?cdid=ABMI&dataset=qna&table-id=C2"
+          }
+        ], 
+        "url": "https://raw.github.com/datasets/gdp-uk/master/annual.csv"
+      }
+    ], 
+    "github_url": "https://github.com/datasets/gdp-uk", 
+    "licenses": [
+      {
+        "id": "odc-pddl", 
+        "url": "http://opendatacommons.org/licenses/pddl/"
+      }
+    ], 
+    "name": "gdp-uk", 
+    "readme": "UK Real GDP since 1948 from the Office of National Statistics including\npercentage change and index versions.\n\n## Data\n\nAnnual data in <annual.csv> The GDP measure is a chained volume measure and is\ntherefore real not nominal.  Amounts are in 2009 \u00a3m.\n\nExtracted from\n<http://www.ons.gov.uk/ons/datasets-and-tables/downloads/csv.csv?dataset=pgdp>.\nProcess is recorded and automated in 2 bash scripts:\n\n    scripts/download.sh\n    scripts/extract.sh\n\n### Licensing\n\nSuch small amounts of data that believe there are no underlying rights and\nhence have provided under the Public Domain Dedication License.\n\n", 
+    "sources": [
+      {
+        "homepage": "http://www.ons.gov.uk/ons/rel/gva/gross-domestic-product--preliminary-estimate/q4-2012/tsd---preliminary-estimate-of-gdp-q4-2012.html", 
+        "name": "Office for National Statistics - GDP Time Series", 
+        "web": "http://www.ons.gov.uk/ons/datasets-and-tables/downloads/csv.csv?dataset=pgdp"
+      }
+    ], 
+    "title": "UK Gross Domestic Product (GDP)"
+  }, 
+  "house-prices-uk": {
+    "description": "UK house prices since 1953 as monthly time-series. Data comes from the Nationwide.", 
+    "files": [
+      {
+        "path": "data.csv", 
+        "schema": {
+          "fields": [
+            {
+              "id": "Date", 
+              "type": "number"
+            }, 
+            {
+              "id": "Price (All)", 
+              "type": "number"
+            }, 
+            {
+              "id": "Price (New)", 
+              "type": "number"
+            }, 
+            {
+              "id": "Price (Modern)", 
+              "type": "number"
+            }, 
+            {
+              "id": "Price (Older)", 
+              "type": "number"
+            }
+          ]
+        }, 
+        "url": "https://raw.github.com/datasets/house-prices-uk/master/data.csv"
+      }
+    ], 
+    "github_url": "https://github.com/datasets/house-prices-uk", 
+    "licenses": [
+      {
+        "id": "odc-pddl", 
+        "url": "http://opendatacommons.org/licenses/pddl/"
+      }
+    ], 
+    "maintainers": [
+      {
+        "name": "Rufus Pollock", 
+        "web": "http://rufuspollock.org/"
+      }
+    ], 
+    "name": "house-prices-uk", 
+    "readme": "UK house prices since 1953 as monthly time-series. Data comes from the Nationwide.\n\nSource: <http://www.nationwide.co.uk/hpi/historical.htm>\n\n", 
+    "sources": [
+      {
+        "name": "Nationwide", 
+        "web": "http://www.nationwide.co.uk/hpi/historical.htm"
+      }
+    ], 
+    "title": "House Prices in the UK since 1953"
   }, 
   "population": {
     "description": "Population figures for countries, regions (e.g. Asia) and the world. Data comes originally from World Bank and has been converted into standard CSV.", 

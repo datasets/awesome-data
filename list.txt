@@ -2,4 +2,6 @@ cofog
 country-codes
 currency-codes
 gdp
+gdp-uk
 population
+house-prices-uk
