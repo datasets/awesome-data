@@ -1,4 +1,44 @@
 {
+  "bond-yields-uk-10y": {
+    "description": "10 year nominal yields on UK government bonds from the bank of England. The 10 year government bond yield is considered a standard indicator of long-term interest rates. This is a direct extract from the Bank of England IUAAMNPY series: \"Annual average yield from British Government Securities, 10 year Nominal Par Yield\".", 
+    "files": [
+      {
+        "path": "annual.csv", 
+        "schema": {
+          "fields": [
+            {
+              "format": "yyyy", 
+              "id": "Year", 
+              "type": "date"
+            }, 
+            {
+              "description": "Annual average yield from British Government Securities, 10 year Nominal Par Yield", 
+              "format": "percentage", 
+              "id": "Rate", 
+              "type": "number"
+            }
+          ]
+        }, 
+        "url": "https://raw.github.com/datasets/bond-yields-uk-10y/master/annual.csv"
+      }
+    ], 
+    "github_url": "https://github.com/datasets/bond-yields-uk-10y", 
+    "licenses": [
+      {
+        "id": "odc-pddl", 
+        "url": "http://opendatacommons.org/licenses/pddl/"
+      }
+    ], 
+    "name": "bond-yields-uk-10y", 
+    "readme": "10 year nominal yields on UK government bonds from the bank of England. The 10\nyear government bond yield is considered a standard indicator of long-term\ninterest rates. This is a direct extract from the Bank of [England IUAAMNPY\nseries: \"Annual average yield from British Government Securities, 10 year\nNominal Par Yield\"][boe].\n\n[boe]: http://www.bankofengland.co.uk/boeapps/iadb/index.asp?Travel=NIxIRx&levels=1&XNotes=Y&C=DUS&G0Xtop.x=51&G0Xtop.y=7&XNotes2=Y&Nodes=X41514X41515X41516X41517X55047X76909X4051X4052X4128X33880X4053X4058&SectionRequired=I&HideNums=-1&ExtraInfo=true#BM\n\n## Data\n\nData from Bank of England (series IUAAMNPY \"Annual average yield from British\nGovernment Securities, 10 year Nominal Par Yield\") with some minor processing\n(see scripts).\n\nFull information about the BoE Yields data may be found on the BoE website at:\n<http://www.bankofengland.co.uk/statistics/Pages/iadb/notesiadb/Yields.aspx>\n\nThere are several relevant series:\n\n* 10y par yields Annual average - IUAAMNPY - Annual\n  * http://www.bankofengland.co.uk/boeapps/iadb/index.asp?Travel=NIxIRx&levels=1&XNotes=Y&G0Xtop.x=56&G0Xtop.y=10&C=DUS&XNotes2=Y&Nodes=X41514X41515X41516X41517X55047X76909X4051X4052X4128X33880X4053X4058&SectionRequired=I&HideNums=-1&ExtraInfo=true#BM\n  * 1984-present\n  * There are also versions of this series at other granularities down to a day\n* 10y par gross redemption yield Annual average - IUAAAJLW - Annual\n  * 1984-2007 (not clear why this ends in 2007)\n\n## License\n\nHowever, the [Bank of England Terms of Use][tou] indicate restriction on\nnon-commercial use only:\n\n> Statistical Interactive Database (IADB) Terms and Conditions\n> \n> The content of the database is for general information only, and is provided\n> to users free of charge. Commercial use for financial gain is not permitted\n> without the express permission of the Bank of England.  The Bank of England\n> reserves the right to terminate or restrict user access if it determines that\n> a user is acting in a manner contrary to the interests of other users of the\n> database e.g. excessive usage. [retrieved 2013-04-07]\n\n[tou]: http://www.bankofengland.co.uk/pages/disclaimer.aspx#Statistics\n\nHowever, the amounts of data provided in this dataset are so minimal as to fall\nbelow any threshold for any Database Rights. \n\nAs such the maintainers feel warranted in putting the dataset out under the\nPublic Domain Dedication and License but that they can, obviously, only license\n(or dedicate) material they control (or in which there are no rights).\n\n", 
+    "sources": [
+      {
+        "name": "Bank of England", 
+        "web": "http://www.bankofengland.co.uk/boeapps/iadb/index.asp?Travel=NIxIRx&levels=1&XNotes=Y&C=DUS&G0Xtop.x=51&G0Xtop.y=7&XNotes2=Y&Nodes=X41514X41515X41516X41517X55047X76909X4051X4052X4128X33880X4053X4058&SectionRequired=I&HideNums=-1&ExtraInfo=true#BM"
+      }
+    ], 
+    "title": "10y UK Government Bond Yields (long-term interest rate)"
+  }, 
   "cofog": {
     "description": "Classification of the Functions of Government (COFOG) is a classification defined by the United Nations Statistics Division. Its purpose is to \"classify the purpose of transactions such as outlays on final consumption expenditure, intermediate consumption, gross capital formation and capital and current transfers, by general government\" (from home page).", 
     "files": [
