@@ -28,10 +28,9 @@ def load_dataset(id_):
     if not datapackage['description'] and 'readme' in datapackage:
         # first extract plain text ...
         import markdown
-        html = markdown.markdown(datapackage['readme'])
+        html = markdown.markdown(unicode(datapackage['readme'], 'utf8'))
         plain = strip_tags(html).split('\n\n')[0].replace(' \n', '').replace('\n', ' ')
-        print plain
-        datapackage['description'] = plain
+        datapackage['description'] = plain.encode('utf8')
 
     # some final tidying up
     datapackage['github_url'] = 'https://github.com/datasets/' + datapackage['name']
