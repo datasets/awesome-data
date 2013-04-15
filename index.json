@@ -1,7 +1,16 @@
 {
   "bond-yields-uk-10y": {
     "description": "10 year nominal yields on UK government bonds from the bank of England. The 10 year government bond yield is considered a standard indicator of long-term interest rates. This is a direct extract from the Bank of England IUAAMNPY series: \"Annual average yield from British Government Securities, 10 year Nominal Par Yield\".", 
-    "files": [
+    "github_url": "https://github.com/datasets/bond-yields-uk-10y", 
+    "licenses": [
+      {
+        "id": "odc-pddl", 
+        "url": "http://opendatacommons.org/licenses/pddl/"
+      }
+    ], 
+    "name": "bond-yields-uk-10y", 
+    "readme": "10 year nominal yields on UK government bonds from the bank of England. The 10\nyear government bond yield is considered a standard indicator of long-term\ninterest rates. This is a direct extract from the Bank of [England IUAAMNPY\nseries: \"Annual average yield from British Government Securities, 10 year\nNominal Par Yield\"][boe].\n\n[boe]: http://www.bankofengland.co.uk/boeapps/iadb/index.asp?Travel=NIxIRx&levels=1&XNotes=Y&C=DUS&G0Xtop.x=51&G0Xtop.y=7&XNotes2=Y&Nodes=X41514X41515X41516X41517X55047X76909X4051X4052X4128X33880X4053X4058&SectionRequired=I&HideNums=-1&ExtraInfo=true#BM\n\n## Data\n\nData from Bank of England (series IUAAMNPY \"Annual average yield from British\nGovernment Securities, 10 year Nominal Par Yield\") with some minor processing\n(see scripts).\n\nFull information about the BoE Yields data may be found on the BoE website at:\n<http://www.bankofengland.co.uk/statistics/Pages/iadb/notesiadb/Yields.aspx>\n\nThere are several relevant series:\n\n* 10y par yields Annual average - IUAAMNPY - Annual\n  * http://www.bankofengland.co.uk/boeapps/iadb/index.asp?Travel=NIxIRx&levels=1&XNotes=Y&G0Xtop.x=56&G0Xtop.y=10&C=DUS&XNotes2=Y&Nodes=X41514X41515X41516X41517X55047X76909X4051X4052X4128X33880X4053X4058&SectionRequired=I&HideNums=-1&ExtraInfo=true#BM\n  * 1984-present\n  * There are also versions of this series at other granularities down to a day\n* 10y par gross redemption yield Annual average - IUAAAJLW - Annual\n  * 1984-2007 (not clear why this ends in 2007)\n\n## License\n\nThe [Bank of England Terms of Use][tou] appear only to allow non-commercial\nuse:\n\n> Statistical Interactive Database (IADB) Terms and Conditions\n> \n> The content of the database is for general information only, and is provided\n> to users free of charge. Commercial use for financial gain is not permitted\n> without the express permission of the Bank of England.  The Bank of England\n> reserves the right to terminate or restrict user access if it determines that\n> a user is acting in a manner contrary to the interests of other users of the\n> database e.g. excessive usage. [retrieved 2013-04-07]\n\n[tou]: http://www.bankofengland.co.uk/pages/disclaimer.aspx#Statistics\n\nHowever, the amounts of data provided in this dataset is so minimal as likely to fall\nbelow any threshold for Database Rights. \n\nAs such the maintainers feel warranted in putting the dataset out under the\nPublic Domain Dedication and License but that they can, obviously, only license\n(or dedicate) material they control (or in which there are no rights).\n\n", 
+    "resources": [
       {
         "path": "annual.csv", 
         "schema": {
@@ -22,15 +31,6 @@
         "url": "https://raw.github.com/datasets/bond-yields-uk-10y/master/annual.csv"
       }
     ], 
-    "github_url": "https://github.com/datasets/bond-yields-uk-10y", 
-    "licenses": [
-      {
-        "id": "odc-pddl", 
-        "url": "http://opendatacommons.org/licenses/pddl/"
-      }
-    ], 
-    "name": "bond-yields-uk-10y", 
-    "readme": "10 year nominal yields on UK government bonds from the bank of England. The 10\nyear government bond yield is considered a standard indicator of long-term\ninterest rates. This is a direct extract from the Bank of [England IUAAMNPY\nseries: \"Annual average yield from British Government Securities, 10 year\nNominal Par Yield\"][boe].\n\n[boe]: http://www.bankofengland.co.uk/boeapps/iadb/index.asp?Travel=NIxIRx&levels=1&XNotes=Y&C=DUS&G0Xtop.x=51&G0Xtop.y=7&XNotes2=Y&Nodes=X41514X41515X41516X41517X55047X76909X4051X4052X4128X33880X4053X4058&SectionRequired=I&HideNums=-1&ExtraInfo=true#BM\n\n## Data\n\nData from Bank of England (series IUAAMNPY \"Annual average yield from British\nGovernment Securities, 10 year Nominal Par Yield\") with some minor processing\n(see scripts).\n\nFull information about the BoE Yields data may be found on the BoE website at:\n<http://www.bankofengland.co.uk/statistics/Pages/iadb/notesiadb/Yields.aspx>\n\nThere are several relevant series:\n\n* 10y par yields Annual average - IUAAMNPY - Annual\n  * http://www.bankofengland.co.uk/boeapps/iadb/index.asp?Travel=NIxIRx&levels=1&XNotes=Y&G0Xtop.x=56&G0Xtop.y=10&C=DUS&XNotes2=Y&Nodes=X41514X41515X41516X41517X55047X76909X4051X4052X4128X33880X4053X4058&SectionRequired=I&HideNums=-1&ExtraInfo=true#BM\n  * 1984-present\n  * There are also versions of this series at other granularities down to a day\n* 10y par gross redemption yield Annual average - IUAAAJLW - Annual\n  * 1984-2007 (not clear why this ends in 2007)\n\n## License\n\nHowever, the [Bank of England Terms of Use][tou] indicate restriction on\nnon-commercial use only:\n\n> Statistical Interactive Database (IADB) Terms and Conditions\n> \n> The content of the database is for general information only, and is provided\n> to users free of charge. Commercial use for financial gain is not permitted\n> without the express permission of the Bank of England.  The Bank of England\n> reserves the right to terminate or restrict user access if it determines that\n> a user is acting in a manner contrary to the interests of other users of the\n> database e.g. excessive usage. [retrieved 2013-04-07]\n\n[tou]: http://www.bankofengland.co.uk/pages/disclaimer.aspx#Statistics\n\nHowever, the amounts of data provided in this dataset are so minimal as to fall\nbelow any threshold for any Database Rights. \n\nAs such the maintainers feel warranted in putting the dataset out under the\nPublic Domain Dedication and License but that they can, obviously, only license\n(or dedicate) material they control (or in which there are no rights).\n\n", 
     "sources": [
       {
         "name": "Bank of England", 
@@ -41,7 +41,25 @@
   }, 
   "cofog": {
     "description": "Classification of the Functions of Government (COFOG) is a classification defined by the United Nations Statistics Division. Its purpose is to \"classify the purpose of transactions such as outlays on final consumption expenditure, intermediate consumption, gross capital formation and capital and current transfers, by general government\" (from home page).", 
-    "files": [
+    "github_url": "https://github.com/datasets/cofog", 
+    "homepage": "http://unstats.un.org/unsd/class/family/family2.asp?Cl=4", 
+    "keywords": [
+      "Classification", 
+      "COFOG", 
+      "Finances", 
+      "Government", 
+      "United Nations"
+    ], 
+    "licenses": [
+      {
+        "id": "odc-pddl", 
+        "name": "Open Data Commons Public Domain Dedication and Licence (PDDL)", 
+        "url": "http://opendatacommons.org/licenses/pddl/"
+      }
+    ], 
+    "name": "cofog", 
+    "readme": "Classification of the Functions of Government (COFOG) is a classification defined by the United Nations Statistics Division. Its purpose is to \"classify the purpose of transactions such as outlays on final consumption expenditure, intermediate consumption, gross capital formation and capital and current transfers, by general government\" (from home page).\n\nThese functions are designed to be general enough to apply to the government of different countries. The accounts of each country in the United Nations are presented under these categories. The value of this is that the accounts of different countries can be compared.\n\n## Data\n\nData was sourced from the [UN site][un-cofog] ([raw access database from the UN][accessdb]) and extracted using the scripts found in the scripts directory of the source data package. In addition to the UN site, versions of COFOG can also be [found on Eurostat](http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_CLS_DLD&StrNom=CL_COFOG99&StrLanguageCode=EN&StrLayoutCode=HIERARCHIC) with one advantage of the Eurostat data being the availability of additional languages (e.g. German).\n\n[un-cofog]: http://unstats.un.org/unsd/cr/registry/regcst.asp?Cl=4&Lg=1\n[accessdb]: http://unstats.un.org/unsd/cr/registry/regdntransfer.asp?f=186\n\n## License\n\nNo license specified but factual data and extraction and normalization of the csv file has been done by the Maintainer who places the material in the Public Domain under the PDDL.\n\n", 
+    "resources": [
       {
         "fields": [
           {
@@ -65,24 +83,6 @@
         "url": "https://raw.github.com/datasets/cofog/master/data/cofog.csv"
       }
     ], 
-    "github_url": "https://github.com/datasets/cofog", 
-    "homepage": "http://unstats.un.org/unsd/class/family/family2.asp?Cl=4", 
-    "keywords": [
-      "Classification", 
-      "COFOG", 
-      "Finances", 
-      "Government", 
-      "United Nations"
-    ], 
-    "licenses": [
-      {
-        "id": "odc-pddl", 
-        "name": "Open Data Commons Public Domain Dedication and Licence (PDDL)", 
-        "url": "http://opendatacommons.org/licenses/pddl/"
-      }
-    ], 
-    "name": "cofog", 
-    "readme": "Classification of the Functions of Government (COFOG) is a classification defined by the United Nations Statistics Division. Its purpose is to \"classify the purpose of transactions such as outlays on final consumption expenditure, intermediate consumption, gross capital formation and capital and current transfers, by general government\" (from home page).\n\nThese functions are designed to be general enough to apply to the government of different countries. The accounts of each country in the United Nations are presented under these categories. The value of this is that the accounts of different countries can be compared.\n\n## Data\n\nData was sourced from the [UN site][un-cofog] ([raw access database from the UN][accessdb]) and extracted using the scripts found in the scripts directory of the source data package. In addition to the UN site, versions of COFOG can also be [found on Eurostat](http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_CLS_DLD&StrNom=CL_COFOG99&StrLanguageCode=EN&StrLayoutCode=HIERARCHIC) with one advantage of the Eurostat data being the availability of additional languages (e.g. German).\n\n[un-cofog]: http://unstats.un.org/unsd/cr/registry/regcst.asp?Cl=4&Lg=1\n[accessdb]: http://unstats.un.org/unsd/cr/registry/regdntransfer.asp?f=186\n\n## License\n\nNo license specified but factual data and extraction and normalization of the csv file has been done by the Maintainer who places the material in the Public Domain under the PDDL.\n\n", 
     "sources": [
       {
         "name": "United Nations", 
@@ -94,7 +94,10 @@
   }, 
   "country-codes": {
     "description": "ISO 3166-1-alpha-2 English country names and code elements. This list states the country names (official short names in English) in alphabetical order as given in ISO 3166-1 and the corresponding ISO 3166-1-alpha-2 code elements.", 
-    "files": [
+    "github_url": "https://github.com/datasets/country-codes", 
+    "name": "country-codes", 
+    "readme": "ISO 3166-1-alpha-2 English country names and code elements. This list states\nthe country names (official short names in English) in alphabetical order as\ngiven in [ISO 3166-1][] and the corresponding ISO 3166-1-alpha-2 code elements.\n\n[ISO 3166-1]: http://www.iso.org/iso/home/standards/country_codes.htm\n\nThis list is updated whenever a change to the official code list in ISO 3166-1\nis effected by the ISO 3166/MA.\n\nIt lists 250 official short names and code elements as of Dec 2012.\n\n## License\n\nThis material is licensed by its maintainers under the Public Domain Dedication\nand License.\n\nNevertheless, it should be noted that this material is ultimately sourced from\nISO and their rights and licensing policy is somewhat unclear. As this is a\nshort, simple database of facts there is a strong argument that no rights can\nsubsist in this collection. However, ISO state on [their\nsite](http://www.iso.org/iso/home/standards/country_codes.htm): \n\n> ISO makes the list of alpha-2 country codes available for internal use and\n> non-commercial purposes free of charge. \n\nThis carries the implication (though not spelled out) that other uses are not\npermitted and that, therefore, there may be rights preventing further general\nuse and reuse.\n\n", 
+    "resources": [
       {
         "path": "country-codes.csv", 
         "schema": {
@@ -110,9 +113,6 @@
         "url": "https://raw.github.com/datasets/country-codes/master/country-codes.csv"
       }
     ], 
-    "github_url": "https://github.com/datasets/country-codes", 
-    "name": "country-codes", 
-    "readme": "ISO 3166-1-alpha-2 English country names and code elements. This list states\nthe country names (official short names in English) in alphabetical order as\ngiven in [ISO 3166-1][] and the corresponding ISO 3166-1-alpha-2 code elements.\n\n[ISO 3166-1]: http://www.iso.org/iso/home/standards/country_codes.htm\n\nThis list is updated whenever a change to the official code list in ISO 3166-1\nis effected by the ISO 3166/MA.\n\nIt lists 250 official short names and code elements as of Dec 2012.\n\n## License\n\nThis material is licensed by its maintainers under the Public Domain Dedication\nand License.\n\nNevertheless, it should be noted that this material is ultimately sourced from\nISO and their rights and licensing policy is somewhat unclear. As this is a\nshort, simple database of facts there is a strong argument that no rights can\nsubsist in this collection. However, ISO state on [their\nsite](http://www.iso.org/iso/home/standards/country_codes.htm): \n\n> ISO makes the list of alpha-2 country codes available for internal use and\n> non-commercial purposes free of charge. \n\nThis carries the implication (though not spelled out) that other uses are not\npermitted and that, therefore, there may be rights preventing further general\nuse and reuse.\n\n", 
     "sources": [
       {
         "name": "ISO", 
@@ -123,49 +123,6 @@
   }, 
   "currency-codes": {
     "description": "List of currencies and their 3 digit codes as defined by ISO 4217. The data provided here is the consolidation of Table A.1 Current currency  funds code list", 
-    "files": [
-      {
-        "fields": [
-          {
-            "description": "Country or region name", 
-            "id": "Entity", 
-            "type": "string"
-          }, 
-          {
-            "description": "Name of the currency", 
-            "id": "Currency", 
-            "type": "string"
-          }, 
-          {
-            "description": "3 digit alphabetic code for the currency", 
-            "id": "AlphabeticCode", 
-            "label": "Alphabetic Code", 
-            "type": "string"
-          }, 
-          {
-            "description": "3 digit numeric code", 
-            "id": "NumericCode", 
-            "label": "Numeric Code", 
-            "type": "integer"
-          }, 
-          {
-            "description": "Date currency withdrawn (values can be ranges or months", 
-            "id": "WithdrawalDate", 
-            "label": "Withdrawal Date", 
-            "type": "string"
-          }, 
-          {
-            "description": "A general remark or comment", 
-            "id": "Remark", 
-            "type": "string"
-          }
-        ], 
-        "mimetype": "text/csv", 
-        "path": "data/codes-all.csv", 
-        "size": "16863", 
-        "url": "https://raw.github.com/datasets/currency-codes/master/data/codes-all.csv"
-      }
-    ], 
     "github_url": "https://github.com/datasets/currency-codes", 
     "homepage": "http://www.iso.org/iso/currency_codes", 
     "keywords": [
@@ -189,6 +146,51 @@
     ], 
     "name": "currency-codes", 
     "readme": "List of currencies and their 3 digit codes as defined by [ISO 4217][iso-4217]. The data\nprovided here is the consolidation of Table A.1 Current currency & funds code list\n\nNote that the [ISO page][iso-4217] offers pay-for PDFs but also links to\n<http://www.currency-iso.org/iso_index/> which does provide them in machine\nreadable form freely.\n\n[iso-4217]: http://www.iso.org/iso/currency_codes\n\n## Data\n\nThe data provided (see data/codes.csv) in this data package provides a\nconsolidated list of currency (and funds) codes by combining these two\nseparate tables: \n\n* [ISO Tables A.1 - Current Currencies and Funds][a1]\n* [ISO Tables A.3 - List of codes for historic denominations of currencies & funds][a3]\n\nSpecifically the steps taken are:\n\n* Obtain the XLS files for Table A.1 and A.3\n* Convert to CSV\n* Concatenate (merging headings)\n\n[a1]: http://www.currency-iso.org/iso_index/iso_tables/iso_tables_a1.htm\n[a3]: http://www.currency-iso.org/iso_index/iso_tables/iso_tables_a3.htm\n\n## License\n\nPlacing in the Public Domain under the Public Domain Dedication and License.\nThe original site states no restriction on use and the data is small and\ncompletely factual.\n\n", 
+    "resources": [
+      {
+        "mimetype": "text/csv", 
+        "path": "data/codes-all.csv", 
+        "schema": {
+          "fields": [
+            {
+              "description": "Country or region name", 
+              "id": "Entity", 
+              "type": "string"
+            }, 
+            {
+              "description": "Name of the currency", 
+              "id": "Currency", 
+              "type": "string"
+            }, 
+            {
+              "description": "3 digit alphabetic code for the currency", 
+              "id": "AlphabeticCode", 
+              "label": "Alphabetic Code", 
+              "type": "string"
+            }, 
+            {
+              "description": "3 digit numeric code", 
+              "id": "NumericCode", 
+              "label": "Numeric Code", 
+              "type": "integer"
+            }, 
+            {
+              "description": "Date currency withdrawn (values can be ranges or months", 
+              "id": "WithdrawalDate", 
+              "label": "Withdrawal Date", 
+              "type": "string"
+            }, 
+            {
+              "description": "A general remark or comment", 
+              "id": "Remark", 
+              "type": "string"
+            }
+          ]
+        }, 
+        "size": "16863", 
+        "url": "https://raw.github.com/datasets/currency-codes/master/data/codes-all.csv"
+      }
+    ], 
     "sources": [
       {
         "email": "office@currency-iso.org", 
@@ -199,7 +201,24 @@
   }, 
   "gdp": {
     "description": "Country, regional and world GDP in current US Dollars ($). Regional means collections of countries e.g. Europe & Central Asia. Data is sourced from the World Bank and turned into a standard normalized CSV.", 
-    "files": [
+    "github_url": "https://github.com/datasets/gdp", 
+    "image": "http://assets.okfn.org/p/opendatahandbook/img/data-wrench.png", 
+    "keywords": [
+      "GDP", 
+      "World", 
+      "Gross Domestic Product", 
+      "Time series"
+    ], 
+    "last_updated": "2011-09-21", 
+    "licenses": [
+      {
+        "id": "odc-pddl", 
+        "url": "http://opendatacommons.org/licenses/pddl/"
+      }
+    ], 
+    "name": "gdp", 
+    "readme": "Country, regional and world GDP in current US Dollars ($). Regional means\ncollections of countries e.g. Europe & Central Asia. Data is sourced from the\nWorld Bank and turned into a standard normalized CSV (code can be found in\nprocess.py of data package repository).\n\n## Source\n\nThe data is sourced from the World Bank (specifically [this dataset][wb]) which\nin turn lists as sources: *World Bank national accounts data, and OECD National\nAccounts data files*.\n\n\n[wb]: http://data.worldbank.org/indicator/NY.GDP.MKTP.CD\n\n", 
+    "resources": [
       {
         "path": "data/gdp.csv", 
         "schema": {
@@ -227,23 +246,6 @@
         "url": "https://raw.github.com/datasets/gdp/master/data/gdp.csv"
       }
     ], 
-    "github_url": "https://github.com/datasets/gdp", 
-    "image": "http://assets.okfn.org/p/opendatahandbook/img/data-wrench.png", 
-    "keywords": [
-      "GDP", 
-      "World", 
-      "Gross Domestic Product", 
-      "Time series"
-    ], 
-    "last_updated": "2011-09-21", 
-    "licenses": [
-      {
-        "id": "odc-pddl", 
-        "url": "http://opendatacommons.org/licenses/pddl/"
-      }
-    ], 
-    "name": "gdp", 
-    "readme": "Country, regional and world GDP in current US Dollars ($). Regional means\ncollections of countries e.g. Europe & Central Asia. Data is sourced from the\nWorld Bank and turned into a standard normalized CSV (code can be found in\nprocess.py of data package repository).\n\n## Source\n\nThe data is sourced from the World Bank (specifically [this dataset][wb]) which\nin turn lists as sources: *World Bank national accounts data, and OECD National\nAccounts data files*.\n\n\n[wb]: http://data.worldbank.org/indicator/NY.GDP.MKTP.CD\n\n", 
     "sources": [
       {
         "name": "World Bank and OECD", 
@@ -255,7 +257,16 @@
   }, 
   "gdp-uk": {
     "description": "UK Real GDP since 1948 from the Office of National Statistics including percentage change and index versions.", 
-    "files": [
+    "github_url": "https://github.com/datasets/gdp-uk", 
+    "licenses": [
+      {
+        "id": "odc-pddl", 
+        "url": "http://opendatacommons.org/licenses/pddl/"
+      }
+    ], 
+    "name": "gdp-uk", 
+    "readme": "UK Real GDP since 1948 from the Office of National Statistics including\npercentage change and index versions.\n\n## Data\n\nAnnual data in <annual.csv> The GDP measure is a chained volume measure and is\ntherefore real not nominal.  Amounts are in 2009 \u00a3m.\n\nExtracted from\n<http://www.ons.gov.uk/ons/datasets-and-tables/downloads/csv.csv?dataset=pgdp>.\nProcess is recorded and automated in 2 bash scripts:\n\n    scripts/download.sh\n    scripts/extract.sh\n\n### Licensing\n\nSuch small amounts of data that believe there are no underlying rights and\nhence have provided under the Public Domain Dedication License.\n\n", 
+    "resources": [
       {
         "path": "annual.csv", 
         "schema": {
@@ -291,15 +302,6 @@
         "url": "https://raw.github.com/datasets/gdp-uk/master/annual.csv"
       }
     ], 
-    "github_url": "https://github.com/datasets/gdp-uk", 
-    "licenses": [
-      {
-        "id": "odc-pddl", 
-        "url": "http://opendatacommons.org/licenses/pddl/"
-      }
-    ], 
-    "name": "gdp-uk", 
-    "readme": "UK Real GDP since 1948 from the Office of National Statistics including\npercentage change and index versions.\n\n## Data\n\nAnnual data in <annual.csv> The GDP measure is a chained volume measure and is\ntherefore real not nominal.  Amounts are in 2009 \u00a3m.\n\nExtracted from\n<http://www.ons.gov.uk/ons/datasets-and-tables/downloads/csv.csv?dataset=pgdp>.\nProcess is recorded and automated in 2 bash scripts:\n\n    scripts/download.sh\n    scripts/extract.sh\n\n### Licensing\n\nSuch small amounts of data that believe there are no underlying rights and\nhence have provided under the Public Domain Dedication License.\n\n", 
     "sources": [
       {
         "homepage": "http://www.ons.gov.uk/ons/rel/gva/gross-domestic-product--preliminary-estimate/q4-2012/tsd---preliminary-estimate-of-gdp-q4-2012.html", 
@@ -311,7 +313,22 @@
   }, 
   "house-prices-uk": {
     "description": "UK house prices since 1953 as monthly time-series. Data comes from the Nationwide.", 
-    "files": [
+    "github_url": "https://github.com/datasets/house-prices-uk", 
+    "licenses": [
+      {
+        "id": "odc-pddl", 
+        "url": "http://opendatacommons.org/licenses/pddl/"
+      }
+    ], 
+    "maintainers": [
+      {
+        "name": "Rufus Pollock", 
+        "web": "http://rufuspollock.org/"
+      }
+    ], 
+    "name": "house-prices-uk", 
+    "readme": "UK house prices since 1953 as monthly time-series. Data comes from the Nationwide.\n\nSource: <http://www.nationwide.co.uk/hpi/historical.htm>\n\n", 
+    "resources": [
       {
         "path": "data.csv", 
         "schema": {
@@ -341,21 +358,6 @@
         "url": "https://raw.github.com/datasets/house-prices-uk/master/data.csv"
       }
     ], 
-    "github_url": "https://github.com/datasets/house-prices-uk", 
-    "licenses": [
-      {
-        "id": "odc-pddl", 
-        "url": "http://opendatacommons.org/licenses/pddl/"
-      }
-    ], 
-    "maintainers": [
-      {
-        "name": "Rufus Pollock", 
-        "web": "http://rufuspollock.org/"
-      }
-    ], 
-    "name": "house-prices-uk", 
-    "readme": "UK house prices since 1953 as monthly time-series. Data comes from the Nationwide.\n\nSource: <http://www.nationwide.co.uk/hpi/historical.htm>\n\n", 
     "sources": [
       {
         "name": "Nationwide", 
@@ -366,31 +368,6 @@
   }, 
   "population": {
     "description": "Population figures for countries, regions (e.g. Asia) and the world. Data comes originally from World Bank and has been converted into standard CSV.", 
-    "files": [
-      {
-        "fields": [
-          {
-            "id": "Country Name", 
-            "type": "string"
-          }, 
-          {
-            "id": "Country Code", 
-            "type": "string"
-          }, 
-          {
-            "fulltype": "date/year", 
-            "id": "Year", 
-            "type": "date"
-          }, 
-          {
-            "id": "Value", 
-            "type": "float"
-          }
-        ], 
-        "path": "data/population.csv", 
-        "url": "https://raw.github.com/datasets/population/master/data/population.csv"
-      }
-    ], 
     "github_url": "https://github.com/datasets/population", 
     "keywords": [
       "Population", 
@@ -406,6 +383,33 @@
     ], 
     "name": "population", 
     "readme": "Population figures for countries, regions (e.g. Asia) and the world. Data comes originally from World Bank and has been converted into standard CSV.\n\n## Source\n\nThe data is sourced from this [World Bank dataset][wb]) which\nin turn lists as sources: *(1) United Nations Population Division. World Population Prospects, (2) United Nations Statistical Division. Population and Vital Statistics Reprot (various years), (3) Census reports and other statistical publications from national statistical offices, (4) Eurostat: Demographic Statistics, (5) Secretariat of the Pacific Community: Statistics and Demography Programme, and (6) U.S. Census Bureau: International Database.*\n\n[wb]: http://data.worldbank.org/indicator/SP.POP.TOTL\n", 
+    "resources": [
+      {
+        "path": "data/population.csv", 
+        "schema": {
+          "fields": [
+            {
+              "id": "Country Name", 
+              "type": "string"
+            }, 
+            {
+              "id": "Country Code", 
+              "type": "string"
+            }, 
+            {
+              "fulltype": "date/year", 
+              "id": "Year", 
+              "type": "date"
+            }, 
+            {
+              "id": "Value", 
+              "type": "float"
+            }
+          ]
+        }, 
+        "url": "https://raw.github.com/datasets/population/master/data/population.csv"
+      }
+    ], 
     "sources": [
       {
         "name": "World Bank", 

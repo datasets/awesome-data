@@ -34,7 +34,7 @@ def load_dataset(id_):
 
     # some final tidying up
     datapackage['github_url'] = 'https://github.com/datasets/' + datapackage['name']
-    for info in datapackage['files']:
+    for info in datapackage['resources']:
         if (not info.get('url') and info.get('path')):
             info['url'] = datapackage['github_url'].replace('github.com',
                     'raw.github.com') + '/master/' + info['path']
