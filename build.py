@@ -1,13 +1,12 @@
 import json
 import urllib2
 
-def load_dataset(id_):
-    print('Processing: %s' % id_)
-    base = 'https://raw.github.com/datasets/' + id_ + '/master/'
-    url = base + 'datapackage.json'
+def load_dataset(datapackage_url):
+    print('Processing: %s' % datapackage_url)
+    base = datapackage_url.rstrip('datapackage.json')
     # TODO: deal with 404s gracefully
     try:
-        datapackage = json.load(urllib2.urlopen(url))
+        datapackage = json.load(urllib2.urlopen(datapackage_url))
     except:
         print('Failed to load %s from %s' % (id_, url))
         return None
@@ -27,17 +26,19 @@ def load_dataset(id_):
     # set description as first paragraph of readme if we no description
     if not datapackage['description'] and 'readme' in datapackage:
         # first extract plain text ...
-        import markdown
-        html = markdown.markdown(unicode(datapackage['readme'], 'utf8'))
+        try:
+            from markdown import markdown
+        except ImportError:
+            print('WARNING: failed to import markdown')
+            markdown = lambda x: x
+        html = markdown(unicode(datapackage['readme'], 'utf8'))
         plain = strip_tags(html).split('\n\n')[0].replace(' \n', '').replace('\n', ' ')
         datapackage['description'] = plain.encode('utf8')
 
-    # some final tidying up
-    datapackage['github_url'] = 'https://github.com/datasets/' + datapackage['name']
     for info in datapackage['resources']:
         if (not info.get('url') and info.get('path')):
-            info['url'] = datapackage['github_url'].replace('github.com',
-                    'raw.github.com') + '/master/' + info['path']
+            info['url'] = base + info.get('path')
+            print info['url']
 
     return datapackage
 
@@ -66,15 +67,33 @@ def load(dataset_names):
     return out
 
 
-def build_index():
-    dataset_list_url = 'list.txt'
+def build_index(dataset_list_url):
     dataset_list = open(dataset_list_url).read().split('\n')
     # strip out blank lines or similar which can creep in
-    dataset_list = [ds for ds in dataset_list if ds]
+    dataset_list = [_to_dp_url(ds) for ds in dataset_list if ds]
     index = load(dataset_list)
     with open('index.json', 'w') as dest:
         json.dump(index, dest, indent=2, sort_keys=True)
 
+def _to_dp_url(nameOrUrl):
+    if '/' not in nameOrUrl:
+        url = 'https://raw.github.com/datasets/' + nameOrUrl + '/master/'
+    else:
+        url = nameOrUrl
+
+    if not url.endswith('datapackage.json'):
+        url = url.rstrip('/')
+        url += '/datapackage.json'
+
+    return url
+        
+
+
+import sys
 if __name__ == '__main__':
-    build_index()
+    if len(sys.argv) > 1:
+        path = sys.argv[1]
+        build_index(path)
+    else:
+        build_index('list.txt')
 
