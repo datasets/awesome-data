@@ -67,12 +67,12 @@ def load(dataset_names):
     return out
 
 
-def build_index(dataset_list_url):
+def build_index(dataset_list_url, outpath='dp-index.json'):
     dataset_list = open(dataset_list_url).read().split('\n')
     # strip out blank lines or similar which can creep in
     dataset_list = [_to_dp_url(ds) for ds in dataset_list if ds]
     index = load(dataset_list)
-    with open('index.json', 'w') as dest:
+    with open(outpath, 'w') as dest:
         json.dump(index, dest, indent=2, sort_keys=True)
 
 def _to_dp_url(nameOrUrl):
@@ -92,8 +92,12 @@ def _to_dp_url(nameOrUrl):
 import sys
 if __name__ == '__main__':
     if len(sys.argv) > 1:
-        path = sys.argv[1]
-        build_index(path)
+        listpath = sys.argv[1]
     else:
-        build_index('list.txt')
+        listpath = 'list.txt'
+    if len(sys.argv) > 2:
+        outpath = sys.argv[2]
+    else:
+        outpath = 'dp-index.json'
+    build_index(listpath, outpath)
 

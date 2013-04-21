@@ -16,9 +16,10 @@ There is also an existing spreadsheet list of [proposed datasets for inclusion i
 
 # For Maintainers
 
-To build the index.json (consolidating cache):
+To build the dp-index.json (consolidating cache):
 
     # install markdown library if you have not already
     # then
-    python build.py
+    # optional path is location to write dp-index.json to
+    python build.py [path]
 
