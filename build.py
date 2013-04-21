@@ -1,5 +1,10 @@
 import json
 import urllib2
+try:
+    from markdown import markdown
+except ImportError:
+    print('WARNING: failed to import markdown')
+    markdown = lambda x: x
 
 def load_dataset(datapackage_url):
     print('Processing: %s' % datapackage_url)
@@ -26,11 +31,6 @@ def load_dataset(datapackage_url):
     # set description as first paragraph of readme if we no description
     if not datapackage['description'] and 'readme' in datapackage:
         # first extract plain text ...
-        try:
-            from markdown import markdown
-        except ImportError:
-            print('WARNING: failed to import markdown')
-            markdown = lambda x: x
         html = markdown(unicode(datapackage['readme'], 'utf8'))
         plain = strip_tags(html).split('\n\n')[0].replace(' \n', '').replace('\n', ' ')
         datapackage['description'] = plain.encode('utf8')
@@ -38,7 +38,6 @@ def load_dataset(datapackage_url):
     for info in datapackage['resources']:
         if (not info.get('url') and info.get('path')):
             info['url'] = base + info.get('path')
-            print info['url']
 
     return datapackage
 
