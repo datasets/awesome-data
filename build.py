@@ -13,7 +13,7 @@ def load_dataset(datapackage_url):
     try:
         datapackage = json.load(urllib2.urlopen(datapackage_url))
     except:
-        print('Failed to load %s from %s' % (id_, url))
+        print('Failed to load %s' % datapackage_url)
         return None
 
     # ensure certain fields exist
@@ -62,6 +62,8 @@ def strip_tags(html):
 
 def load(dataset_names):
     out = [ load_dataset(name) for name in dataset_names if name ]
+    # if failed loads returned dp is None
+    out = [ x for x in out if x ]
     out = dict([ (x['name'], x) for x in out ])
     return out
 
