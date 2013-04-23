@@ -1,8 +1,8 @@
+gdp-uk
+gdp
+bond-yields-uk-10y
+population
+house-prices-uk
 cofog
 country-codes
 currency-codes
-gdp
-gdp-uk
-population
-house-prices-uk
-bond-yields-uk-10y
