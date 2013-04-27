@@ -385,6 +385,63 @@
     ], 
     "title": "House Prices in the UK since 1953"
   }, 
+  "house-prices-us": {
+    "description": "Case-Shiller Index of US residential house prices. Data comes from SP Case-Shiller data and includes both the national index and the indices for 20 metropolitan regions. The indices are created using a repeat-sales methodology.", 
+    "keywords": [
+      "Indicator", 
+      "House Prices", 
+      "US"
+    ], 
+    "licenses": [
+      {
+        "name": "Public Domain Dedication and License", 
+        "url": "http://opendatacommons.org/licenses/pddl/1.0/"
+      }
+    ], 
+    "name": "house-prices-us", 
+    "readme": "Case-Shiller Index of US residential house prices. Data comes from S&P\nCase-Shiller data and includes both the national index and the indices for 20\nmetropolitan regions. The indices are created using a repeat-sales methodology.\n\n## Data\n\nThere is [home page for Indices on S&P website][sp-home]. This provides a table\nof links but these are not direct file URLs and you have dig around in S&P's\njavascript to find the actual download locations:\n\n[sp-home]: http://www.standardandpoors.com/indices/sp-case-shiller-home-price-indices/en/us/?indexId=spusa-cashpidff--p-us----\n\n* [National index][nat] (xls)\n* [City indices][city] (xls)\n\nTo convert to the final form we do various processing:\n\n* Convert to CSV with dataconvert\n* Normalize the files using scripts/process.py\n\n[nat]: http://www.standardandpoors.com/servlet/BlobServer?blobheadername3=MDT-Type&blobcol=urldocumentfile&blobtable=SPComSecureDocument&blobheadervalue2=inline%3B+filename%3Ddownload.xls&blobheadername2=Content-Disposition&blobheadervalue1=application%2Fexcel&blobkey=id&blobheadername1=content-type&blobwhere=1245214513097&blobheadervalue3=abinary%3B+charset%3DUTF-8&blobnocache=true\n[city]: http://www.standardandpoors.com/servlet/BlobServer?blobheadername3=MDT-Type&blobcol=urldocumentfile&blobtable=SPComSecureDocument&blobheadervalue2=inline%3B+filename%3Ddownload.xls&blobheadername2=Content-Disposition&blobheadervalue1=application%2Fexcel&blobkey=id&blobheadername1=content-type&blobwhere=1245214507048&blobheadervalue3=abinary%3B+charset%3DUTF-8&blobnocache=true\n\n", 
+    "resources": [
+      {
+        "name": "national", 
+        "path": "national.csv", 
+        "schema": {
+          "fields": [
+            {
+              "format": "yyyy", 
+              "id": "Year", 
+              "type": "date"
+            }, 
+            {
+              "description": "Case-Shiller Index level at national level (not seasonally adjusted)", 
+              "id": "Composite-US", 
+              "type": "number"
+            }
+          ]
+        }, 
+        "url": "https://raw.github.com/datasets/house-prices-us/master/national.csv"
+      }
+    ], 
+    "sources": [
+      {
+        "name": "Standard and Poors Case-Shiller Indices", 
+        "web": "http://www.standardandpoors.com/indices/sp-case-shiller-home-price-indices/en/us/?indexId=spusa-cashpidff--p-us----"
+      }
+    ], 
+    "title": "US House Price Index (Case-Shiller)", 
+    "views": [
+      {
+        "id": "Graph", 
+        "state": {
+          "graphType": "lines-and-points", 
+          "group": "Year", 
+          "series": [
+            "Composite-US"
+          ]
+        }, 
+        "type": "Graph"
+      }
+    ]
+  }, 
   "population": {
     "description": "Population figures for countries, regions (e.g. Asia) and the world. Data comes originally from World Bank and has been converted into standard CSV.", 
     "keywords": [
