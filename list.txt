@@ -1,4 +1,5 @@
 house-prices-us
+gold-prices
 gdp-uk
 gdp
 bond-yields-uk-10y
