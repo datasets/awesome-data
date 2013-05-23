@@ -346,6 +346,7 @@
     "resources": [
       {
         "format": "csv", 
+        "path": "data/data.csv", 
         "schema": {
           "fields": [
             {
@@ -358,7 +359,7 @@
             }
           ]
         }, 
-        "url": "data/data.csv"
+        "url": "https://raw.github.com/datasets/gold-prices/master/data/data.csv"
       }
     ], 
     "sources": [
