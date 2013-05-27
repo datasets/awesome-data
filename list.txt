@@ -8,3 +8,4 @@ house-prices-uk
 cofog
 country-codes
 currency-codes
+cpi
