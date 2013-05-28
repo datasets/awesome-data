@@ -130,6 +130,61 @@
     ], 
     "title": "ISO 2 digit country codes"
   }, 
+  "cpi": {
+    "description": "Annual Consumer Price Index (CPI) for most countries in the world. Reference year is 2005.", 
+    "keywords": [
+      "CPI", 
+      "World", 
+      "Consumer Price Index", 
+      "Annual Data", 
+      "The World Bank"
+    ], 
+    "last_updated": "2013-05-27", 
+    "licenses": [
+      {
+        "id": "odc-pddl", 
+        "url": "http://opendatacommons.org/licenses/pddl/"
+      }
+    ], 
+    "name": "cpi", 
+    "readme": "# CPI datapackage\n\nAnnual Consumer Price Index (CPI) for most countries in the world when it has been measured. The reference year is 2005 (meaning the value of CPI for all countries is 100 and all other CPI values are relative to that year).\n\n# Data\n\nThe data comes from [The World Bank](http://data.worldbank.org/indicator/FP.CPI.TOTL) and is collected from 1960 to 2011. There are some values missing from data so users of the data will have to *guess* what should be in the empty slots.\n\nThe actual download happens via [The World Bank's API (with csv as the requested format)](http://api.worldbank.org/indicator/FP.CPI.TOTL?format=csv).\n\nIt is parsed via the script **cpi2datapackage.py**, located in scripts.\n\n## Usage of cpi2datapackage.py\n\n    usage: cpi2datapackage.py [-h] [-o filename] [source]\n    \n    convert WorldBank CPI data to a data package resource\n\n    positional arguments:\n      source                source file to generate output from\n    \n    optional arguments:\n      -h, --help            show this help message and exit\n      -o filename, --output filename\n                            define output filename\n", 
+    "resources": [
+      {
+        "path": "data/cpi.csv", 
+        "schema": {
+          "fields": [
+            {
+              "id": "Country Name", 
+              "type": "string"
+            }, 
+            {
+              "id": "Country Code", 
+              "type": "string"
+            }, 
+            {
+              "format": "yyyy", 
+              "id": "Year", 
+              "type": "date"
+            }, 
+            {
+              "description": "CPI (where 2005=100)", 
+              "id": "CPI", 
+              "type": "number"
+            }
+          ]
+        }, 
+        "url": "https://raw.github.com/datasets/cpi/master/data/cpi.csv"
+      }
+    ], 
+    "sources": [
+      {
+        "name": "The World Bank", 
+        "web": "http://data.worldbank.org/indicator/FP.CPI.TOTL"
+      }
+    ], 
+    "title": "Annual Consumer Price Index (CPI)", 
+    "version": "1.0.1"
+  }, 
   "currency-codes": {
     "description": "List of currencies and their 3 digit codes as defined by ISO 4217. The data provided here is the consolidation of Table A.1 Current currency  funds code list", 
     "homepage": "http://www.iso.org/iso/currency_codes", 
@@ -471,6 +526,108 @@
           ]
         }, 
         "url": "https://raw.github.com/datasets/house-prices-us/master/national.csv"
+      }, 
+      {
+        "description": "Case-Shiller index values for cities across the US. Monthly.", 
+        "name": "cities", 
+        "path": "cities.csv", 
+        "schema": {
+          "fields": [
+            {
+              "id": "Date", 
+              "type": "date"
+            }, 
+            {
+              "id": "AZ-Phoenix", 
+              "type": "number"
+            }, 
+            {
+              "id": "CA-Los Angeles", 
+              "type": "number"
+            }, 
+            {
+              "id": "CA-San Diego", 
+              "type": "number"
+            }, 
+            {
+              "id": "CA-San Francisco", 
+              "type": "number"
+            }, 
+            {
+              "id": "CO-Denver", 
+              "type": "number"
+            }, 
+            {
+              "id": "DC-Washington", 
+              "type": "number"
+            }, 
+            {
+              "id": "FL-Miami", 
+              "type": "number"
+            }, 
+            {
+              "id": "FL-Tampa", 
+              "type": "number"
+            }, 
+            {
+              "id": "GA-Atlanta", 
+              "type": "number"
+            }, 
+            {
+              "id": "IL-Chicago", 
+              "type": "number"
+            }, 
+            {
+              "id": "MA-Boston", 
+              "type": "number"
+            }, 
+            {
+              "id": "MI-Detroit", 
+              "type": "number"
+            }, 
+            {
+              "id": "MN-Minneapolis", 
+              "type": "number"
+            }, 
+            {
+              "id": "NC-Charlotte", 
+              "type": "number"
+            }, 
+            {
+              "id": "NV-Las Vegas", 
+              "type": "number"
+            }, 
+            {
+              "id": "NY-New York", 
+              "type": "number"
+            }, 
+            {
+              "id": "OH-Cleveland", 
+              "type": "number"
+            }, 
+            {
+              "id": "OR-Portland", 
+              "type": "number"
+            }, 
+            {
+              "id": "TX-Dallas", 
+              "type": "number"
+            }, 
+            {
+              "id": "WA-Seattle", 
+              "type": "number"
+            }, 
+            {
+              "id": "Composite-10", 
+              "type": "number"
+            }, 
+            {
+              "id": "Composite-20", 
+              "type": "number"
+            }
+          ]
+        }, 
+        "url": "https://raw.github.com/datasets/house-prices-us/master/cities.csv"
       }
     ], 
     "sources": [
