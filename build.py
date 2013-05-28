@@ -68,7 +68,7 @@ def load(dataset_names):
     return out
 
 
-def build_index(dataset_list_url, outpath='dp-index.json'):
+def build_index(dataset_list_url, outpath='datapackage-index.json'):
     dataset_list = open(dataset_list_url).read().split('\n')
     # strip out blank lines or similar which can creep in
     dataset_list = [_to_dp_url(ds) for ds in dataset_list if ds]
@@ -95,10 +95,10 @@ if __name__ == '__main__':
     if len(sys.argv) > 1:
         listpath = sys.argv[1]
     else:
-        listpath = 'list.txt'
+        listpath = 'datapackage-list.txt'
     if len(sys.argv) > 2:
         outpath = sys.argv[2]
     else:
-        outpath = 'dp-index.json'
+        outpath = 'datapackage-index.json'
     build_index(listpath, outpath)
 
