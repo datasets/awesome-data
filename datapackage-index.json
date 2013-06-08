@@ -702,5 +702,105 @@
     ], 
     "title": "Population figures for countries, regions (e.g. Asia) and the world", 
     "version": "2011"
+  }, 
+  "s-and-p-500": {
+    "description": "SP 500 index data including level, dividend, earnings and P/E ratio on a monthly basis since 1870. The SP 500 (Standard and Poor's 500) is a free-float, capitalization-weighted index of the top 500 publicly listed stocks in the US (top 500 by market cap).", 
+    "keywords": [
+      "Indicator", 
+      "Economics", 
+      "Prices", 
+      "Stocks", 
+      "Stock Market", 
+      "US"
+    ], 
+    "licenses": [
+      {
+        "id": "odc-pddl", 
+        "name": "Public Domain Dedication and License", 
+        "url": "http://opendatacommons.org/licenses/pddl/1.0/", 
+        "version": "1.0"
+      }
+    ], 
+    "maintainers": [
+      {
+        "email": "rufus.pollock@okfn.org", 
+        "name": "Rufus Pollock"
+      }
+    ], 
+    "name": "s-and-p-500", 
+    "readme": "S&P 500 index data including level, dividend, earnings and P/E ratio on a\nmonthly basis since 1870. The S&P 500 (Standard and Poor's 500) is a\nfree-float, capitalization-weighted index of the top 500 publicly listed stocks\nin the US (top 500 by market cap).\n\n## Data\n\nThe data provided here is a tidied and CSV'd version of that collected and\nprepared by the Economist Robert Shiller and made [available on his\nwebsite][shiller].\n\n[shiller]: http://www.econ.yale.edu/~shiller/data.htm\n\n### Source Data Construction\n\nDetails of the data construction as described on Shiller's website (and\nslightly reformatted):\n\n> Stock market data used in my book, Irrational Exuberance [Princeton University Press 2000, Broadway Books 2001, 2nd ed., 2005] are available for download, Excel file (xls). This data set consists of monthly stock price, dividends, and earnings data and the consumer price index (to allow conversion to real values), all starting January 1871.\n> \n> The price, dividend, and earnings series are from the same sources as described in Chapter 26 of my earlier book (Market Volatility [Cambridge, MA: MIT Press, 1989]), although now I use monthly data, rather than annual data. Monthly dividend and earnings data are computed from the S&P four-quarter totals for the quarter since 1926, with linear interpolation to monthly figures. Dividend and earnings data before 1926 are from Cowles and associates (Common Stock Indexes, 2nd ed. [Bloomington, Ind.: Principia Press, 1939]), interpolated from annual data.\n>\n> Stock price data are monthly averages of daily closing prices through January 2000, the last month available as this book goes to press. The CPI-U (Consumer Price Index-All Urban Consumers) published by the U.S. Bureau of Labor Statistics begins in 1913; for years before 1913 1 spliced to the CPI Warren and Pearson's price index, by multiplying it by the ratio of the indexes in January 1913. December 1999 and January 2000 values for the CPI-U are extrapolated. See George F. Warren and Frank A. Pearson, Gold and Prices (New York: John Wiley and Sons, 1935). Data are from their Table 1, pp. 11\u201314.\n>\n> For the Plots, I have multiplied the inflation-corrected series by a constant so that their value in january 2000 equals their nominal value, i.e., so that all prices are effectively in January 2000 dollars.\n\n### Preparation\n\nRun:\n\n    python scripts/data.py\n\n## License\n\nNo exact statement on license of original data but given size and factual\nnature believe one can assume these are public domain (and I, the maintainer,\nexplicitly license under the ODC Public Domain Dedication and License (PDDL)).\n\nThat said, it would be natural to credit Robert Shiller for preparing this\ndataset and kindly making it publicly available.\n\n", 
+    "resources": [
+      {
+        "path": "data/data.csv", 
+        "schema": {
+          "fields": [
+            {
+              "id": "Date", 
+              "type": "date"
+            }, 
+            {
+              "description": "Level ('price') of the S&P 500 index", 
+              "id": "SP500", 
+              "type": "number"
+            }, 
+            {
+              "id": "Dividend", 
+              "type": "number"
+            }, 
+            {
+              "id": "Earnings", 
+              "type": "number"
+            }, 
+            {
+              "id": "Consumer Price Index", 
+              "type": "number"
+            }, 
+            {
+              "description": "10 year interest rate (gov bonds)", 
+              "id": "Long Interest Rate", 
+              "type": "number"
+            }, 
+            {
+              "id": "Real Price", 
+              "type": "number"
+            }, 
+            {
+              "id": "Real Dividend", 
+              "type": "number"
+            }, 
+            {
+              "id": "Real Earnings", 
+              "type": "number"
+            }, 
+            {
+              "description": "Cyclically Adjusted Price Earnings Ratio P/E10 or CAPE", 
+              "id": "P/E10", 
+              "type": "number"
+            }
+          ]
+        }, 
+        "url": "https://raw.github.com/datasets/s-and-p-500/master/data/data.csv"
+      }
+    ], 
+    "sources": [
+      {
+        "name": "Robert Shiller", 
+        "web": "http://www.econ.yale.edu/~shiller/data.htm"
+      }
+    ], 
+    "title": "Standard and Poor's (S&P) 500 Index Data including Dividend, Earnings and P/E Ratio", 
+    "views": [
+      {
+        "id": "graph", 
+        "state": {
+          "graphType": "lines", 
+          "group": "Date", 
+          "series": [
+            "SP500"
+          ]
+        }, 
+        "type": "Graph"
+      }
+    ]
   }
 }
