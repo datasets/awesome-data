@@ -10,3 +10,4 @@ cofog
 country-codes
 currency-codes
 cpi
+country-codes-comprehensive
