@@ -11,3 +11,4 @@ country-codes
 currency-codes
 cpi
 country-codes-comprehensive
+cpi-us

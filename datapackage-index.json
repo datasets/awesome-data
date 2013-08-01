@@ -134,137 +134,158 @@
     "title": "ISO 2 digit country codes"
   }, 
   "country-codes-comprehensive": {
-    "datapackage_version": "1.0-beta.3",
-    "description": "",
-    "format": "csv",
-    "hash": "385dfca7b9e19fd5ff10503a75e2f615",
-    "last_modified": "2013-06-17T15:36:33.391400",
+    "datapackage_version": "1.0-beta.3", 
+    "description": "Comprehensive country codes datapackage DataPackage of current country code information in Simple Data Format. See datapackage.json for package description. See dataprotocols.org for more information.", 
+    "format": "csv", 
+    "hash": "fdb74ef13502af2968ca94824752e4a5", 
+    "last_modified": "2013-07-16T22:41:52.119493", 
     "licenses": [
       {
-        "id": "odc-pddl",
-        "name": "Public Domain Dedication and License",
-        "url": "http://opendatacommons.org/licenses/pddl/1.0/",
+        "id": "odc-pddl", 
+        "name": "Public Domain Dedication and License", 
+        "url": "http://opendatacommons.org/licenses/pddl/1.0/", 
         "version": "1.0"
       }
-    ],
+    ], 
     "maintainers": [
       {
-        "name": "Evan Wheeler",
-        "web": "https://github.com/ewheeler/country-codes-comprehensive"
+        "name": "Evan Wheeler", 
+        "web": "https://github.com/datasets/country-codes-comprehensive"
       }
-    ],
-    "name": "country-codes-comprehensive",
-    "readme": "",
+    ], 
+    "name": "country-codes-comprehensive", 
+    "readme": "# Comprehensive country codes datapackage\n\nDataPackage of current country code information in Simple Data Format.\nSee datapackage.json for package description.\nSee [dataprotocols.org](http://www.dataprotocols.org) for more information.\n\n## Data\n\nComprehensive country code information, including ISO 3166 codes, ITU dialing\ncodes, ISO 4217 currency codes, and many others.\n\n### Preparation\n\nThis package includes a Python script to fetch current country information\nand output a JSON document of combined country code information.\nPer-country JSON documents may be keyed by any of the fields below.\n\nCSV output is provided via the `in2csv` utility from [csvkit](http://github.com/onyxfish/csvkit)\n\nRun **scripts/get_countries_of_earth.py --help** for usage information\n\n#### data/country-codes-comprehensive.csv\nInstall requirements:\n\n    pip install -r scripts/requirements.pip\n\n\nRun the python script:\n\n    python scripts/get_countries_of_earth.py -l --output=data/country-codes-comprehensive.json\n\n\nConvert json file to csv:\n\n    in2csv data/country-codes-comprehensive.json > data/country-codes-comprehensive.csv\n\n\n## Sources\n\nISO 3166 offical English and French short names are from\n[iso.org](http://www.iso.org/iso/country_codes/iso_3166_code_lists.htm)\n\nISO 4217 currency codes are from\n[currency-iso.org](http://www.currency-iso.org/dl_iso_table_a1.xml)\n\nMany other country codes are from\n[statoids.com](http://www.statoids.com/wab.html)\n\nSpecial thanks to Gwillim Law for his excellent [statoids.com](http://www.statoids.com) site (some of the field descriptions\nare excerpted from his site), which is more up-to-date than most similar resources and is much\neasier to scrape than multiple Wikipedia pages.\n\n\n## License\n\tThis material is licensed by its maintainers under the Public Domain Dedication\n\tand License.\n\n\tNevertheless, it should be noted that this material is ultimately sourced from\n\tISO and other standards bodies and their rights and licensing policies are somewhat\n\tunclear. As this is a short, simple database of facts there is a strong argument\n\tthat no rights can subsist in this collection. However, ISO state on [their\n\tsite](http://www.iso.org/iso/home/standards/country_codes.htm):\n\n\t> ISO makes the list of alpha-2 country codes available for internal use and\n\t> non-commercial purposes free of charge.\n\n\tThis carries the implication (though not spelled out) that other uses are not\n\tpermitted and that, therefore, there may be rights preventing further general\n\tuse and reuse.\n\n\tIf you intended to use these data in a public or commercial product, please\n\tcheck the original sources for any specific restrictions.\n", 
     "resources": [
       {
-        "path": "data/current-countries-of-earth.csv",
+        "path": "data/current-countries-of-earth.csv", 
         "schema": {
           "fields": [
             {
-              "description": "Distinguishing signs of vehicles in international traffic",
-              "id": "DS"
-            },
+              "description": "Distinguishing signs of vehicles in international traffic", 
+              "id": "DS", 
+              "type": "string"
+            }, 
             {
-              "description": "Country code from ITU-T recommendation E.164, sometimes followed by area code",
-              "id": "Dial"
-            },
+              "description": "Country code from ITU-T recommendation E.164, sometimes followed by area code", 
+              "id": "Dial", 
+              "type": "string"
+            }, 
             {
-              "description": "Country name as shown in 'Administrative Subdivisions of Countries'",
-              "id": "Entity"
-            },
+              "description": "Country name as shown in 'Administrative Subdivisions of Countries'", 
+              "id": "Entity", 
+              "type": "string"
+            }, 
             {
-              "description": "Codes assigned by the F\u00e9d\u00e9ration Internationale de Football Association",
-              "id": "FIFA"
-            },
+              "description": "Codes assigned by the F\u00e9d\u00e9ration Internationale de Football Association", 
+              "id": "FIFA", 
+              "type": "string"
+            }, 
             {
-              "description": "Codes from the U.S. standard FIPS PUB 10-4",
-              "id": "FIPS"
-            },
+              "description": "Codes from the U.S. standard FIPS PUB 10-4", 
+              "id": "FIPS", 
+              "type": "string"
+            }, 
             {
-              "description": "Global Administrative Unit Layers from the Food and Agriculture Organization",
-              "id": "GAUL"
-            },
+              "description": "Global Administrative Unit Layers from the Food and Agriculture Organization", 
+              "id": "GAUL", 
+              "type": "integer"
+            }, 
             {
-              "description": "Codes assigned by the International Olympics Committee",
-              "id": "IOC"
-            },
+              "description": "Codes assigned by the International Olympics Committee", 
+              "id": "IOC", 
+              "type": "string"
+            }, 
             {
-              "description": "Alpha-2 codes from ISO 3166-1",
-              "id": "ISO3166-1-Alpha-2"
-            },
+              "description": "Alpha-2 codes from ISO 3166-1", 
+              "id": "ISO3166-1-Alpha-2", 
+              "type": "string"
+            }, 
             {
-              "description": "Alpha-3 codes from ISO 3166-1 (synonymous with World Bank Codes)",
-              "id": "ISO3166-1-Alpha-3"
-            },
+              "description": "Alpha-3 codes from ISO 3166-1 (synonymous with World Bank Codes)", 
+              "id": "ISO3166-1-Alpha-3", 
+              "type": "string"
+            }, 
             {
-              "description": "Numeric codes from ISO 3166-1 (synonymous with UN Statistics M49 Codes)",
-              "id": "ISO3166-1-numeric"
-            },
+              "description": "Numeric codes from ISO 3166-1 (synonymous with UN Statistics M49 Codes)", 
+              "id": "ISO3166-1-numeric", 
+              "type": "integer"
+            }, 
             {
-              "description": "Codes assigned by the International Telecommunications Union",
-              "id": "ITU"
-            },
+              "description": "Codes assigned by the International Telecommunications Union", 
+              "id": "ITU", 
+              "type": "string"
+            }, 
             {
-              "description": "MAchine-Readable Cataloging codes from the Library of Congress",
-              "id": "MARC"
-            },
+              "description": "MAchine-Readable Cataloging codes from the Library of Congress", 
+              "id": "MARC", 
+              "type": "string"
+            }, 
             {
-              "description": "Country abbreviations by the World Meteorological Organization",
-              "id": "WMO"
-            },
+              "description": "Country abbreviations by the World Meteorological Organization", 
+              "id": "WMO", 
+              "type": "string"
+            }, 
             {
-              "description": "ISO 4217 currency alphabetic code",
-              "id": "currency_alphabetic_code"
-            },
+              "description": "ISO 4217 currency alphabetic code", 
+              "id": "currency_alphabetic_code", 
+              "type": "string"
+            }, 
             {
-              "description": "ISO 4217 currency number of minor units",
-              "id": "currency_minor_unit"
-            },
+              "description": "ISO 4217 currency number of minor units", 
+              "id": "currency_minor_unit", 
+              "type": "integer"
+            }, 
             {
-              "description": "ISO 4217 currency name",
-              "id": "currency_name"
-            },
+              "description": "ISO 4217 currency name", 
+              "id": "currency_name", 
+              "type": "string"
+            }, 
             {
-              "description": "ISO 4217 currency alphabetic code",
-              "id": "currency_numeric_code"
-            },
+              "description": "ISO 4217 currency numeric code", 
+              "id": "currency_numeric_code", 
+              "type": "integer"
+            }, 
             {
-              "description": "ISO 4217 country name",
-              "id": "currency_short_name_en"
-            },
+              "description": "ISO 4217 country name", 
+              "id": "currency_short_name_en", 
+              "type": "string"
+            }, 
             {
-              "description": "Country status, based on the CIA World Factbook",
-              "id": "is_independent"
-            },
+              "description": "Country status, based on the CIA World Factbook", 
+              "id": "is_independent", 
+              "type": "string"
+            }, 
             {
-              "description": "Country's official English short name",
-              "id": "short_name_en"
-            },
+              "description": "Country's official English short name", 
+              "id": "short_name_en", 
+              "type": "string"
+            }, 
             {
-              "description": "Country's offical French short name",
-              "id": "short_name_fr"
+              "description": "Country's offical French short name", 
+              "id": "short_name_fr", 
+              "type": "string"
             }
           ]
-        },
+        }, 
         "url": "https://raw.github.com/ewheeler/country-codes-comprehensive/master/data/country-codes-comprehensive.csv"
       }
-    ],
+    ], 
     "sources": [
       {
-        "name": "International Organization for Standardization",
+        "name": "International Organization for Standardization", 
         "web": "http://www.iso.org/iso/country_codes/iso_3166_code_lists.htm"
-      },
+      }, 
       {
-        "name": "SIX Interbank Clearing Ltd (on behalf of ISO)",
+        "name": "SIX Interbank Clearing Ltd (on behalf of ISO)", 
         "web": "http://www.currency-iso.org/dam/downloads/dl_iso_table_a1.xls"
-      },
+      }, 
       {
-        "name": "Statoids",
+        "name": "Statoids", 
         "web": "http://www.statoids.com/wab.html"
       }
-    ],
+    ], 
     "title": "Collection of country codes for current countries of Earth"
-  },
+  }, 
   "cpi": {
     "description": "Annual Consumer Price Index (CPI) for most countries in the world. Reference year is 2005.", 
     "keywords": [
@@ -319,6 +340,57 @@
     ], 
     "title": "Annual Consumer Price Index (CPI)", 
     "version": "1.0.1"
+  }, 
+  "cpi-us": {
+    "description": "Consumer Price Index for All Urban Consumers (CPI-U) from U.S. Department Of Labor Bureau of Labor Statistics. This is a monthly time series from January 1913. Values are U.S. city averages for all items and 1982-84=100. Note that there are many price indices and this is only one of them (albeit the most standard and with the longest set of data).", 
+    "keywords": [
+      "Indicator"
+    ], 
+    "licenses": [
+      {
+        "id": "odc-pddl", 
+        "name": "Public Domain Dedication and License", 
+        "url": "http://opendatacommons.org/licenses/pddl/1.0/", 
+        "version": "1.0"
+      }
+    ], 
+    "name": "cpi-us", 
+    "readme": "Consumer Price Index for *All Urban Consumers (CPI-U)* from U.S. Department\nOf Labor Bureau of Labor Statistics. This is a monthly time series from January 1913. Values are U.S. city averages for all items and\n1982-84=100. Note that there are many price indices and this is only one of\nthem (albeit the most standard and with the longest set of data).\n\n## Data\n\nData is sourced from <ftp://ftp.bls.gov/pub/special.requests/cpi/cpiai.txt> and normalized into a CSV.\n\n", 
+    "resources": [
+      {
+        "format": "csv", 
+        "mimetype": "text/csv", 
+        "path": "data/cpiai.csv", 
+        "schema": {
+          "fields": [
+            {
+              "description": "Date (strictly the year and month)", 
+              "id": "Date", 
+              "type": "date"
+            }, 
+            {
+              "description": "Consumer Price Index. Values are U.S. city averages for all items and 1982-84=100.", 
+              "id": "Value", 
+              "type": "number"
+            }
+          ]
+        }, 
+        "size": "15157", 
+        "sources": [
+          {
+            "web": "ftp://ftp.bls.gov/pub/special.requests/cpi/cpiai.txt"
+          }
+        ], 
+        "url": "https://raw.github.com/datasets/cpi-us/master/data/cpiai.csv"
+      }
+    ], 
+    "sources": [
+      {
+        "name": "US Bureau of Labor Statistics", 
+        "web": "http://www.bls.gov/cpi/"
+      }
+    ], 
+    "title": "US Consumer Price Index (CPI)"
   }, 
   "currency-codes": {
     "description": "List of currencies and their 3 digit codes as defined by ISO 4217. The data provided here is the consolidation of Table A.1 Current currency  funds code list", 
