@@ -369,8 +369,13 @@
               "type": "date"
             }, 
             {
-              "description": "Consumer Price Index. Values are U.S. city averages for all items and 1982-84=100.", 
-              "id": "Value", 
+              "description": "Monthly Consumer Price Index. Values are U.S. city averages for all items and 1982-84=100.", 
+              "id": "Index", 
+              "type": "number"
+            }, 
+            {
+              "description": "Monthly Consumer Price Inflation. Values are for U.S. city averages for all items.", 
+              "id": "Inflation", 
               "type": "number"
             }
           ]
@@ -390,7 +395,33 @@
         "web": "http://www.bls.gov/cpi/"
       }
     ], 
-    "title": "US Consumer Price Index (CPI)"
+    "title": "US Consumer Price Index and Inflation (CPI)", 
+    "views": [
+      {
+        "id": "graph", 
+        "label": "Inflation", 
+        "state": {
+          "graphType": "columns", 
+          "group": "Date", 
+          "series": [
+            "Inflation"
+          ]
+        }, 
+        "type": "Graph"
+      }, 
+      {
+        "id": "graph-index", 
+        "label": "Index", 
+        "state": {
+          "graphType": "lines", 
+          "group": "Date", 
+          "series": [
+            "Index"
+          ]
+        }, 
+        "type": "Graph"
+      }
+    ]
   }, 
   "currency-codes": {
     "description": "List of currencies and their 3 digit codes as defined by ISO 4217. The data provided here is the consolidation of Table A.1 Current currency  funds code list", 
