@@ -1040,5 +1040,133 @@
         "type": "Graph"
       }
     ]
+  }, 
+  "s-and-p-500-companies": {
+    "description": "List of companies in the SP 500 (Standard and Poor's 500). The SP 500 is a free-float, capitalization-weighted index of the top 500 publicly listed stocks in the US (top 500 by market cap). The dataset includes a list of all the stocks contained therein and their associated financials.", 
+    "licenses": [
+      {
+        "id": "odc-pddl", 
+        "name": "Public Domain Dedication and License", 
+        "url": "http://opendatacommons.org/licenses/pddl/1.0/", 
+        "version": "1.0"
+      }
+    ], 
+    "name": "s-and-p-500-companies", 
+    "readme": "List of companies in the S&P 500 (Standard and Poor's 500). The S&P 500 is a free-float, capitalization-weighted index of the top 500 publicly\nlisted stocks in the US (top 500 by market cap). The dataset includes a list of\nall the stocks contained therein and their associated financials.\n\n## Data\n\nDetailed information on the S&P 500 (primarily in xls format) can be obtained\nfrom its [official webpage on the Standard and Poor's website][sp-home] - it's\nfree but registration is required.\n\n* Index listing - see <data/constituents.csv> extracted from [source xls on S&P\n  website][sp-listing] (<del>but note you have to register and login to\n  access</del> - no longer true as of August 2013)\n* Constituent financials - see <data/constituents-financials.csv> (source via Yahoo Finance)\n* Historical performance ([source xls on S&P website][sp-historical])\n\nNotes:\n\n* Market Capitalization and EBIDTA are in Billions\n\n[sp-home]: http://www.standardandpoors.com/indices/sp-500/en/us/?indexId=spusa-500-usduf--p-us-l--\n[sp-listing]: http://us.spindices.com/idsexport/file.xls?hostIdentifier=48190c8c-42c4-46af-8d1a-0cd5db894797&selectedModule=Constituents&selectedSubModule=ConstituentsFullList&indexId=340\n[sp-historical]: http://www.standardandpoors.com/prot/spf/docs/indices/SPUSA-500-USDUF--P-US-L--HistoricalData.xls\n\n### Additional materials\n\nAlso provided is a [S&P 500 Google Docs spreadsheet][gdocs] incorporating\nall of the CSVs. This is licensed under the same terms as all the other data.\n\n*Note*: for aggregate information on the S&P (dividends, earnings etc) see\n[Standard and Poor's 500 Dataset][shiller]\n\n[gdocs]: https://docs.google.com/spreadsheet/ccc?key=0Aon3JiuouxLUdDU5S2NrbVJHRWVBRWxvU1dlOUQ2WUE#gid=0\n[shiller]: http://data.okfn.org/data/s-and-p-500\n\n### Preparation\n\nYou need python plus [dataconverters][] library tool installed to run the\nscripts. You also probably need to be on Linux/Unix or Mac for the shell\nscripts to work.\n\n[dataconverters]: http://okfnlabs.org/dataconverters/\n\n#### constituents.csv\n\nRun python script (this in turn runs the shell script\n`scripts/constituents.sh`):\n\n      python scripts/constituents.py\n\n####  constituents-financials.csv\n\nRun python script:\n\n    python scripts/process.py\n\n## General Financial Notes\n\nPublicly listed US companies are obliged various reports on a regular basis\nwith the SEC. Of these 2 types are of especial interest to investors and others\ninterested in their finances and business. These are:\n\n* 10-K = Annual Report\n* 10-Q = Quarterly report\n\n## License\n\nAll data is licensed under the [Open Data Commons Public Domain Dedication and\nLicense][pddl]. All code is licensed under the MIT/BSD license.\n\nNote that while no credit is formally required a link back or credit to [Rufus\nPollock][rp] and the [Open Knowledge Foundation][okfn] is much appreciated.\n\n[pddl]: http://opendatacommons.org/licenses/pddl/1.0/\n[rp]: http://dev.rufuspollock.org/\n[okfn]: http://okfn.org/\n\n", 
+    "resources": [
+      {
+        "format": "csv", 
+        "mediatype": "text/csv", 
+        "name": "constituents", 
+        "path": "data/constituents.csv", 
+        "schema": {
+          "fields": [
+            {
+              "description": "", 
+              "id": "Symbol", 
+              "type": "string"
+            }, 
+            {
+              "description": "", 
+              "id": "Name", 
+              "type": "string"
+            }, 
+            {
+              "description": "", 
+              "id": "Sector", 
+              "type": "string"
+            }
+          ]
+        }, 
+        "url": "https://raw.github.com/datasets/s-and-p-500-companies/master/data/constituents.csv"
+      }, 
+      {
+        "format": "csv", 
+        "mediatype": "text/csv", 
+        "name": "constituents-financials", 
+        "schema": {
+          "fields": [
+            {
+              "description": "", 
+              "id": "Symbol", 
+              "type": "string"
+            }, 
+            {
+              "description": "", 
+              "id": "Name", 
+              "type": "string"
+            }, 
+            {
+              "description": "", 
+              "id": "Sector", 
+              "type": "string"
+            }, 
+            {
+              "description": "", 
+              "id": "Price", 
+              "type": "number"
+            }, 
+            {
+              "description": "", 
+              "id": "Dividend Yield", 
+              "type": "number"
+            }, 
+            {
+              "description": "", 
+              "id": "Price/Earnings", 
+              "type": "number"
+            }, 
+            {
+              "description": "", 
+              "id": "Earnings/Share", 
+              "type": "number"
+            }, 
+            {
+              "description": "", 
+              "id": "Book Value", 
+              "type": "number"
+            }, 
+            {
+              "description": "", 
+              "id": "52 week low", 
+              "type": "number"
+            }, 
+            {
+              "description": "", 
+              "id": "52 week high", 
+              "type": "number"
+            }, 
+            {
+              "description": "", 
+              "id": "Market Cap", 
+              "type": "number"
+            }, 
+            {
+              "description": "", 
+              "id": "EBITDA", 
+              "type": "number"
+            }, 
+            {
+              "description": "", 
+              "id": "Price/Sales", 
+              "type": "number"
+            }, 
+            {
+              "description": "", 
+              "id": "Price/Book", 
+              "type": "number"
+            }, 
+            {
+              "description": "", 
+              "format": "url", 
+              "id": "SEC Filings", 
+              "type": "string"
+            }
+          ]
+        }, 
+        "url": "data/constituents-financials.csv"
+      }
+    ], 
+    "title": "Companies in S&P 500 with Financial Information"
   }
 }
