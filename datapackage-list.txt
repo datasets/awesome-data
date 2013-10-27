@@ -13,3 +13,4 @@ https://github.com/datasets/currency-codes
 https://github.com/datasets/cpi
 https://github.com/datasets/country-codes-comprehensive
 https://github.com/datasets/cpi-us
+https://github.com/datasets/gdp-us
