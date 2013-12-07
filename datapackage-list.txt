@@ -8,9 +8,9 @@ https://github.com/datasets/bond-yields-uk-10y
 https://github.com/datasets/population
 https://github.com/datasets/house-prices-uk
 https://github.com/datasets/cofog
-https://github.com/datasets/country-codes
+https://github.com/datasets/country-list
 https://github.com/datasets/currency-codes
 https://github.com/datasets/cpi
-https://github.com/datasets/country-codes-comprehensive
+https://github.com/datasets/country-codes
 https://github.com/datasets/cpi-us
 https://github.com/datasets/gdp-us
