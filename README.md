@@ -14,12 +14,3 @@ There is also an existing spreadsheet list of [proposed datasets for inclusion i
 
 [issues]: https://github.com/datasets/registry/issues
 
-# For Maintainers
-
-To build the dp-index.json (consolidating cache):
-
-    # install markdown library if you have not already
-    # then
-    # optional path is location to write dp-index.json to
-    python build.py [path]
-
