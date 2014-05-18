@@ -1,16 +1,38 @@
-Register (list) of the published datasets in the Datasets Project.
+Register (list) of Data Packages including the core datasets in the
+Frictionless Data Project.
 
-## Adding a Dataset to the Registry
+Currently two registers maintained here:
 
-To add a dataset please add it to the list.txt - we recommend fork and pull.
+* datapackage-list.txt - ["Core" Datasets][core] (hand-maintained)
+* github-list.txt - community data packages found on github (automatically)
 
-## Propose Datasets for Addition
+[core]: http://data.okfn.org/roadmap/core-datasets
 
-Discussion of proposals for new datasets and for incorporation of prepared datasets takes place in the [issues][].
+## Preparation
 
-To **propose a new dataset for inclusion**, please create a [new issue](https://github.com/datasets/registry/issues/new).
+### Github List
 
-There is also an existing spreadsheet list of [proposed datasets for inclusion in the Datasets Project]
+Github list is scraped using the script `scripts/scrape.js`:
+
+    # install deps
+    npm install .
+    # scrape data
+    node scripts/scrape.js
+
+Note we'd prefer not to scrape and use the API but we can't do the relevant
+query via the API - see
+<http://developer.github.com/changes/2013-10-18-new-code-search-requirements/>
+
+### Core List
+
+To add a dataset please add it to the `datapackage-list.txt` - we recommend
+fork and pull.
+
+Discussion of proposals for new datasets and for incorporation of prepared
+datasets takes place in the [issues][].
+
+To **propose a new dataset for inclusion**, please create a [new
+issue](https://github.com/datasets/registry/issues/new).
 
 [issues]: https://github.com/datasets/registry/issues
 
