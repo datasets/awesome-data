@@ -5,6 +5,7 @@ https://github.com/datasets/gold-prices
 https://github.com/datasets/gdp-uk
 https://github.com/datasets/gdp
 https://github.com/datasets/bond-yields-uk-10y
+https://github.com/datasets/bond-yields-us-10y
 https://github.com/datasets/population
 https://github.com/datasets/house-prices-uk
 https://github.com/datasets/cofog
