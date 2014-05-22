@@ -8,6 +8,7 @@ https://github.com/cbenz/ccomptes-affected-taxes
 https://github.com/centraldedados/eleicoes_europeias
 https://github.com/cihai/cihaidata-unihan
 https://github.com/datasets/bond-yields-uk-10y
+https://github.com/datasets/bond-yields-us-10y
 https://github.com/datasets/browser-stats
 https://github.com/datasets/california-finances
 https://github.com/datasets/co2-fossil-global
