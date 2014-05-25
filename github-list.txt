@@ -30,6 +30,7 @@ https://github.com/datasets/glwd
 https://github.com/datasets/gold-prices
 https://github.com/datasets/house-prices-uk
 https://github.com/datasets/house-prices-us
+https://github.com/datasets/investor-flow-of-funds-us
 https://github.com/datasets/land-matrix
 https://github.com/datasets/lme-large-marine-ecosystems
 https://github.com/datasets/population
