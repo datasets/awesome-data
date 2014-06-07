@@ -1,3 +1,4 @@
+https://github.com/DemocracyClub/ge2015-candidates
 https://github.com/ElenaTomas/FirstTest
 https://github.com/PV-Log/Open-Inverter-Database
 https://github.com/RDBinns/datactrl
@@ -5,12 +6,18 @@ https://github.com/aliounedia/bce-data
 https://github.com/aliounedia/senegal-companies
 https://github.com/amercader/car-fuel-and-emissions
 https://github.com/cbenz/ccomptes-affected-taxes
-https://github.com/centraldedados/eleicoes_europeias
+https://github.com/centraldedados/contratos_publicos
+https://github.com/centraldedados/eleicoes-autarquicas
+https://github.com/centraldedados/eleicoes-datas
+https://github.com/centraldedados/eleicoes-europeias
+https://github.com/centraldedados/governos
+https://github.com/centraldedados/parlamento-datas_sessoes
+https://github.com/centraldedados/parlamento-deputados
+https://github.com/centraldedados/partidos
 https://github.com/cihai/cihaidata-unihan
 https://github.com/datasets/bond-yields-uk-10y
 https://github.com/datasets/bond-yields-us-10y
 https://github.com/datasets/browser-stats
-https://github.com/datasets/california-finances
 https://github.com/datasets/co2-fossil-global
 https://github.com/datasets/cofog
 https://github.com/datasets/country-codes
@@ -41,6 +48,7 @@ https://github.com/datasets/zopa
 https://github.com/flother/glasgow-cycle-hire
 https://github.com/flother/landnr
 https://github.com/fozy81/nuclear-ghost
+https://github.com/hhtyo/evacuees-by-prefecture
 https://github.com/investigacion/candidatos-facebook-data
 https://github.com/investigacion/delitos-data
 https://github.com/investigacion/desarrollo-humano-data
@@ -68,9 +76,11 @@ https://github.com/okffi/popup-katalogi
 https://github.com/okfn/opendatasites
 https://github.com/okfn/publicbodies
 https://github.com/opendatamali/sos_hotline_data
+https://github.com/opendatamali/sos_hotline_data2
 https://github.com/openspending/dpkg-cra
 https://github.com/openspending/dpkg-uk25k
 https://github.com/peterdesmet/traffic-signs-hansbeke
+https://github.com/pezholio/cid-test
 https://github.com/prmkbr/data_pkgs
 https://github.com/rgrp/crime-data-sf
 https://github.com/rgrp/dataset-gla
@@ -82,9 +92,11 @@ https://github.com/skitazaki/datasets-zipcode-jp
 https://github.com/stevesong/dp-afterfibre
 https://github.com/stevesong/old-afterfibre
 https://github.com/texttochange/uganda-admin-divisions
+https://github.com/theodi/cid-test
 https://github.com/theodi/csv-validation-research
 https://github.com/theodi/dataset-metadata-survey
 https://github.com/theodi/dataset-mod-disposals
+https://github.com/theodi/euro-elections
 https://github.com/theodi/hot-drinks
 https://github.com/theodi/test-data
 https://github.com/tlevine/open-data-500

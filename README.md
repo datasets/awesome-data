@@ -12,12 +12,12 @@ Currently two registers maintained here:
 
 ### Github List
 
-Github list is scraped using the script `scripts/scrape.js`:
+Github list is scraped using the python script `scripts/scrape.py`:
 
     # install deps
-    npm install .
+    pip install -r scripts/requirements.txt
     # scrape data
-    node scripts/scrape.js
+    python scripts/scrape.py
 
 Note we'd prefer not to scrape and use the API but we can't do the relevant
 query via the API - see
