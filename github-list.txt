@@ -27,6 +27,7 @@ https://github.com/datasets/cpi-gb
 https://github.com/datasets/cpi-us
 https://github.com/datasets/currency-codes
 https://github.com/datasets/employment-us
+https://github.com/datasets/ex-geojson
 https://github.com/datasets/ex-topojson
 https://github.com/datasets/gdp
 https://github.com/datasets/gdp-uk
@@ -86,6 +87,7 @@ https://github.com/rgrp/crime-data-sf
 https://github.com/rgrp/dataset-gla
 https://github.com/rgrp/hard-drive-prices
 https://github.com/rgrp/health-data-uk
+https://github.com/rgrp/search-engine-market-shares
 https://github.com/rgrp/wheat-us
 https://github.com/skitazaki/datasets-location-reference-jp
 https://github.com/skitazaki/datasets-zipcode-jp
