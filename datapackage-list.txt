@@ -17,3 +17,4 @@ https://github.com/datasets/cpi-us
 https://github.com/datasets/gdp-us
 https://github.com/datasets/co2-fossil-global
 https://github.com/datasets/investor-flow-of-funds-us
+https://github.com/datasets/finance-vix

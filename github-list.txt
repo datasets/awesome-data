@@ -29,6 +29,7 @@ https://github.com/datasets/currency-codes
 https://github.com/datasets/employment-us
 https://github.com/datasets/ex-geojson
 https://github.com/datasets/ex-topojson
+https://github.com/datasets/finance-vix
 https://github.com/datasets/gdp
 https://github.com/datasets/gdp-uk
 https://github.com/datasets/gdp-us
