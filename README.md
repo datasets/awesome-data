@@ -3,16 +3,17 @@ Frictionless Data Project.
 
 Currently two registers maintained here:
 
-* datapackage-list.txt - ["Core" Datasets][core] (hand-maintained)
-* github-list.txt - community data packages found on github (automatically)
+* catalog-list.txt - catalog of all the community data packages we can find (at
+  the moment largely those found on github via automatic search)
+* core-list.txt - ["Core" Datasets][core] (hand-maintained)
 
 [core]: http://data.okfn.org/roadmap/core-datasets
 
 ## Preparation
 
-### Github List
+### Catalog List
 
-Github list is scraped using the python script `scripts/scrape.py`:
+The main Catalog list is scraped using the python script `scripts/scrape.py`:
 
     # install deps
     pip install -r scripts/requirements.txt
@@ -25,7 +26,7 @@ query via the API - see
 
 ### Core List
 
-To add a dataset please add it to the `datapackage-list.txt` - we recommend
+To add a dataset please add it to the `core-list.txt` - we recommend
 fork and pull.
 
 Discussion of proposals for new datasets and for incorporation of prepared

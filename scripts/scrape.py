@@ -57,5 +57,5 @@ if __name__ == '__main__':
     out = get_list_from_github()
     print('Found %s data packages' % len(out))
     out = '\n'.join(out)
-    open('github-list.txt', 'w').write(out)
+    open('catalog-list.txt', 'w').write(out)
 
