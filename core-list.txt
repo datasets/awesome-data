@@ -19,3 +19,4 @@ https://github.com/datasets/co2-fossil-global
 https://github.com/datasets/investor-flow-of-funds-us
 https://github.com/datasets/finance-vix
 https://github.com/datasets/imf-weo
+https://github.com/datasets/co2-ppm
