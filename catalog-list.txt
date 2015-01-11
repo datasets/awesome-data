@@ -19,6 +19,7 @@ https://github.com/datasets/bond-yields-uk-10y
 https://github.com/datasets/bond-yields-us-10y
 https://github.com/datasets/browser-stats
 https://github.com/datasets/co2-fossil-global
+https://github.com/datasets/co2-ppm
 https://github.com/datasets/cofog
 https://github.com/datasets/country-codes
 https://github.com/datasets/country-list
