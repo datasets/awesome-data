@@ -108,3 +108,4 @@ https://github.com/tlevine/open-data-500
 https://github.com/tlevine/open-data-index
 https://github.com/transporteaberto/osm-bicicletarios
 https://github.com/sanjaypoyzer/general-election-candidates-2015-datapackage
+https://github.com/johnlsheridan/occupations
