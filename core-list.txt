@@ -22,3 +22,4 @@ https://github.com/datasets/imf-weo
 https://github.com/datasets/language-codes
 https://github.com/datasets/co2-ppm
 https://github.com/datasets/ppp
+https://github.com/datasets/global-temp
