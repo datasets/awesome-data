@@ -25,3 +25,4 @@ https://github.com/datasets/ppp
 https://github.com/datasets/global-temp
 https://github.com/datasets/unece-package-codes
 https://github.com/datasets/uk-sic-2007-condensed
+https://github.com/datasets/euribor
