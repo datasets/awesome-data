@@ -28,6 +28,7 @@ https://github.com/datasets/cpi-gb
 https://github.com/datasets/cpi-us
 https://github.com/datasets/currency-codes
 https://github.com/datasets/employment-us
+https://github.com/datasets/euribor
 https://github.com/datasets/ex-geojson
 https://github.com/datasets/ex-topojson
 https://github.com/datasets/finance-vix
