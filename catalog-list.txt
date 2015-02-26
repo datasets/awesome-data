@@ -57,7 +57,7 @@ https://github.com/datasets/zopa
 https://github.com/flother/glasgow-cycle-hire
 https://github.com/flother/landnr
 https://github.com/fozy81/nuclear-ghost
-https://github.com/hhtyo/evacuees-by-prefecture
+https://github.com/hhtyo/great-east-japan-earthquake-evacuees
 https://github.com/investigacion/candidatos-facebook-data
 https://github.com/investigacion/delitos-data
 https://github.com/investigacion/desarrollo-humano-data
