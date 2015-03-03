@@ -52,6 +52,7 @@ https://github.com/datasets/s-and-p-500
 https://github.com/datasets/s-and-p-500-companies
 https://github.com/datasets/transformer-test
 https://github.com/datasets/uk-sic-2007-condensed
+https://github.com/datasets/un-locode
 https://github.com/datasets/unece-package-codes
 https://github.com/datasets/zopa
 https://github.com/flother/glasgow-cycle-hire
