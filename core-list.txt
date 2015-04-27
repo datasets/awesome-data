@@ -29,3 +29,4 @@ https://github.com/datasets/euribor
 https://github.com/datasets/membership-to-copyright-treaties
 https://github.com/datasets/un-locode
 https://github.com/datasets/media-types
+https://github.com/datasets/airport-codes
