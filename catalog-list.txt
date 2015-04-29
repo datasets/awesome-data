@@ -15,6 +15,7 @@ https://github.com/centraldedados/parlamento-datas_sessoes
 https://github.com/centraldedados/parlamento-deputados
 https://github.com/centraldedados/partidos
 https://github.com/cihai/cihaidata-unihan
+https://github.com/datasets/airport-codes
 https://github.com/datasets/bond-yields-uk-10y
 https://github.com/datasets/bond-yields-us-10y
 https://github.com/datasets/browser-stats
