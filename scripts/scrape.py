@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 # We'd so like not to have to scrape this and just use the API but we can't ...
 # http://developer.github.com/changes/2013-10-18-new-code-search-requirements/
 def get_list_from_github():
-    url = 'https://github.com/search?q=name+extension%3Ajson+path%3Adatapackage.json&type=Code&ref=searchresults'
+    url = 'https://github.com/search?l=json&q=name+resources+filename%3Adatapackage.json+path%3A%2F&type=Code'
     fo = urllib.urlopen(url)
     if (fo.getcode() >= 400):
       print('Status code: %s' % fo.getcode())
@@ -15,7 +15,7 @@ def get_list_from_github():
 
     soup = BeautifulSoup(fo.read())
     # total number of results
-    total = int(soup.select('.selected .counter')[0].get_text())
+    total = int(soup.select('.selected .counter')[0].get_text().replace(',', ''))
     print('According to github there are %s data packages' % total)
 
     # do the first one to save loading again
