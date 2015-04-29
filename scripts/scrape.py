@@ -85,7 +85,9 @@ def extractReposFromPage(soup):
 
 if __name__ == '__main__':
     out = get_list_from_github()
+
+    # Sort and deduplicate.
+    out = sorted(set(out))
     print('Found %s data packages' % len(out))
     out = '\n'.join(out)
     open('catalog-list.txt', 'w').write(out)
-
