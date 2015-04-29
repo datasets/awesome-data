@@ -1,6 +1,7 @@
 import urllib
 import json
 import time
+import sys
 from bs4 import BeautifulSoup
 
 
@@ -8,6 +9,8 @@ from bs4 import BeautifulSoup
 # http://developer.github.com/changes/2013-10-18-new-code-search-requirements/
 def get_list_from_github():
     url = 'https://github.com/search?l=json&q=name+resources+filename%3Adatapackage.json+path%3A%2F&type=Code'
+    failuresLeft = 5
+
     fo = urllib.urlopen(url)
     if (fo.getcode() >= 400):
       print('Status code: %s' % fo.getcode())
@@ -16,10 +19,14 @@ def get_list_from_github():
     soup = BeautifulSoup(fo.read())
     # total number of results
     total = int(soup.select('.selected .counter')[0].get_text().replace(',', ''))
-    print('According to github there are %s data packages' % total)
+    print('According to github there are %s potential data packages' % total)
 
     # do the first one to save loading again
-    out = extractReposFromPage(soup)
+    try:
+        out = extractReposFromPage(soup)
+    except ValueError:
+        print('First page of results did not contain any data packages')
+        sys.exit(0)
 
     # now go through results pages - 10 results per page
     pagecount = int(total/10.0)+1
@@ -28,11 +35,20 @@ def get_list_from_github():
         print('Processing: %s' % turl)
         fo = urllib.urlopen(turl)
         if (fo.getcode() >= 400):
-          print('ERROR! Status code: %s' % fo.getcode())
+          print('ERROR! Status code: %s, sleeping for 1' % fo.getcode())
+          time.sleep(1)
           continue
         body = fo.read()
         soup = BeautifulSoup(body)
-        tmp = extractReposFromPage(soup)
+        try:
+            tmp = extractReposFromPage(soup)
+        except ValueError:
+            failuresLeft -= 1
+            if failuresLeft <= 0:
+                print('Got 5 pages that contained no data packages, exiting.')
+                return out
+
+            continue
         out += tmp
         # sleep to prevent github getting unhappy and 420'ing us
         if ii == 9:
@@ -45,12 +61,26 @@ def get_list_from_github():
 
 def extractReposFromPage(soup):
     out = []
-    for el in soup.select('#code_search_results .title a:first-child'):
-        userPlusRepo = el.get_text().strip()
-        # some cases get results where data is just # datapackage.json (??)
-        if userPlusRepo != 'datapackage.json':
-            url = 'https://github.com/' + userPlusRepo
-            out.append(url)
+    for et in soup.select('#code_search_results .title'):
+        links = et.select('a')
+        if len(links) < 2:
+            print('Too few links for node %s' % et.get_text())
+            continue
+
+        userPlusRepo = links[0].get_text()
+        filename = links[1].get_text()
+
+        if filename != 'datapackage.json':
+            print('Got file named "{0}" for "{1}" (expected datapackage.json)'.format(
+                filename, userPlusRepo))
+            continue
+
+        url = 'https://github.com/' + userPlusRepo;
+        out.append(url)
+
+    if not out:
+        raise ValueError('No data packages found in page')
+
     return out
 
 if __name__ == '__main__':
