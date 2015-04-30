@@ -2,6 +2,7 @@ import urllib
 import json
 import time
 import sys
+import argparse
 from bs4 import BeautifulSoup
 
 
@@ -12,25 +13,32 @@ def get_list_from_github():
     failuresLeft = 5
 
     fo = urllib.urlopen(url)
-    if (fo.getcode() >= 400):
-      print('Status code: %s' % fo.getcode())
-      return []
+    while (fo.getcode() >= 400):
+        code = fo.getcode()
+        if code == 429:
+            print('ERROR! Status code %s, sleeping for 20' % code)
+            time.sleep(20)
+            fo = urllib.urlopen(url)
+        else:
+            print('ERROR! Status code %s, exiting' % code)
+            return []
 
     soup = BeautifulSoup(fo.read())
     # total number of results
     total = int(soup.select('.selected .counter')[0].get_text().replace(',', ''))
-    print('According to github there are %s potential data packages' % total)
+    print('Current GitHub search returned %s results' % total)
 
     # do the first one to save loading again
     try:
         out = extractReposFromPage(soup)
     except ValueError:
         print('First page of results did not contain any data packages')
-        sys.exit(0)
+        failuresLeft -= 1
 
     # now go through results pages - 10 results per page
-    pagecount = int(total/10.0)+1
-    for ii in range(2,pagecount+1):
+    ii = 2
+    while failuresLeft > 0:
+        slept = False
         turl = url + '&p=%s' % ii
         print('Processing: %s' % turl)
 
@@ -38,10 +46,12 @@ def get_list_from_github():
         while True:
             fo = urllib.urlopen(turl)
             if (fo.getcode() < 400):
+                ii += 1
                 break
 
-            print('ERROR! Status code: %s, sleeping for 1' % fo.getcode())
-            time.sleep(1)
+            print('ERROR! Status code: %s, sleeping for 20' % fo.getcode())
+            time.sleep(20)
+            slept = True
 
         body = fo.read()
         soup = BeautifulSoup(body)
@@ -51,17 +61,18 @@ def get_list_from_github():
             failuresLeft -= 1
             if failuresLeft <= 0:
                 print('Got 5 pages that contained no data packages, exiting.')
-                return out
+                break
 
             continue
+
         out += tmp
         # sleep to prevent github getting unhappy and 420'ing us
-        if ii == 9:
-            print('sleeping for 60')
+        if ii % 10 == 0 and not slept:
+            print('Sleeping for 60 to avoid rate limit')
             time.sleep(60)
         else:
             time.sleep(1)
-    out.sort()
+
     return out
 
 def extractReposFromPage(soup):
@@ -89,7 +100,20 @@ def extractReposFromPage(soup):
     return out
 
 if __name__ == '__main__':
-    out = get_list_from_github()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-c', '--count', default='3', type=int,
+        help='Number of searches to run')
+    args = parser.parse_args()
+
+    out = []
+
+    for i in range(0, args.count):
+        print('Starting run {0} of {1}'.format(i+1, args.count))
+        out += get_list_from_github()
+
+    if not out:
+        print('Found no data packages, exiting')
+        sys.exit(1)
 
     # Sort and deduplicate.
     out = sorted(set(out))
