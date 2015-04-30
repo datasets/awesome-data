@@ -33,11 +33,16 @@ def get_list_from_github():
     for ii in range(2,pagecount+1):
         turl = url + '&p=%s' % ii
         print('Processing: %s' % turl)
-        fo = urllib.urlopen(turl)
-        if (fo.getcode() >= 400):
-          print('ERROR! Status code: %s, sleeping for 1' % fo.getcode())
-          time.sleep(1)
-          continue
+
+        # Retry until the request succeeds
+        while True:
+            fo = urllib.urlopen(turl)
+            if (fo.getcode() < 400):
+                break
+
+            print('ERROR! Status code: %s, sleeping for 1' % fo.getcode())
+            time.sleep(1)
+
         body = fo.read()
         soup = BeautifulSoup(body)
         try:
