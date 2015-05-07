@@ -31,3 +31,4 @@ https://github.com/datasets/un-locode
 https://github.com/datasets/media-types
 https://github.com/datasets/airport-codes
 https://github.com/datasets/corruption-perceptions-index
+https://github.com/datasets/geo-nuts-administrative-boundaries
