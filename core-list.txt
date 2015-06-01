@@ -33,3 +33,5 @@ https://github.com/datasets/airport-codes
 https://github.com/datasets/corruption-perceptions-index
 https://github.com/datasets/geo-nuts-administrative-boundaries
 https://github.com/datasets/top-level-domain-names
+https://github.com/datasets/nasdaq-listings
+https://github.com/datasets/nyse-listings
