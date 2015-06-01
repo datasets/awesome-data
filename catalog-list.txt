@@ -90,6 +90,7 @@ https://github.com/mihi-tr/list-of-deaths-dpkg
 https://github.com/mihi-tr/parteien-oesterreich-dpkg
 https://github.com/mihi-tr/tanzania-census-dpkg
 https://github.com/okffi/popup-katalogi
+https://github.com/okfn/licenses
 https://github.com/okfn/opendatasites
 https://github.com/okfn/publicbodies
 https://github.com/opendatamali/sos_hotline_data
