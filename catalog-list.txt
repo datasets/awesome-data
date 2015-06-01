@@ -51,6 +51,8 @@ https://github.com/datasets/land-matrix
 https://github.com/datasets/lme-large-marine-ecosystems
 https://github.com/datasets/media-types
 https://github.com/datasets/membership-to-copyright-treaties
+https://github.com/datasets/nasdaq-listings
+https://github.com/datasets/nyse-listings
 https://github.com/datasets/population
 https://github.com/datasets/s-and-p-500
 https://github.com/datasets/s-and-p-500-companies
