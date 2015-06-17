@@ -40,6 +40,7 @@ https://github.com/datasets/gdp-us
 https://github.com/datasets/geo-boundaries-us-110m
 https://github.com/datasets/geo-boundaries-world-110m
 https://github.com/datasets/geo-nuts-administrative-boundaries
+https://github.com/datasets/geoip2
 https://github.com/datasets/glwd
 https://github.com/datasets/gold-prices
 https://github.com/datasets/house-prices-uk
