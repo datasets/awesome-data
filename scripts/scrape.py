@@ -1,61 +1,122 @@
 import urllib
 import json
 import time
+import sys
+import argparse
 from bs4 import BeautifulSoup
 
 
 # We'd so like not to have to scrape this and just use the API but we can't ...
 # http://developer.github.com/changes/2013-10-18-new-code-search-requirements/
 def get_list_from_github():
-    url = 'https://github.com/search?q=name+extension%3Ajson+path%3Adatapackage.json&type=Code&ref=searchresults'
+    url = 'https://github.com/search?l=json&q=name+resources+filename%3Adatapackage.json+path%3A%2F&type=Code'
+    failuresLeft = 5
+
     fo = urllib.urlopen(url)
-    if (fo.getcode() >= 400):
-      print('Status code: %s' % fo.getcode())
-      return []
+    while (fo.getcode() >= 400):
+        code = fo.getcode()
+        if code == 429:
+            print('ERROR! Status code %s, sleeping for 20' % code)
+            time.sleep(20)
+            fo = urllib.urlopen(url)
+        else:
+            print('ERROR! Status code %s, exiting' % code)
+            return []
 
     soup = BeautifulSoup(fo.read())
     # total number of results
-    total = int(soup.select('.selected .counter')[0].get_text())
-    print('According to github there are %s data packages' % total)
+    total = int(soup.select('.selected .counter')[0].get_text().replace(',', ''))
+    print('Current GitHub search returned %s results' % total)
 
     # do the first one to save loading again
-    out = extractReposFromPage(soup)
+    try:
+        out = extractReposFromPage(soup)
+    except ValueError:
+        print('First page of results did not contain any data packages')
+        failuresLeft -= 1
 
     # now go through results pages - 10 results per page
-    pagecount = int(total/10.0)+1
-    for ii in range(2,pagecount+1):
+    ii = 2
+    while failuresLeft > 0:
+        slept = False
         turl = url + '&p=%s' % ii
         print('Processing: %s' % turl)
-        fo = urllib.urlopen(turl)
-        if (fo.getcode() >= 400):
-          print('ERROR! Status code: %s' % fo.getcode())
-          continue
+
+        # Retry until the request succeeds
+        while True:
+            fo = urllib.urlopen(turl)
+            if (fo.getcode() < 400):
+                ii += 1
+                break
+
+            print('ERROR! Status code: %s, sleeping for 20' % fo.getcode())
+            time.sleep(20)
+            slept = True
+
         body = fo.read()
         soup = BeautifulSoup(body)
-        tmp = extractReposFromPage(soup)
+        try:
+            tmp = extractReposFromPage(soup)
+        except ValueError:
+            failuresLeft -= 1
+            if failuresLeft <= 0:
+                print('Got 5 pages that contained no data packages, exiting.')
+                break
+
+            continue
+
         out += tmp
         # sleep to prevent github getting unhappy and 420'ing us
-        if ii == 9:
-            print('sleeping for 60')
+        if ii % 10 == 0 and not slept:
+            print('Sleeping for 60 to avoid rate limit')
             time.sleep(60)
         else:
             time.sleep(1)
-    out.sort()
+
     return out
 
 def extractReposFromPage(soup):
     out = []
-    for el in soup.select('#code_search_results .title a:first-child'):
-        userPlusRepo = el.get_text().strip()
-        # some cases get results where data is just # datapackage.json (??)
-        if userPlusRepo != 'datapackage.json':
-            url = 'https://github.com/' + userPlusRepo
-            out.append(url)
+    for et in soup.select('#code_search_results .title'):
+        links = et.select('a')
+        if len(links) < 2:
+            print('Too few links for node %s' % et.get_text())
+            continue
+
+        userPlusRepo = links[0].get_text()
+        filename = links[1].get_text()
+
+        if filename != 'datapackage.json':
+            print('Got file named "{0}" for "{1}" (expected datapackage.json)'.format(
+                filename, userPlusRepo))
+            continue
+
+        url = 'https://github.com/' + userPlusRepo;
+        out.append(url)
+
+    if not out:
+        raise ValueError('No data packages found in page')
+
     return out
 
 if __name__ == '__main__':
-    out = get_list_from_github()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-c', '--count', default='3', type=int,
+        help='Number of searches to run')
+    args = parser.parse_args()
+
+    out = []
+
+    for i in range(0, args.count):
+        print('Starting run {0} of {1}'.format(i+1, args.count))
+        out += get_list_from_github()
+
+    if not out:
+        print('Found no data packages, exiting')
+        sys.exit(1)
+
+    # Sort and deduplicate.
+    out = sorted(set(out))
     print('Found %s data packages' % len(out))
     out = '\n'.join(out)
     open('catalog-list.txt', 'w').write(out)
-
