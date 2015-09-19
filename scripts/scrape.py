@@ -109,7 +109,7 @@ if __name__ == '__main__':
     parser.add_argument('-c', '--count', default='3', type=int,
         help='Number of searches to run')
     parser.add_argument('-H', '--hours', default='72', type=int,
-        help='Number of searches to run')
+        help='Number hours for cache expiration')
     args = parser.parse_args()
 
     session = requests_cache.CachedSession(
