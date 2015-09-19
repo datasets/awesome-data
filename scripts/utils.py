@@ -21,6 +21,12 @@ def build_github_url(user, project, branch='master'):
     """
     return "https://raw.githubusercontent.com/%s/%s/%s/" % (user, project, branch)
 
+def build_github_raw_url(url_repository, branch='master'):
+    """
+    Returns a GitHub "raw" URL from a repository URL
+    """
+    user, project = get_user_project(url_repository)
+    return build_github_url(user, project, branch)
 
 def request_dpkg(url, session):
     """
