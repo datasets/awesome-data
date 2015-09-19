@@ -1,0 +1,64 @@
+{
+  "name": "registry",
+  "title": "Registry of published datasets in the Datasets Project",
+  "description": "Registry of published datasets in the Datasets Project",
+  "license": "PDDL-1.0",
+  "keywords": [ "datasets", "registry", "catalog" ],
+  "version": "0.0.1",
+  "last_updated": "2015-09-19",
+  "image": "",
+  "sources": [{
+    "name": "Datasets from OKFN",
+    "web": "https://github.com/datasets/registry"
+  }],
+  "resources": [
+    {
+      "path": "data/core-list.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "url",
+            "type": "string"
+          },
+          {
+            "name": "owner",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "url_optional",
+            "type": "string",
+            "description": "other url (when url field is not enough to find datapackage.json)"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/catalog-list.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "url",
+            "type": "string"
+          },
+          {
+            "name": "owner",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "url_optional",
+            "type": "string",
+            "description": "other url (when url field is not enough to find datapackage.json)"
+          }
+        ]
+      }
+    }
+  ]
+}

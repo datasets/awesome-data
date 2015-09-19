@@ -1,7 +1,0 @@
-{
-  "name": "datapackage-register",
-  "dependencies": {
-    "request": "",
-    "cheerio": ""
-  }
-}

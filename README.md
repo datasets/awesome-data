@@ -1,11 +1,11 @@
-Register (list) of Data Packages including the core datasets in the
+A tabular Data Package of Data Packages including the core datasets in the
 Frictionless Data Project.
 
 Currently two registers maintained here:
 
-* catalog-list.txt - catalog of all the community data packages we can find (at
+* catalog-list.csv - catalog of all the community data packages we can find (at
   the moment largely those found on github via automatic search)
-* core-list.txt - ["Core" Datasets][core] (hand-maintained)
+* core-list.csv - ["Core" Datasets][core] (hand-maintained)
 
 [core]: http://data.okfn.org/roadmap/core-datasets
 
@@ -26,7 +26,7 @@ query via the API - see
 
 ### Core List
 
-To add a dataset please add it to the `core-list.txt` - we recommend
+To add a dataset please add it to the `core-list.csv` - we recommend
 fork and pull.
 
 Discussion of proposals for new datasets and for incorporation of prepared
