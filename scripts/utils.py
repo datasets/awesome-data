@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+import re
+import traceback
+
 def get_user_project(url):
     """
     Returns a tuple (user, project) from a GitHub URL
