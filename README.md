@@ -1,4 +1,4 @@
-A tabular Data Packages of Data Packages including the core datasets in the
+A tabular Data Package of Data Packages including the core datasets in the
 Frictionless Data Project.
 
 Currently two registers maintained here:
