@@ -4,7 +4,7 @@
   "description": "Registry of published datasets in the Datasets Project",
   "license": "PDDL-1.0",
   "keywords": [ "datasets", "registry", "catalog" ],
-  "version": "2015",
+  "version": "0.0.1",
   "last_updated": "2015-09-19",
   "image": "",
   "sources": [{
