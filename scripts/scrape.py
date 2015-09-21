@@ -1,29 +1,32 @@
-import urllib
 import json
 import time
 import sys
 import argparse
 from bs4 import BeautifulSoup
 
+import datetime
+import requests
+import requests_cache
 
 # We'd so like not to have to scrape this and just use the API but we can't ...
 # http://developer.github.com/changes/2013-10-18-new-code-search-requirements/
-def get_list_from_github():
+def get_list_from_github(session):
     url = 'https://github.com/search?l=json&q=name+resources+filename%3Adatapackage.json+path%3A%2F&type=Code'
     failuresLeft = 5
 
-    fo = urllib.urlopen(url)
-    while (fo.getcode() >= 400):
-        code = fo.getcode()
-        if code == 429:
+    while (True):
+        response = session.get(url)
+        code = response.status_code
+        if response.status_code < 400:
+            break
+        elif code == 429:
             print('ERROR! Status code %s, sleeping for 20' % code)
             time.sleep(20)
-            fo = urllib.urlopen(url)
         else:
             print('ERROR! Status code %s, exiting' % code)
             return []
 
-    soup = BeautifulSoup(fo.read())
+    soup = BeautifulSoup(response.text)
     # total number of results
     total = int(soup.select('.selected .counter')[0].get_text().replace(',', ''))
     print('Current GitHub search returned %s results' % total)
@@ -44,16 +47,17 @@ def get_list_from_github():
 
         # Retry until the request succeeds
         while True:
-            fo = urllib.urlopen(turl)
-            if (fo.getcode() < 400):
+            response = session.get(turl)
+            code = response.status_code
+            if (code < 400):
                 ii += 1
                 break
 
-            print('ERROR! Status code: %s, sleeping for 20' % fo.getcode())
+            print('ERROR! Status code: %s, sleeping for 20' % code)
             time.sleep(20)
             slept = True
 
-        body = fo.read()
+        body = response.text
         soup = BeautifulSoup(body)
         try:
             tmp = extractReposFromPage(soup)
@@ -67,11 +71,12 @@ def get_list_from_github():
 
         out += tmp
         # sleep to prevent github getting unhappy and 420'ing us
-        if ii % 10 == 0 and not slept:
-            print('Sleeping for 60 to avoid rate limit')
-            time.sleep(60)
-        else:
-            time.sleep(1)
+        if not response.from_cache:
+            if ii % 10 == 0 and not slept:
+                print('Sleeping for 60 to avoid rate limit')
+                time.sleep(60)
+            else:
+                time.sleep(1)
 
     return out
 
@@ -103,13 +108,19 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-c', '--count', default='3', type=int,
         help='Number of searches to run')
+    parser.add_argument('-H', '--hours', default='72', type=int,
+        help='Number hours for cache expiration')
     args = parser.parse_args()
+
+    session = requests_cache.CachedSession(
+        cache_name='cache', backend='sqlite',
+        expire_after=datetime.timedelta(hours=args.hours))
 
     out = []
 
     for i in range(0, args.count):
         print('Starting run {0} of {1}'.format(i+1, args.count))
-        out += get_list_from_github()
+        out += get_list_from_github(session)
 
     if not out:
         print('Found no data packages, exiting')
