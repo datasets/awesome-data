@@ -38,3 +38,7 @@ https://github.com/datasets/nasdaq-listings,datasets,,
 https://github.com/datasets/nyse-listings,datasets,nyse-other-listings,
 https://github.com/datasets/geoip2,datasets,geoip2-ipv4,
 https://github.com/datasets/citypopulation-year,datasets,unsd-citypopulation-year,
+https://github.com/datasets/glacier-mass-balance,
+https://github.com/datasets/eu-emissions-trading-system,
+https://github.com/datasets/global-temp-anomalies,
+https://github.com/datasets/genome-sequencing-costs
