@@ -320,3 +320,4 @@ https://github.com/warrantgroup/IMO-IMDG-Codes
 https://github.com/warrantgroup/IMO-Vessel-Codes
 https://github.com/warrantgroup/ISO-Container-Codes
 https://github.com/datasets/geo-countries
+https://github.com/datasets/oil-prices
