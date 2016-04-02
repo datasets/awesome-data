@@ -322,3 +322,4 @@ https://github.com/warrantgroup/ISO-Container-Codes
 https://github.com/datasets/geo-countries
 https://github.com/datasets/oil-prices
 https://github.com/datasets/inflation
+https://github.com/datasets/continent-codes
