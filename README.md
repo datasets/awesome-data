@@ -1,5 +1,5 @@
-A tabular Data Package of Data Packages including the core datasets in the
-Frictionless Data Project.
+A [Tabular Data Package](http://frictionlessdata.io/guides/tabular-data-package/) of Data Packages including the core datasets in the
+[Frictionless Data](http://frictionlessdata.io/) Project.
 
 Currently two registers maintained here:
 
