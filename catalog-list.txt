@@ -327,3 +327,4 @@ https://github.com/datasets/geo-ne-admin1-us
 https://github.com/datasets/geo-ne-admin1
 https://github.com/datasets/geo-ne-admin1
 https://github.com/datasets/natural-gas-prices
+https://github.com/datasets/gini-index
