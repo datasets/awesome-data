@@ -123,6 +123,7 @@ https://github.com/datasets/uk-sic-2007-condensed
 https://github.com/datasets/un-locode
 https://github.com/datasets/unece-package-codes
 https://github.com/datasets/zopa
+https://github.com/datasets/cash-surplus-deficit
 https://github.com/davetaz/data-publishing-template
 https://github.com/davetaz/quantitative-data-from-edsa-demand-analysis-
 https://github.com/dazzaji/us-department-of-justice-data-list-in-json-format
