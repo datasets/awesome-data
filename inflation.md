@@ -1,6 +1,6 @@
 ---
 title: Inflation datasets
-date: 2017-12-13
+description: collection of data about Inflation processes all over the world
 ---
 
 ## This page collects datasets about global economic inflation.
