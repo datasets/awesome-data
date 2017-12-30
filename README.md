@@ -5,7 +5,15 @@ description: Awesome data - high quality data and datasets organized by topic
 
 The awesome section presents collections of high quality datasets organized by topic.
 
+# Machine Learning
+
+* [registry] UCI Machine Learning Repository https://archive.ics.uci.edu/ml/datasets.html. 404 datasets.
+
 # Wealth, Income and Inequality
+
+Qu: how have incomes of different social groups changed over time?
+
+More specifically: Real income changes by quintile (plus top 5% and top 1%) in last 40+ years in the US?
 
 ## US
 
