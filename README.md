@@ -35,7 +35,7 @@ Machine learning algorithms are often categorized as supervised or unsupervised 
 
 ## Machine learning user
 
-User which is created on datahub.io on which all the machine learning datasets will be posted is
+User which is created on datahub on which all the machine learning datasets will be posted is
 @MachineLearning: https://datahub.io/MachineLearning.
 
 # Wealth, Income and Inequality
