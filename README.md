@@ -34,6 +34,12 @@ Machine learning algorithms are often categorized as supervised or unsupervised 
 * [OpenML datasets](https://www.openml.org/search?q=tags.tag%3AOpenML100&type=data&table=1&size=100)
 * [Kaggle datasets](https://www.kaggle.com/datasets)
 
+
+## Machine learning user
+
+User which is created on datahub on which all the machine learning datasets will be posted is
+@MachineLearning: https://datahub.io/MachineLearning.
+
 # Wealth, Income and Inequality
 
 Qu: how have incomes of different social groups changed over time?
