@@ -61,5 +61,5 @@ Emmanuel Saez and Gabriel Zucman, “Wealth Inequality in the United States sinc
 
 See [Football Page][football]
 
-[football]: ./football
+[football]: /awesome/football
 
