@@ -9,6 +9,8 @@ The awesome section presents collections of high quality datasets organized by t
 
 [jump-in]: https://github.com/datahubio/awesome-data/edit/master/README.md
 
+[[toc]]
+
 # Machine Learning / Statistical 
 
 Machine learning is used as a general term for computational data analysis: using data to makes inferences and predictions. Interpreted broadly it includes computational statistics, data analytics, data mining and a good portion of data science.
@@ -57,4 +59,7 @@ Emmanuel Saez and Gabriel Zucman, “Wealth Inequality in the United States sinc
 
 # Football
 
+See [Football Page][football]
+
+[football]: ./football
 
