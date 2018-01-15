@@ -27,18 +27,18 @@ Machine learning algorithms are often categorized as supervised or unsupervised 
 >
 > [source](http://www.expertsystem.com/machine-learning-definition/)
 
+## Datasets
+
+There are a variety of machine-learning datasets on the DataHub under the @machine-learning account: https://datahub.io/machine-learning
+
+* Seismic Bumps: https://datahub.io/machine-learning/seismic-bumps. This is a classification problem. The data describe the problem of high energy (higher than 10^4 J) seismic bumps forecasting in a coal mine. Data come from two of longwalls located in a Polish coal mine.
+
 
 ## Existing collections
 
 * [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets.html). 404 datasets.
 * [OpenML datasets](https://www.openml.org/search?q=tags.tag%3AOpenML100&type=data&table=1&size=100)
 * [Kaggle datasets](https://www.kaggle.com/datasets)
-
-
-## Machine learning user
-
-User which is created on datahub on which all the machine learning datasets will be posted is
-@MachineLearning: https://datahub.io/MachineLearning.
 
 # Wealth, Income and Inequality
 
@@ -58,6 +58,55 @@ More specifically: Real income changes by quintile (plus top 5% and top 1%) in l
 * Internal Revenue Service, “SOI Tax Stats — Individual Income Tax Returns Publication 1304,” multiple years available
 
 Emmanuel Saez and Gabriel Zucman, “Wealth Inequality in the United States since 1913: Evidence from Capitalized Income Tax Data,” Quarterly Journal of Economics, Vol. 131, No. 2, May 2016, http://eml.berkeley.edu/~saez/SaezZucman2016QJE.pdf.
+
+
+# Climate Change
+
+What are the most important "general" datasets to have on climate change?
+
+## Policy
+
+* Country or sub-region commitments (e.g. emission amounts, cuts, temperature targets)
+* Which countries / regions have emission trading schemes in place and their status
+* [#29](https://github.com/datasets/registry/issues/29) - CO2 "price" in ETS
+
+## State of the World
+
+* Temperature datasets - which ones?
+* [#27](https://github.com/datasets/registry/issues/27) - CO2 per country (what about other GHG)
+* [#56](https://github.com/datasets/registry/issues/56) - CO2 PPM (over time)
+
+## Sources
+
+* IPCC Data - http://www.ipcc-data.org/
+* NOAA
+* ...
+
+- Global temperature datasets
+- Hemispheric 
+- Zonal 
+- Average
+- Soil temperature
+- Satelite measurement temperature datasets 
+- Ocean temperature datasets 
+- Human population growth / Urban population growth 
+- Volcano emissions 
+
+http://nsstc.uah.edu/climate/
+
+http://data.worldbank.org/topic/climate-change
+
+http://cdiac.ornl.gov/climate/temp/temp_table.html
+
+http://www.climate4you.com/GlobalTemperatures.htm
+
+https://www.ncdc.noaa.gov/data-access
+
+http://catalog.data.gov/dataset
+
+https://climatedataguide.ucar.edu/climate-data
+
+https://climatedataguide.ucar.edu/data-vertical-levels/surface-data-set
 
 
 # Inflation
