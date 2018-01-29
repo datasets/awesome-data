@@ -74,7 +74,7 @@ What are the most important "general" datasets to have on climate change?
 
 * Temperature datasets - which ones?
 * [#27](https://github.com/datasets/registry/issues/27) - CO2 per country (what about other GHG)
-* [#56](https://github.com/datasets/registry/issues/56) - CO2 PPM (over time)
+* CO2 PPM (over time) - http://datahub.io/core/co2-ppm
 
 ## Sources
 
@@ -82,15 +82,15 @@ What are the most important "general" datasets to have on climate change?
 * NOAA
 * ...
 
-- Global temperature datasets
-- Hemispheric 
-- Zonal 
-- Average
+- Global temperature
+  - http://datahub.io/core/global-temp (NASA GISTEMP and GCAP)
+  - http://datahub.io/core/global-temp-anomalies (NASA GISTEMP anomalies)
 - Soil temperature
 - Satelite measurement temperature datasets 
 - Ocean temperature datasets 
 - Human population growth / Urban population growth 
-- Volcano emissions 
+- Volcano emissions
+- Glacier size - http://datahub.io/core/glacier-mass-balance
 
 http://nsstc.uah.edu/climate/
 
