@@ -68,45 +68,42 @@ What are the most important "general" datasets to have on climate change?
 
 * Country or sub-region commitments (e.g. emission amounts, cuts, temperature targets)
 * Which countries / regions have emission trading schemes in place and their status
-* [#29](https://github.com/datasets/registry/issues/29) - CO2 "price" in ETS
+* CO2 "price" in European ETS http://datahub.io/core/eu-emissions-trading-system (European Union Emissions Trading System (EU ETS) data from EUTL)
 
 ## State of the World
 
-* Temperature datasets - which ones?
+Green house gases including C02:
+
+* CO2 Levels globally (PPM over time) - http://datahub.io/core/co2-ppm
+* CO2 emissions:
+  * From Fossil Fuels: http://datahub.io/core/co2-fossil-global
+* Human population growth / Urban population growth 
+* Volcano emissions
+
+Impacts
+
+* Global temperature
+  * http://datahub.io/core/global-temp (NASA GISTEMP and GCAP)
+  * http://datahub.io/core/global-temp-anomalies (NASA GISTEMP anomalies)
 * [#27](https://github.com/datasets/registry/issues/27) - CO2 per country (what about other GHG)
-* CO2 PPM (over time) - http://datahub.io/core/co2-ppm
+* Soil temperature
+* Satelite measurement temperature datasets 
+* Ocean temperature datasets 
+* Glacier size - http://datahub.io/core/glacier-mass-balance
+* Sea Level http://datahub.io/core/sea-level-rise (Global Average Absolute Sea Level Change, 1880-2014)
 
 ## Sources
 
 * IPCC Data - http://www.ipcc-data.org/
 * NOAA
-* ...
-
-- Global temperature
-  - http://datahub.io/core/global-temp (NASA GISTEMP and GCAP)
-  - http://datahub.io/core/global-temp-anomalies (NASA GISTEMP anomalies)
-- Soil temperature
-- Satelite measurement temperature datasets 
-- Ocean temperature datasets 
-- Human population growth / Urban population growth 
-- Volcano emissions
-- Glacier size - http://datahub.io/core/glacier-mass-balance
-
-http://nsstc.uah.edu/climate/
-
-http://data.worldbank.org/topic/climate-change
-
-http://cdiac.ornl.gov/climate/temp/temp_table.html
-
-http://www.climate4you.com/GlobalTemperatures.htm
-
-https://www.ncdc.noaa.gov/data-access
-
-http://catalog.data.gov/dataset
-
-https://climatedataguide.ucar.edu/climate-data
-
-https://climatedataguide.ucar.edu/data-vertical-levels/surface-data-set
+* http://nsstc.uah.edu/climate/
+* http://data.worldbank.org/topic/climate-change
+* http://cdiac.ornl.gov/climate/temp/temp_table.html
+* http://www.climate4you.com/GlobalTemperatures.htm
+* https://www.ncdc.noaa.gov/data-access
+* http://catalog.data.gov/dataset
+* https://climatedataguide.ucar.edu/climate-data
+* https://climatedataguide.ucar.edu/data-vertical-levels/surface-data-set
 
 
 # Property Prices
