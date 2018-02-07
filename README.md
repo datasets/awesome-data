@@ -39,6 +39,10 @@ There are a variety of machine-learning datasets on the DataHub under the @machi
 * [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets.html). 404 datasets.
 * [OpenML datasets](https://www.openml.org/search?q=tags.tag%3AOpenML100&type=data&table=1&size=100)
 * [Kaggle datasets](https://www.kaggle.com/datasets)
+* [Academic Torrents](http://academictorrents.com/)
+* [TU Berlin/ MLdata.org](http://mldata.org/repository/data/)
+* [AWS Public Datasets](https://aws.amazon.com/public-datasets/)
+* [BigQuery Public Datasets](https://cloud.google.com/bigquery/public-data/)
 
 # Wealth, Income and Inequality
 
