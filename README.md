@@ -135,5 +135,5 @@ See [Football Page][football]
 
 See [World Bank Page][world-bank]
 
-[world-bank]: /awesome/football
+[world-bank]: /awesome/world-bank
 
