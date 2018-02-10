@@ -5,7 +5,7 @@ description: Awesome data - high quality data and datasets organized by topic
 
 The awesome section presents collections of high quality datasets organized by topic.
 
-*Dec 2017: we're just starting out here so this is still "under development". Please [jump in and help us improve][jump-in].*
+*Dec 2017: we're just starting out and this is still "under development". Please [jump in and help us improve][jump-in].*
 
 [jump-in]: https://github.com/datahubio/awesome-data/edit/master/README.md
 
