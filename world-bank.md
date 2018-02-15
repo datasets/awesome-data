@@ -3,13 +3,47 @@ title: World Bank Data
 description: An overview of the World Bank data holdings
 ---
 
-Over 15 major datasets at the moment comprising over 2000 indicators. Currently no easy way to automatedly obtain that listing though.
+The World Bank has a wide array of high quality data and much of it is [open data][[]. It includes over 15 major databases with more than 2000 indicators.
 
-### Openness: OPEN
+[open data]: https://opendefinition.org/
+
+## Data
+
+There are a variety of different databases.
+
+One of the major open ones are the World Development Indicators which provide a variety of important indicators ranging from GDP and population to CO2 emissions and literacy in a standardized cross country form.
+
+## API
+
+The World Bank has a data API. You can use this to access a variety of data including the world developemn
+
+You can get data in CSV, JSON and XML (default).
+
+Per indicator:
+
+```bash
+https://api.worldbank.org/indicator/GC.DOD.TOTL.GD.ZS?format=csv
+
+# for some reason json format just yields metadata
+https://api.worldbank.org/indicator/GC.DOD.TOTL.GD.ZS?format=json
+```
+
+More elaborate queries documented in http://blogs.worldbank.org/opendata/first-steps-in-integrating-open-data:
+
+```
+http://api.worldbank.org/en/countries/KE;XF;XM/indicators/EN.ATM.CO2E.PC?date=1961:2011&format=csv
+
+```
+http://api.worldbank.org/en/countries/KE;XF;XM/indicators/EN.ATM.CO2E.PC?date=1961:2011&format=json
+```
+
+## License: OPEN (mostly)
+
+Currently no easy way to automatedly obtain that listing though.
 
 As of April 20th 2010 data is now open (subject to some reservations for specific datasets). See this [blog post](http://blog.okfn.org/2010/04/20/world-bank-opens-up-development-data/).
 
-#### License
+### License Details
 
 [Terms of use summary](http://data.worldbank.org/summary-terms-of-use) state:
 
