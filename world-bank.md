@@ -3,7 +3,7 @@ title: World Bank Data
 description: An overview of the World Bank data holdings
 ---
 
-The World Bank has a wide array of high quality data and much of it is [open data][[]. It includes over 15 major databases with more than 2000 indicators.
+The World Bank has a wide array of high quality data and much of it is [open data][]. It includes over 15 major databases with more than 2000 indicators.
 
 [open data]: https://opendefinition.org/
 
