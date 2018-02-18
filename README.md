@@ -137,3 +137,12 @@ See [World Bank Page][world-bank]
 
 [world-bank]: /awesome/world-bank
 
+
+# War and Peace
+
+Data on inter-state conflicts, international relations and other correlates of war including war-related deaths and injuries.
+
+See [War and Peace - data on inter-state conflicts, international relations and other correlates of war including war-related deaths and injuries][war-and-peace].
+
+[war-and-peace]: /awesome/war-and-peace
+
