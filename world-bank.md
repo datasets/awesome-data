@@ -7,6 +7,8 @@ The World Bank has a wide array of high quality data and much of it is [open dat
 
 [open data]: https://opendefinition.org/
 
+[toc]
+
 ## Data
 
 There are a variety of different databases.
@@ -28,16 +30,15 @@ https://api.worldbank.org/indicator/GC.DOD.TOTL.GD.ZS?format=csv
 https://api.worldbank.org/indicator/GC.DOD.TOTL.GD.ZS?format=json
 ```
 
-More elaborate queries documented in http://blogs.worldbank.org/opendata/first-steps-in-integrating-open-data:
+More elaborate queries documented in http://blogs.worldbank.org/opendata/first-steps-in-integrating-open-data, for example:
 
-```
 http://api.worldbank.org/en/countries/KE;XF;XM/indicators/EN.ATM.CO2E.PC?date=1961:2011&format=csv
 
-```
 http://api.worldbank.org/en/countries/KE;XF;XM/indicators/EN.ATM.CO2E.PC?date=1961:2011&format=json
-```
 
-## License: OPEN (mostly)
+## License
+
+License: OPEN (mostly)
 
 Currently no easy way to automatedly obtain that listing though.
 
