@@ -7,7 +7,7 @@ The World Bank has a wide array of high quality data and much of it is [open dat
 
 [open data]: https://opendefinition.org/
 
-[toc]
+[[toc]]
 
 ## Data
 
