@@ -17,7 +17,7 @@ One of the major open ones are the World Development Indicators which provide a 
 
 ## API
 
-The World Bank has a data API. You can use this to access a variety of data including the world developemn
+The World Bank has a data API. You can use this to access a variety of data including the world development indicators.
 
 You can get data in CSV, JSON and XML (default).
 
@@ -35,6 +35,13 @@ More elaborate queries documented in http://blogs.worldbank.org/opendata/first-s
 http://api.worldbank.org/en/countries/KE;XF;XM/indicators/EN.ATM.CO2E.PC?date=1961:2011&format=csv
 
 http://api.worldbank.org/en/countries/KE;XF;XM/indicators/EN.ATM.CO2E.PC?date=1961:2011&format=json
+
+### Scripts
+
+Here is a script that automates access to World Bank data and conversion to data packages.
+
+https://github.com/rufuspollock/world-bank-data
+
 
 ## License
 
