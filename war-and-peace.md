@@ -5,7 +5,7 @@ description: Data on inter-state conflicts, international relations and other co
 
 Data on inter-state conflicts, international relations and other correlates of war including war-related deaths and injuries.
 
-[toc]
+[[toc]]
 
 ## Uppsala Conflict Data Program (UCDP) dataset
 
