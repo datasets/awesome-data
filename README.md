@@ -92,11 +92,11 @@ See [Football Page][football]
 [football]: /awesome/football
 
 
-# Linked Open Data
+# Linking Open Data
 
-See [Linked Open Data Page][lod]
+See [Linking Open Data Page][lod]
 
-[lod]: /awesome/linked-open-data
+[lod]: /awesome/linking-open-data
 
 
 # World Bank

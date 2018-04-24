@@ -1,5 +1,5 @@
 ---
-title: Linked Open Data
+title: Linking Open Data
 description: An overview of the Linking Open Data datasets.
 ---
 
@@ -44,10 +44,10 @@ Triple count and link statistics provided by Freebase contributor Tom Morris
 RDF data and URIs
 Freebase has [an RDF service](https://developers.google.com/freebase/) that exposes URIs and generates RDF descriptions for all Freebase topics.
 
-## Linked Railway Data Project
+## Linking Railway Data Project
 
-Bringing together data on the United Kingdom's railway network under linked data principles.
-Please, see [dataset](https://old.datahub.io/dataset/linked-railway-data-project)
+Bringing together data on the United Kingdom's railway network under Linking data principles.
+Please, see [dataset](https://old.datahub.io/dataset/Linking-railway-data-project)
 
 ## DBTune – Music-Related RDF
 
