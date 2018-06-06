@@ -5,6 +5,8 @@ description: An overview of the Linking Open Data datasets.
 
 A group for Linking Open Data datasets. The initial import of data for this group was done in October 2009 from the list of [RDF datasets dumps](https://www.w3.org/wiki/DataSetRDFDumps) provided by the W3C Linking Open Data Interest Group.
 
+[[toc]]
+
 ## DBpedia
 
 DBpedia.org is a community effort to extract structured information from Wikipedia and to make this information available on the Web. DBpedia allows you to ask sophisticated queries against Wikipedia and to link other datasets on the Web to Wikipedia data.

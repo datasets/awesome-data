@@ -1,5 +1,5 @@
 ---
-title: Reference data
+title: Reference Data
 description: Easy-to-use reference data in CSV and JSON formats
 ---
 
