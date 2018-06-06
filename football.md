@@ -1,6 +1,7 @@
 ---
 title: Football Data
 description: A collection of awesome football datasets including national teams, clubs, match schedules, players, stadiums, etc.
+keywords: football data and API, world cup, stadium data, football apps
 ---
 
 A collection of awesome football datasets including national teams, clubs, match schedules, players, stadiums, etc.

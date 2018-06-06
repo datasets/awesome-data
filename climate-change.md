@@ -1,6 +1,7 @@
 ---
 title: Climate Change Data
 description: A collection of the most important "general" datasets on climate change.
+keywords: climate data, world climate data, historical climate data, CO2 levels globally, CO2 emission from fossil fuels
 ---
 
 What are the most important "general" datasets to have on climate change?

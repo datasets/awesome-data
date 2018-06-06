@@ -1,6 +1,7 @@
 ---
 title: Linking Open Data
 description: An overview of the Linking Open Data datasets.
+keywords: Open Data, DBpedia, Lexvo, General Multilingual Environmental Thesaurus, Freebase, Linking Railway Data Project, DBTune
 ---
 
 A group for Linking Open Data datasets. The initial import of data for this group was done in October 2009 from the list of [RDF datasets dumps](https://www.w3.org/wiki/DataSetRDFDumps) provided by the W3C Linking Open Data Interest Group.

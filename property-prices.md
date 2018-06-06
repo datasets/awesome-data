@@ -1,6 +1,7 @@
 ---
 title: Property Prices
-description: Property Prices Datasets available on DataHub
+description: Property Prices Datasets available on DataHub.
+keywords: house prices, global cross-country property prices, UK house prices, US house prices
 ---
 
 Property prices including house prices

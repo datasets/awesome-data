@@ -1,6 +1,7 @@
 ---
 title: Home
-description: Awesome data - high quality data and datasets organized by topic
+description: Awesome data - high quality data and datasets organized by topic.
+keywords: Data Collections, Climate Change, Economic Data, Geodata, Inflation, Linked Open Data, Machine Learning, Reference Data, World Bank
 ---
 
 The awesome section presents collections of high quality datasets organized by topic.
