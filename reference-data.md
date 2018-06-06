@@ -82,6 +82,12 @@ Official IMDG Codes for use in transport of dangerous goods as described by the 
 
 [core/imo-imdg-codes](/core/imo-imdg-codes)
 
+## IPv4 geolocation
+
+Database of IPv4 address networks with their respective geographical location:
+
+[core/geoip2-ipv4](/core/geoip2-ipv4)
+
 ### Top Level Domain Names
 
 This Data Package contains the delegation details of top-level domains:
