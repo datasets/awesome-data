@@ -20,7 +20,8 @@ Green house gases including C02:
 * CO2 Levels globally (PPM over time) - http://datahub.io/core/co2-ppm
 * CO2 emissions:
   * From Fossil Fuels: http://datahub.io/core/co2-fossil-global
-* Human population growth / Urban population growth 
+  * From Fossil Fuels By Nation: https://datahub.io/core/co2-fossil-by-nation
+* Human population growth / Urban population growth
 * Volcano emissions
 
 Impacts
