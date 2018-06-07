@@ -118,6 +118,12 @@ The United Nations Code for Trade and Transport Locations is a code list maintai
 
 [core/un-locode](/core/un-locode)
 
+### Membership to Copyright Treaties
+
+This data provides the details of the membership by states to WIPO administered treaties on the subject matter of copyright:
+
+[core/membership-to-copyright-treaties](/core/membership-to-copyright-treaties)
+
 ### List of FIPS
 
 List of FIPS (Federal Information Processing Standards) region codes:
