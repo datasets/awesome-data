@@ -9,9 +9,12 @@ The awesome section presents collections of high quality datasets organized by t
 # Table of Contents
 
 * [Climate Change](/awesome/climate-change)
+* [Demography (population)](/awesome/demography)
 * [Economic Data and Indicators](/awesome/economic-data)
+* [Education](/awesome/education)
 * [Football](/awesome/football)
 * [GeoJSON](/awesome/geojson)
+* [Health Care Data](/awesome/healthcare-data)
 * [Inflation](/awesome/inflation)
 * [Linked Open Data](/awesome/linked-open-data)
 * [Logistics](/awesome/logistics-data)
