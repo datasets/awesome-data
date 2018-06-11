@@ -62,7 +62,6 @@ IMF World Economic Outlook (WEO) database. The source database is made of annual
 * [GINI Index](/core/gini-index) - Historic values of the GINI Index.
 * [Global House Prices](/core/house-prices-global) - Residential property price statistics from different countries.
 * [Population Growth Estimates and Projections](/core/population-growth-estimates-and-projections)
-* [City Population by Sex, City and City Type](/core/population-city)
 * [Purchasing Power Parity (PPP)](/core/ppp)
 * [Brent and WTI Spot Prices](/core/oil-prices) - Europe Brent and WTI (Western Texas Intermediate) Spot Prices (Annual/ Monthly/ Weekly/ Daily).
 * [Natural gas prices](/core/natural-gas) - Time series of major Natural Gas Prices including US Henry Hub.

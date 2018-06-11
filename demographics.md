@@ -1,5 +1,5 @@
 ---
-title: Demography (population)
+title: Demographics (population)
 description: Population data and data analytics.
 keywords: world population, city population, historical population, demographic, demographics data
 ---
