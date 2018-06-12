@@ -1,10 +1,10 @@
 ---
-title: Linking Open Data
-description: An overview of the Linking Open Data datasets.
-keywords: Open Data, DBpedia, Lexvo, General Multilingual Environmental Thesaurus, Freebase, Linking Railway Data Project, DBTune
+title: Linked Open Data
+description: An overview of the Linked Open Data datasets.
+keywords: Open Data, DBpedia, Lexvo, General Multilingual Environmental Thesaurus, Freebase, Linked Railway Data Project, DBTune
 ---
 
-A group for Linking Open Data datasets. The initial import of data for this group was done in October 2009 from the list of [RDF datasets dumps](https://www.w3.org/wiki/DataSetRDFDumps) provided by the W3C Linking Open Data Interest Group.
+A group for Linked Open Data datasets. The initial import of data for this group was done in October 2009 from the list of [RDF datasets dumps](https://www.w3.org/wiki/DataSetRDFDumps) provided by the W3C Linked Open Data Interest Group.
 
 [[toc]]
 
@@ -30,7 +30,7 @@ The web service additionally provides some parts that are not fully open, e.g. E
 
 A thesaurus in 20+ languages for terms related to the environment and environmental data. Published by the European Environment Agency.
 
-[Available in RDF]((https://old.datahub.io/dataset/gemet)) without reuse constraints.
+[Available in RDF](https://old.datahub.io/dataset/gemet) without reuse constraints.
 
 ## Freebase
 
@@ -47,17 +47,17 @@ Triple count and link statistics provided by Freebase contributor Tom Morris
 RDF data and URIs
 Freebase has [an RDF service](https://developers.google.com/freebase/) that exposes URIs and generates RDF descriptions for all Freebase topics.
 
-## Linking Railway Data Project
+## Linked Railway Data Project
 
-Bringing together data on the United Kingdom's railway network under Linking data principles.
-Please, see [dataset](https://old.datahub.io/dataset/Linking-railway-data-project)
+Bringing together data on the United Kingdom's railway network under Linked data principles.
+Please, see [dataset](https://old.datahub.io/dataset/linked-railway-data-project).
 
 ## DBTune – Music-Related RDF
 
-This effort has started in the context of the Linking open data community project of the Semantic Web Education and Outreach Interest Group.
+This effort has started in the context of the Linked open data community project of the Semantic Web Education and Outreach Interest Group.
 
 Its main purpose is to make available freely available data concerning music on the semantic-web, such as Magnatune, Jamendo, Dogmazic, Mutopia, and to create links between them and other available semantic web repositories, such as Frederick Giasson's Musicbrainz dump, or DBPedia and GeoNames."
-Please, see [DBTune – Music-Related RDF](https://old.datahub.io/organization/lod).
+Please, see [DBTune – Music-Related RDF](https://old.datahub.io/dataset/dbtune).
 
 ## schema.org
 
@@ -115,7 +115,7 @@ Please, see [Linked ISO 3166-2 Data](https://old.datahub.io/dataset/iso-3166-2-d
 
 ## Historical Events Markup Language
 
-Historical Event Markup and Linking Project (Heml) provides an XML schema for historical events and a Java Web app which transforms conforming documents into hyperlinked timelines, maps and tables. It aims to provide a most information-rich interchange format for historical data, and thus add a historical component to the growing movement for a 'Semantic Web.'
+Historical Event Markup and Linked Project (Heml) provides an XML schema for historical events and a Java Web app which transforms conforming documents into hyperlinked timelines, maps and tables. It aims to provide a most information-rich interchange format for historical data, and thus add a historical component to the growing movement for a 'Semantic Web.'
 
 For our purposes main item of interest is the data provided with the project available from: . About 30 timelines in the form of RDF files on historical themes ranging from Alexander the Great to the Meiji Restoration.
 
@@ -132,9 +132,7 @@ Please, see [A Short Biographical Dictionary of English Literature (RKBExplorer)
 
 ## Billion Triples Challenge Dataset 2008
 
-* Data exposed: various dumps 
+* Data exposed: various dumps
 * Size of dump and data set: 1 billion triples
 
 Please, see [Billion Triples Challenge Dataset 2008](https://old.datahub.io/dataset/billion_triples_challenge_dataset2008)
-
-
