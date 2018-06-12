@@ -42,11 +42,10 @@ Impacts
 * IPCC Data - http://www.ipcc-data.org/
 * NOAA
 * http://nsstc.uah.edu/climate/
-* http://data.worldbank.org/topic/climate-change
+* http://data.worldbank.org (search for 'climate change')
 * http://cdiac.ornl.gov/climate/temp/temp_table.html
 * http://www.climate4you.com/GlobalTemperatures.htm
 * https://www.ncdc.noaa.gov/data-access
 * http://catalog.data.gov/dataset
 * https://climatedataguide.ucar.edu/climate-data
 * https://climatedataguide.ucar.edu/data-vertical-levels/surface-data-set
-

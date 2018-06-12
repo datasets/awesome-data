@@ -24,7 +24,8 @@ _Where's the open football data?_
 ## World Cup
 
 - [openfootball/world-cup :octocat:](https://github.com/openfootball/world-cup)
-- [import-io/worldcup2014 :octocat:](https://github.com/import-io/worldcup2014) - World cup data
+- [lsv/fifa-worldcup-2018 :octocat:](https://github.com/lsv/fifa-worldcup-2018) - FIFA Worldcup 2018 - json data (The data file will be updated within a hour after a match is over)
+- [kidehen/worldcup2014 :octocat:](https://github.com/kidehen/worldcup2014) - World cup data
 - [estiens/world_cup_json :octocat:](https://github.com/estiens/world_cup_json) - rails backend for a scraper that outputs World Cup data as JSON
 - [sanand0/fifadata :octocat:](https://github.com/sanand0/fifadata) - scraping FIFA world cup data
 - [pratapvardhan/FIFAWorldCup :octocat:](https://github.com/pratapvardhan/FIFAWorldCup) - FIFA World Cup data includes teams data, squad formations, clubs dominance
