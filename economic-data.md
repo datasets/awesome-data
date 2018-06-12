@@ -12,7 +12,7 @@ On this page, we summarize all available economic data (or economic statistics) 
 
 Following datasets can be considered as basic economic indicators:
 
-* [GDP](/core/co2-ppm) - Country, Regional and World GDP (Gross Domestic Product).
+* [GDP](/core/gdp) - Country, Regional and World GDP (Gross Domestic Product).
 * [CPI](/core/cpi) - Annual Consumer Price Index (CPI) for most countries in the world.
 * [Inflation](/core/inflation) - Annual inflation by GDP deflator and consumer prices.
 * [Population](/core/population) - Population figures for countries, regions (e.g. Asia) and the world.
