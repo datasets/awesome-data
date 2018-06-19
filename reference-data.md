@@ -82,7 +82,7 @@ Official IMDG Codes for use in transport of dangerous goods as described by the 
 
 [core/imo-imdg-codes](/core/imo-imdg-codes)
 
-## IPv4 geolocation
+### IPv4 geolocation
 
 Database of IPv4 address networks with their respective geographical location:
 
