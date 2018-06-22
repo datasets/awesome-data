@@ -2,6 +2,8 @@
 title: Reference Data
 description: Easy-to-use reference data in CSV and JSON formats.
 keywords: Country list, S&P 500 companies, Language codes, World cities, Airport codes, Country codes, Currency codes, UN Locode
+date: 2018-06-06
+modified: 2018-06-19
 ---
 
 This page is the place where you can find all reference data available on DataHub. Each dataset is easy-to-use and includes instructions on how to use it in different tools and programming languages.

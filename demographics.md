@@ -2,6 +2,8 @@
 title: Demographics (population)
 description: Population data and data analytics.
 keywords: world population, city population, historical population, demographic, demographics data
+date: 2018-06-11
+modified: 2018-06-11
 ---
 
 ## Population figures for countries, regions (e.g. Asia) and the world

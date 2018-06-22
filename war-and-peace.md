@@ -2,6 +2,8 @@
 title: War and Peace - Inter-state Conflicts, Associated Fatalities etc
 description: Data on inter-state conflicts, international relations and other correlates of war including fatalities.
 keywords: Uppsala Conflict Data Program (UCDP) dataset, Correlates of War, Brecke Conflict Catalog
+date: 2018-02-19
+modified: 2018-06-06
 ---
 
 Data on inter-state conflicts, international relations and other correlates of war including war-related deaths and injuries.
@@ -59,4 +61,3 @@ Conflict Catalog:(Violent Conflicts 1400 A.D. to the Present in Different Region
 * Homepage: http://www.cgeh.nl/data#conflict
 
 TODO: data package!
-

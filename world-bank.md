@@ -2,6 +2,8 @@
 title: World Bank Data
 description: An overview of the World Bank data holdings.
 keywords: Open Data Catalog, World Development Indicators, DataBank, Open finances, Global Consumption Database, Microdata Library
+date: 2018-02-09
+modified: 2018-06-06
 ---
 
 The World Bank has a wide array of high quality data and much of it is [open data][]. It covers several distinct collections and databases.
@@ -132,12 +134,11 @@ As of April 20th 2010 data is now open (subject to some reservations for specifi
 [Terms of use summary](http://data.worldbank.org/summary-terms-of-use) state:
 
 > You are free to copy, distribute, adapt, display or include the data in other products for commercial and noncommercial purposes at no cost subject to certain limitations summarized below.
-> 
+>
 > You must include attribution for the data you use in the manner indicated in the metadata included with the data.
-> 
+>
 > You must not claim or imply that The World Bank endorses your use of the data by or use The World Bank’s logo(s) or trademark(s) in conjunction with such use.
 >
 > Other parties may have ownership interests in some of the materials contained on The World Bank Web site. For example, we maintain a list of some specific data within the Datasets that you may not redistribute or reuse without first contacting the original content provider, as well as information regarding how to contact the original content provider. Before incorporating any data in other products, please check the list: Terms of use: Restricted Data
 >
 > The World Bank makes no warranties with respect to the data and you agree The World Bank shall not be liable to you in connection with your use of the data.
-

@@ -2,6 +2,8 @@
 title: Climate Change Data
 description: A collection of the most important "general" datasets on climate change.
 keywords: climate data, world climate data, historical climate data, CO2 levels globally, CO2 emission from fossil fuels
+date: 2018-04-12
+modified: 2018-06-12
 ---
 
 What are the most important "general" datasets to have on climate change?
@@ -32,8 +34,8 @@ Impacts
   * http://datahub.io/core/global-temp-anomalies (NASA GISTEMP anomalies)
 * [#27](https://github.com/datasets/registry/issues/27) - CO2 per country (what about other GHG)
 * Soil temperature
-* Satelite measurement temperature datasets 
-* Ocean temperature datasets 
+* Satelite measurement temperature datasets
+* Ocean temperature datasets
 * Glacier size - http://datahub.io/core/glacier-mass-balance
 * Sea Level http://datahub.io/core/sea-level-rise (Global Average Absolute Sea Level Change, 1880-2014)
 

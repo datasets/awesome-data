@@ -2,6 +2,8 @@
 title: Education Data
 description: US education data
 keywords: education, data, data analytics, US education budget analysis, CIRP freshmen survey
+date: 2018-06-07
+modified: 2018-06-07
 ---
 
 ## United States of America education budget analysis

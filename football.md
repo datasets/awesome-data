@@ -2,6 +2,8 @@
 title: Football Data
 description: A collection of awesome football datasets including national teams, clubs, match schedules, players, stadiums, etc.
 keywords: football data and API, world cup, stadium data, football apps
+date: 2017-12-13
+modified: 2018-06-12
 ---
 
 A collection of awesome football datasets including national teams, clubs, match schedules, players, stadiums, etc.
@@ -42,7 +44,7 @@ _Where's the open football data?_
 - [llimllib/soccerdata :octocat:](https://github.com/llimllib/soccerdata) - a collection of soccer results
 - [milkysunshine91/sport_db.Football :octocat:](https://github.com/milkysunshine91/sport_db.Football) - general purpose football database
 - [orlandoaleman/FootballAppResources :octocat:](https://github.com/orlandoaleman/FootballAppResources)
- 
+
 
 # Stadium Datasets
 
@@ -57,7 +59,7 @@ _Open source apps for match scores, picks, predictions, office pools, and more_
 - [world_cup_cli gem :octocat:](https://github.com/jameswilliamiii/world_cup_cli), [:gem:](https://rubygems.org/gems/world_cup_cli) - a command line interface that provides you the latest group table standings, scores, and see upcoming matches from the 2014 World Cup
 
 - [fatiherikli/worldcup :octocat:](https://github.com/fatiherikli/worldcup) - World cup results for hackers; uses Soccer For Good API
-- [Huang-Wei/2014 :octocat:](https://github.com/Huang-Wei/2014) 
+- [Huang-Wei/2014 :octocat:](https://github.com/Huang-Wei/2014)
 - [rtopitt/bolao2014 :octocat:](https://github.com/rtopitt/bolao2014) - Bolão PiTTlândia Copa do Mundo 2014
 - [rtopitt/bolao :octocat:](https://github.com/rtopitt/bolao) - Bolão Copa 2010
 - [threefunkymonkeys/funky-world-cup :octocat:](https://github.com/threefunkymonkeys/funky-world-cup) - a match predictions website for the FIFA World Cup, that allows you to create groups so you can play with your friends defining prices
@@ -74,4 +76,3 @@ _Open source apps for match scores, picks, predictions, office pools, and more_
 - [kdungs/tippspiel :octocat:](https://github.com/kdungs/tippspiel) - bet on football games with your friends
 - [chipsmachine/bltippspiel :octocat:](https://github.com/chipsmachine/bltippspiel) - Bundesliga betting game (tippspiel)
 - [chrenkot/Austrian-Bundesliga :octocat:](https://github.com/chrenkot/Austrian-Bundesliga) - a little open source android app for gathering information about the austrian bundesliga
-

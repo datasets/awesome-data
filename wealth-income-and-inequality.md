@@ -2,6 +2,8 @@
 title: Wealth, Income and Inequality
 description: Data and analysis on Wealth, Income and Inequality
 keywords: household incomes in the US, income data in the US
+date: 2018-06-06
+modified: 2018-06-06
 ---
 
 Qu: how have incomes of different social groups changed over time?

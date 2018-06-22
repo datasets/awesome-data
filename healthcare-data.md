@@ -2,6 +2,8 @@
 title: Health Care Data
 description: Ready-to-use datasets on DataHub about Health Care.
 keywords: Healthcare, DNA Sequencing Costs, Pharmaceutical Drug Spending by countries and Data Analytics
+date: 2018-06-07
+modified: 2018-06-07
 ---
 
 ## Costs assosiated with DNA sequencing since 2001

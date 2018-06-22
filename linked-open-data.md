@@ -2,6 +2,8 @@
 title: Linked Open Data
 description: An overview of the Linked Open Data datasets.
 keywords: Open Data, DBpedia, Lexvo, General Multilingual Environmental Thesaurus, Freebase, Linked Railway Data Project, DBTune
+date: 2018-05-10
+modified: 2018-06-12
 ---
 
 A group for Linked Open Data datasets. The initial import of data for this group was done in October 2009 from the list of [RDF datasets dumps](https://www.w3.org/wiki/DataSetRDFDumps) provided by the W3C Linked Open Data Interest Group.
