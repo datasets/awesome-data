@@ -76,7 +76,6 @@ modified: 2018-06-27
       <div class="panel-footer"><a href="/core/co2-fossil-by-nation">Explore this dataset &raquo;</a></div>
     </div>
     <!-- End of Countries by carbon emission in 2014 -->
-
     <!-- Countries by carbon emission per capita in 2014 -->
     <div class="panel panel-default">
       <div class="panel-heading">
