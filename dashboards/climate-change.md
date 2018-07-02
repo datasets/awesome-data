@@ -15,7 +15,7 @@ modified: 2018-06-27
         Trends of CO2 PPM from 1958 to the latest available date (Mauna Loa series)
       </div>
       <div class="panel-body">
-        <img src="/core/co2-ppm/view/0.png" class="img-responsive" />
+        <img src="/core/co2-ppm/view/0" class="img-responsive" />
       </div>
       <div class="panel-footer"><a href="/core/co2-ppm">Explore this dataset &raquo;</a></div>
     </div>
@@ -28,7 +28,7 @@ modified: 2018-06-27
         Annual growth rate of CO2 level (Mauna Loa series)
       </div>
       <div class="panel-body">
-        <img src="/core/co2-ppm/view/1.png" class="img-responsive" />
+        <img src="/core/co2-ppm/view/1" class="img-responsive" />
       </div>
       <div class="panel-footer"><a href="/core/co2-ppm">Explore this dataset &raquo;</a></div>
     </div>
@@ -43,7 +43,7 @@ modified: 2018-06-27
         Global CO2 Emissions from Fossil Fuels (~99% of total CO2 Emisions)
       </div>
       <div class="panel-body">
-        <img src="/core/co2-fossil-global/view/0.png" class="img-responsive" />
+        <img src="/core/co2-fossil-global/view/0" class="img-responsive" />
       </div>
       <div class="panel-footer"><a href="/core/co2-fossil-global">Explore this dataset &raquo;</a></div>
     </div>
@@ -56,7 +56,7 @@ modified: 2018-06-27
         Global growth rate of CO2 emissions from Fossil Fuels per Capita
       </div>
       <div class="panel-body">
-        <img src="/core/co2-fossil-global/view/1.png" class="img-responsive" />
+        <img src="/core/co2-fossil-global/view/1" class="img-responsive" />
       </div>
       <div class="panel-footer"><a href="/core/co2-fossil-global">Explore this dataset &raquo;</a></div>
     </div>
@@ -71,7 +71,7 @@ modified: 2018-06-27
         Which countries had most of carbon emission in 2014?
       </div>
       <div class="panel-body">
-        <img src="/core/co2-fossil-by-nation/view/0.png" class="img-responsive" />
+        <img src="/core/co2-fossil-by-nation/view/0" class="img-responsive" />
       </div>
       <div class="panel-footer"><a href="/core/co2-fossil-by-nation">Explore this dataset &raquo;</a></div>
     </div>
@@ -82,7 +82,7 @@ modified: 2018-06-27
         Which countries had most per capita carbon emission in 2014?
       </div>
       <div class="panel-body">
-        <img src="/core/co2-fossil-by-nation/view/3.png" class="img-responsive" />
+        <img src="/core/co2-fossil-by-nation/view/3" class="img-responsive" />
       </div>
       <div class="panel-footer"><a href="/core/co2-fossil-by-nation">Explore this dataset &raquo;</a></div>
     </div>
@@ -95,7 +95,7 @@ modified: 2018-06-27
         What is carbon emission trend in China?
       </div>
       <div class="panel-body">
-        <img src="/core/co2-fossil-by-nation/view/1.png" class="img-responsive" />
+        <img src="/core/co2-fossil-by-nation/view/1" class="img-responsive" />
       </div>
       <div class="panel-footer"><a href="/core/co2-fossil-by-nation">Explore this dataset &raquo;</a></div>
     </div>
@@ -106,7 +106,7 @@ modified: 2018-06-27
         What is carbon emission trend in the USA?
       </div>
       <div class="panel-body">
-        <img src="/core/co2-fossil-by-nation/view/2.png" class="img-responsive" />
+        <img src="/core/co2-fossil-by-nation/view/2" class="img-responsive" />
       </div>
       <div class="panel-footer"><a href="/core/co2-fossil-by-nation">Explore this dataset &raquo;</a></div>
     </div>
@@ -119,7 +119,7 @@ modified: 2018-06-27
         China population trend
       </div>
       <div class="panel-body">
-        <img src="/core/population/view/1.png" class="img-responsive" />
+        <img src="/core/population/view/1" class="img-responsive" />
       </div>
       <div class="panel-footer"><a href="/core/population">Explore this dataset &raquo;</a></div>
     </div>
@@ -130,7 +130,7 @@ modified: 2018-06-27
         US population trend
       </div>
       <div class="panel-body">
-        <img src="/core/population/view/2.png" class="img-responsive" />
+        <img src="/core/population/view/2" class="img-responsive" />
       </div>
       <div class="panel-footer"><a href="/core/population">Explore this dataset &raquo;</a></div>
     </div>
@@ -141,7 +141,7 @@ modified: 2018-06-27
         World population trend
       </div>
       <div class="panel-body">
-        <img src="/core/population/view/0.png" class="img-responsive" />
+        <img src="/core/population/view/0" class="img-responsive" />
       </div>
       <div class="panel-footer"><a href="/core/population">Explore this dataset &raquo;</a></div>
     </div>
@@ -158,7 +158,7 @@ modified: 2018-06-27
         Global temperature
       </div>
       <div class="panel-body">
-        <img src="/core/global-temp/view/0.png" class="img-responsive" />
+        <img src="/core/global-temp/view/0" class="img-responsive" />
       </div>
       <div class="panel-footer"><a href="/core/global-temp">Explore this dataset &raquo;</a></div>
     </div>
@@ -171,7 +171,7 @@ modified: 2018-06-27
         Mass of glacier
       </div>
       <div class="panel-body">
-        <img src="/core/glacier-mass-balance/view/0.png" class="img-responsive" />
+        <img src="/core/glacier-mass-balance/view/0" class="img-responsive" />
       </div>
       <div class="panel-footer"><a href="/core/glacier-mass-balance">Explore this dataset &raquo;</a></div>
     </div>
@@ -184,7 +184,7 @@ modified: 2018-06-27
         Sea level rise
       </div>
       <div class="panel-body">
-        <img src="/core/sea-level-rise/view/0.png" class="img-responsive" />
+        <img src="/core/sea-level-rise/view/0" class="img-responsive" />
       </div>
       <div class="panel-footer"><a href="/core/sea-level-rise">Explore this dataset &raquo;</a></div>
     </div>
