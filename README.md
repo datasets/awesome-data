@@ -6,8 +6,9 @@ keywords: Data Collections, Climate Change, Economic Data, Geodata, Inflation, L
 
 The awesome section presents collections of high quality datasets organized by topic.
 
-# Table of Contents
+# Collections
 
+* [Bibliographic data](/awesome/bibliographic-data)
 * [Climate Change](/awesome/climate-change)
 * [Demographics (population)](/awesome/demographics)
 * [Economic Data and Indicators](/awesome/economic-data)
@@ -19,9 +20,11 @@ The awesome section presents collections of high quality datasets organized by t
 * [Linked Open Data](/awesome/linked-open-data)
 * [Logistics](/awesome/logistics-data)
 * [Machine Learning / Statistical](/awesome/machine-learning-data)
+* [Open Corporates](/awesome/opencorporates)
 * [Property Prices](/awesome/property-prices)
 * [Reference Data](/awesome/reference-data)
 * [Stock Market Data](/awesome/stock-market-data)
 * [War and Peace](/awesome/war-and-peace)
 * [Wealth, Income and Inequality](/awesome/wealth-income-and-inequality)
 * [World Bank](/awesome/world-bank)
+* [YAGO](/awesome/yago)
