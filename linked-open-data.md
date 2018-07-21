@@ -36,17 +36,21 @@ A thesaurus in 20+ languages for terms related to the environment and environmen
 
 ## Freebase
 
+### Description
+
 "Freebase is an open database of the world?s information. It is built by the community and for the community?free for anyone to query, contribute to, built applications on top of, or integrate into their websites."
 
-Openness: OPEN
-License: CC-BY for data. Variety of open source licenses (or PD) for text blurbs & images.
-Access: API + bulk.
-bulk: yes.
-api: yes.
+### Openness: OPEN
+
+* License: CC-BY for data. Variety of open source licenses (or PD) for text blurbs & images.
+* Access: API + bulk.
+  * bulk: yes.
+  * api: yes.
 
 Triple count and link statistics provided by Freebase contributor Tom Morris
 
-RDF data and URIs
+### RDF data and URIs
+
 Freebase has [an RDF service](https://developers.google.com/freebase/) that exposes URIs and generates RDF descriptions for all Freebase topics.
 
 ## Linked Railway Data Project
