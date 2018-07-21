@@ -20,6 +20,7 @@ The awesome section presents collections of high quality datasets organized by t
 * [Linked Open Data](/awesome/linked-open-data)
 * [Logistics](/awesome/logistics-data)
 * [Machine Learning / Statistical](/awesome/machine-learning-data)
+* [Movies and TV](/awesome/movies-and-tv)
 * [Open Corporates](/awesome/opencorporates)
 * [Property Prices](/awesome/property-prices)
 * [Reference Data](/awesome/reference-data)
