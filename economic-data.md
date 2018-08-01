@@ -4,6 +4,7 @@ description: A collection of economic indicators available on DataHub.
 keywords: economic statistics, examples of economic indicators, explore data by country, basic economic indicators, US economic data, UK economic data, World Bank data
 date: 2018-06-06
 modified: 2018-06-12
+metaImage: economic-data.png
 ---
 
 On this page, we summarize all available economic data (or economic statistics) on DataHub. Users can find various examples of economic indicators or explore data by country. The page is curated and updated on regular basis so don't forget to bookmark it!

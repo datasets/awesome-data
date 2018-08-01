@@ -4,6 +4,7 @@ description: Examples of machine learning datasets.
 keywords: machine learning datasets, examples of ml data
 date: 2018-06-06
 modified: 2018-06-06
+metaImage: machine-learning-data.png
 ---
 
 Machine learning is used as a general term for computational data analysis: using data to makes inferences and predictions. Interpreted broadly it includes computational statistics, data analytics, data mining and a good portion of data science.

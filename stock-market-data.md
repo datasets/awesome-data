@@ -4,6 +4,7 @@ description: Find and Explore ready-to-use Stock Market Datasets.
 keywords: stock data, s&p 500, finance vix, oil prices, natural gas prices, gold prices, nyse listings, nasdaq listings
 date: 2018-06-07
 modified: 2018-06-07
+metaImage: stock-market-data.png
 ---
 
 [[toc]]

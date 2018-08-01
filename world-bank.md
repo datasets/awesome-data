@@ -4,6 +4,7 @@ description: An overview of the World Bank data holdings.
 keywords: Open Data Catalog, World Development Indicators, DataBank, Open finances, Global Consumption Database, Microdata Library
 date: 2018-02-09
 modified: 2018-06-06
+metaImage: world-bank.png
 ---
 
 The World Bank has a wide array of high quality data and much of it is [open data][]. It covers several distinct collections and databases.

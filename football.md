@@ -4,6 +4,7 @@ description: A collection of awesome football datasets including national teams,
 keywords: football data and API, world cup, stadium data, football apps
 date: 2017-12-13
 modified: 2018-06-12
+metaImage: football.png
 ---
 
 A collection of awesome football datasets including national teams, clubs, match schedules, players, stadiums, etc.

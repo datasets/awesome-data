@@ -4,6 +4,7 @@ description: Data and analysis on Wealth, Income and Inequality
 keywords: household incomes in the US, income data in the US
 date: 2018-06-06
 modified: 2018-06-06
+metaImage: wealth-income-and-inequality.png
 ---
 
 Qu: how have incomes of different social groups changed over time?
