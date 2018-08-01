@@ -4,7 +4,7 @@ description: A collection of the most important "general" datasets on climate ch
 keywords: climate data, world climate data, historical climate data, CO2 levels globally, CO2 emission from fossil fuels
 date: 2018-04-12
 modified: 2018-06-12
-metaImage: climate-change.png
+image: climate-change.png
 ---
 
 What are the most important "general" datasets to have on climate change?

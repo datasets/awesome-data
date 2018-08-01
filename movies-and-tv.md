@@ -4,7 +4,7 @@ description: Various resources for Movies and TV data
 keywords: movies data, tv dataset, imdb
 date: 2018-07-21
 modified: 2018-07-21
-metaImage: movies-and-tv.png
+image: movies-and-tv.png
 ---
 
 ## Internet Movie Database

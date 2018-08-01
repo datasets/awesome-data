@@ -4,7 +4,7 @@ description: Data on inter-state conflicts, international relations and other co
 keywords: Uppsala Conflict Data Program (UCDP) dataset, Correlates of War, Brecke Conflict Catalog
 date: 2018-02-19
 modified: 2018-06-06
-metaImage: war-and-peace.png
+image: war-and-peace.png
 ---
 
 Data on inter-state conflicts, international relations and other correlates of war including war-related deaths and injuries.

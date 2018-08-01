@@ -4,7 +4,7 @@ description: GeoJSON datasets available on DataHub.
 keywords: geojson, European NUTS boundaries, Country Polygons, Natural Earth Admin1 Polygons
 date: 2018-06-07
 modified: 2018-06-07
-metaImage: geojson.png
+image: geojson.png
 ---
 
 [[toc]]

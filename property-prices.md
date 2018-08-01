@@ -4,7 +4,7 @@ description: Property Prices Datasets available on DataHub.
 keywords: house prices, global cross-country property prices, UK house prices, US house prices
 date: 2018-06-06
 modified: 2018-06-06
-metaImage: property-prices.png
+image: property-prices.png
 ---
 
 Property prices including house prices

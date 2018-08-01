@@ -4,7 +4,7 @@ description: YAGO3 is a huge semantic knowledge base, derived from Wikipedia Wor
 keywords:   YAGO, ckanupload.esw.200910, crossdomain, format-rdf, linkeddata, lod, lodcloud-diagram-2011-09-19, lodcloud-diagram-2014-08-30, no-deref-vocab, no-license-metadata, no-provenance-metadata, ontology, published-by-producer
 date: 2018-07-17
 modified: 2018-07-17
-metaImage: yago.png
+image: yago.png
 ---
 
 YAGO3 is a huge semantic knowledge base, derived from Wikipedia WordNet and GeoNames. Currently, YAGO3 has knowledge of more than 10 million entities (like persons, organizations, cities, etc.) and contains more than 120 million facts about these entities.
