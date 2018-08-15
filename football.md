@@ -11,7 +11,7 @@ A collection of awesome football datasets including national teams, clubs, match
 
 *Contributions welcome. Anything missing? Send in a pull request. Thanks.*
 
-Note: :octocat: stands for the GitHub page and :gem: stands for the RubyGems page.
+Note: :octocat: stands for the GitHub page, :gem: stands for the RubyGems page and :datahub: stands for dataset on DataHub.
 
 [[toc]]
 
@@ -23,6 +23,14 @@ _Where's the open football data?_
 - [Article: Using open football data - Get ready for the World Cup in Brazil 2014 @ The Data Wrangling Blog (Open Knowledge Foundation (OKFN) Labs)](http://okfnlabs.org/blog/2014/05/06/open-data-world-cup.html) by Gerald Bauer
 
 # Football Datasets
+
+## Football datasets on DataHub
+
+- [sports-data/english-premier-league :datahub:](https://datahub.io/sports-data/english-premier-league)
+- [sports-data/spanish-la-liga :datahub:](https://datahub.io/sports-data/spanish-la-liga)
+- [sports-data/italian-serie-a :datahub:](https://datahub.io/sports-data/italian-serie-a)
+- [sports-data/german-bundesliga :datahub:](https://datahub.io/sports-data/german-bundesliga)
+- [sports-data/french-ligue-1 :datahub:](https://datahub.io/sports-data/french-ligue-1)
 
 ## World Cup
 
