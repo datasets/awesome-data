@@ -15,19 +15,21 @@ The World Bank has a wide array of high quality data and much of it is [open dat
 
 * [DataBank][] - collections of time series data on a variety of topics. Total: 69 databases.
 
-* [Open finances][] - World Bank Group’s financials datasets such as
+* [Open finances][] - World Bank Group’s financials datasets. There are 93 datasets in 8 categories and one dataset not belonging in any of these categories
   * [Loans and credits][] - 5 datasets
-  * [Financial Reporting][] - 23 datasets
+  * [Financial Reporting][] - 33 datasets
   * [Shareholder Equity][] - 4 datasets
   * [Procurement][] - 4 datasets
   * [Projects][] - 9 datasets
   * [Budget][] - 3 datasets
+  * [Trust Funds and FIFs][] - 12 datasets
+  * [Other][] - 23 datasets
 
 * [Projects & operations][] - information on all of the World Bank's lending projects since 1947. Around 13,119 projects in 173 countries.
 
 * [Global Consumption Database][] - datasets on household consumption patterns in developing countries. Data can be derived by country, sector or product.
 
-* [Microdata Library][] - collection of sample surveys of households, business establishments or other facilities. As of April 02, 2018 the Library contains 2,503 surveys and 2,577 citations.
+* [Microdata Library][] - collection of sample surveys of households, business establishments or other facilities. As of August 28, 2018 the Library contains 2,696 surveys and 2,577 citations.
 
 [Open Data Catalog]: http://datacatalog.worldbank.org/
 [World Development Indicators]:https://data.worldbank.org/products/wdi
@@ -39,60 +41,71 @@ The World Bank has a wide array of high quality data and much of it is [open dat
 [Procurement]:https://finances.worldbank.org/browse?category=Procurement&limitTo=datasets
 [Projects]:https://finances.worldbank.org/browse?category=Projects&limitTo=datasets
 [Budget]:https://finances.worldbank.org/browse?category=Budget&limitTo=datasets
+[Trust Funds and FIFs]:https://finances.worldbank.org/browse?category=Trust+Funds+and+FIFs&limitTo=datasets
+[Other]:https://finances.worldbank.org/browse?category=Other&limitTo=datasets
 [Projects & operations]:http://projects.worldbank.org/
 [Global Consumption Database]:http://datatopics.worldbank.org/consumption/
 [Microdata Library]:http://microdata.worldbank.org/catalog
 [open data]: https://opendefinition.org/
+[featured indicators page]:https://data.worldbank.org/indicator?tab=featured
 
 [[toc]]
 
 ## Data
 
-We have created [world-bank](https://datahub.io/world-bank) user specifically for World Bank datasets, so they will be found in one place.
+We have created [world-bank](https://datahub.io/world-bank) user specifically for World Bank datasets so they can all be found in one place.
 
 ### World Development Indicators
 
-One of the major open ones are the [World Development Indicators][] which provide a variety of important indicators ranging from GDP and population to CO2 emissions and literacy in a standardized cross country form. It consists of several main categories:
+One of the major open ones are the [World Development Indicators][] which provide a variety of important indicators ranging from GDP and population to CO2 emissions and literacy in a standardized cross country form. We added 308 datasets from [featured indicators page][] to datahub. These datasets can be found in several main categories:
 
--   Agriculture & Rural Development
+* Agriculture & Rural Development
 
--   Aid Effectiveness
+* Aid Effectiveness
 
--   Climate Change
+* Climate Change
 
--   Economy & Growth
+* Economy & Growth
 
--   Education
+* Education
 
--   Energy & Mining
+* Energy & Mining
 
--   Environment
+* Environment
 
--   External Debt
+* External Debt
 
--   Financial Sector
+* Financial Sector
 
--   Gender
+* Gender
 
--   Health
+* Health
 
--   Infrastructure
+* Infrastructure
 
--   Poverty
+* Poverty
 
--   Private Sector
+* Private Sector
 
--   Public Sector
+* Public Sector
 
--   Science & Technology
+* Science & Technology
 
--   Social Development
+* Social Development
 
--   Social Protection & Labor
+* Social Protection & Labor
 
--   Trade
+* Trade
 
--   Urban Development
+* Urban Development
+
+Some of the most popular world-bank indicators featured on our website:
+
+* Total population of various world regions based on the de facto definition of population, which counts all residents regardless of legal status or citizenship. The values shown are midyear estimates https://datahub.io/world-bank/sp.pop.totl
+
+* Cause of death, by non-communicable diseases (cancer, diabetes mellitus, cardiovascular diseases, digestive diseases, skin diseases, musculoskeletal diseases, and congenital anomalies) https://datahub.io/world-bank/sh.dth.ncom.zs
+
+* Prevalence of HIV, female (% ages 15-24) https://datahub.io/world-bank/sh.hiv.1524.fe.zs
 
 ## API
 
@@ -126,7 +139,7 @@ https://github.com/rufuspollock/world-bank-data
 
 License: OPEN (mostly)
 
-Currently no easy way to automatedly obtain that listing though.
+There is currently no easy way to automatically obtain that listing though.
 
 As of April 20th 2010 data is now open (subject to some reservations for specific datasets). See this [blog post](http://blog.okfn.org/2010/04/20/world-bank-opens-up-development-data/).
 
