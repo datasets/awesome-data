@@ -11,7 +11,7 @@ We use several sources for open data on temperature:
 
 # How to download the data 
 1. Create account and log in to https://www.ceda.ac.uk/ 
-2. Depending on the variables and time-scale of the data you want to download setup request, e.g. for 2010 taxmax (temperature): http://dap.ceda.ac.uk/thredds/fileServer/badc/ukmo-hadobs/data/insitu/MOHC/HadOBS/HadUK-Grid/v1.0.0.0/60km/tas/mon/v20181126/tas_hadukgrid_uk_60km_mon_201001-201012.nc
+2. Depending on the variables and time-scale of the data you want to download setup request, for example, 2010 taxmax (temperature): http://dap.ceda.ac.uk/thredds/fileServer/badc/ukmo-hadobs/data/insitu/MOHC/HadOBS/HadUK-Grid/v1.0.0.0/60km/tas/mon/v20181126/tas_hadukgrid_uk_60km_mon_201001-201012.nc
 
 
 
@@ -34,4 +34,3 @@ The code for parcing the data is uploaded to the folder https://github.com/Liyub
 
 You can also open and look into the climate data using command line via:
 *ncdump -t tasmax_hadukgrid_uk_60km_mon_188601-188612.nc*
-
