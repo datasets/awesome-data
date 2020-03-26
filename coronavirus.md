@@ -62,13 +62,22 @@ Coming soon ...
 
 ### Italy
 
-### United Kingdom
+### United Kingdom
 
 ### France
 
 
 ## Models
+There are various types of models in epidemiology, which are used for prediction of prevalence (total number of infected) or the duration of an epidemic spreading processes. One of the most commonly used types is compartmental models, where population is divided into compartments of people with the same properties, e.g. people who are susceptible to virus, who are recovered etc.
+There are three main types of compartmental models in epidemiology: 
+    Susceptible-Infected (SI), where each person can be just in two states, either susceptible (S) or infected (I); 
+     Susceptible-Infected-Recovered (SIS), where each person can be in one of two states, susceptible (S) or infected (I), but then can become susceptible again;
+     Susceptible-Infected-Recovered (SIR), where each person can be  in one of three states, susceptible (S), infected (I) or recovered (R).
+In this model we study the number of people in each of those groups, denoted by variable S, I and R correspondingly. SIR system can be  expressed by the following set of ordinary differential equations: 
 
-This section will list relevant modelling efforts.
+$\frac{dS}{dt} = -\beta SI,$ 
+where the main idea 
+These equations were proposed by O. Kermack and Anderson Gray McKendrick. 
+The simulations of SIR model are shown in the python script here https://github.com/Liyubov/heterogeneous-dynamics-on-networks/blob/master/code_network_heterogen_models/spreading_SIR.py 
 
-
+The main take-away message from these simulations is that there is always an epidemics peak, e.g. time when number of infected people reaches its maximum.
