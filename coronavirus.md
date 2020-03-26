@@ -73,13 +73,7 @@ There are three main types of compartmental models in epidemiology:
     Susceptible-Infected (SI), where each person can be just in two states, either susceptible (S) or infected (I); 
      Susceptible-Infected-Recovered (SIS), where each person can be in one of two states, susceptible (S) or infected (I), but then can become susceptible again;
      Susceptible-Infected-Recovered (SIR), where each person can be  in one of three states, susceptible (S), infected (I) or recovered (R).
-In this model we study the number of people in each of those groups, denoted by variable S, I and R correspondingly. SIR system can be  expressed by the following set of ordinary differential equations: 
-
-\begin{align}
-\dot{S}  \frac{dS}{dt} = -\beta SI,
-\end{align}
-where the main idea 
-These equations were proposed by O. Kermack and Anderson Gray McKendrick. 
+In this model we study the number of people in each of those groups, denoted by variable S, I and R correspondingly. SIR system can be  expressed by the following set of ordinary differential equations proposed by (O. Kermack and Anderson Gray McKendrick)[https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology]. 
 The simulations of SIR model are shown in the python script here https://github.com/Liyubov/heterogeneous-dynamics-on-networks/blob/master/code_network_heterogen_models/spreading_SIR.py 
 
-The main take-away message from these simulations is that there is always an epidemics peak, e.g. time when number of infected people reaches its maximum.
+The main take-away message from the SIR model simulations is that we observe so-called peak of epidemic, when the number of infected people reaches its maximum. This moment of when size of epidemic outbreak is maximal depends on SIR model parameters: probability of epidemic transmission and recovery from the disease. 
