@@ -75,7 +75,9 @@ There are three main types of compartmental models in epidemiology:
      Susceptible-Infected-Recovered (SIR), where each person can be  in one of three states, susceptible (S), infected (I) or recovered (R).
 In this model we study the number of people in each of those groups, denoted by variable S, I and R correspondingly. SIR system can be  expressed by the following set of ordinary differential equations: 
 
-$\frac{dS}{dt} = -\beta SI,$ 
+\begin{align}
+\dot{S}  \frac{dS}{dt} = -\beta SI,
+\end{align}
 where the main idea 
 These equations were proposed by O. Kermack and Anderson Gray McKendrick. 
 The simulations of SIR model are shown in the python script here https://github.com/Liyubov/heterogeneous-dynamics-on-networks/blob/master/code_network_heterogen_models/spreading_SIR.py 
