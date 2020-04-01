@@ -87,7 +87,7 @@ The SEIR model is the most widely used tool for predicting epidemics and acting 
 
 
 References:
-1. [Maslov et al.](https://arxiv.org/abs/2003.09564)
-2. [Pastor-Satoras et al.](https://arxiv.org/abs/1408.2701)
+1. [Maslov et al. "Window of Opportunity for Mitigation to Prevent Overflow of ICU capacity in Chicago by COVID-19"](https://arxiv.org/abs/2003.09564)
+2. [Pastor-Satoras et al. "Epidemic processes in complex networks"](https://arxiv.org/abs/1408.2701)
 3. [COVID model by Neuer](https://neherlab.org/covid19/)
 
