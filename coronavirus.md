@@ -69,12 +69,31 @@ Coming soon ...
 
 ## Models
 There are various types of models in epidemiology, which are used for prediction of prevalence (total number of infected) or the duration of an epidemic spreading processes. One of the most commonly used types is compartmental models, where population is divided into compartments of people with the same properties, e.g. people who are susceptible to virus, who are recovered etc.
-There are three main types of compartmental models in epidemiology: 
+There are three main types of compartmental models in epidemiology based on which many other models can be built upon: 
     Susceptible-Infected (SI), where each person can be just in two states, either susceptible (S) or infected (I); 
      Susceptible-Infected-Recovered (SIS), where each person can be in one of two states, susceptible (S) or infected (I), but then can become susceptible again;
      Susceptible-Infected-Recovered (SIR), where each person can be  in one of three states, susceptible (S), infected (I) or recovered (R).
      
+
+In **SIR model** one can study the number of people in each of the compartments, denoted by variable S, I and R correspondingly. SIR system can be  expressed by the set of ordinary differential equations proposed by [O. Kermack and Anderson Gray McKendrick](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology). 
+The simulations of SIR model are shown in the python script [here](https://github.com/Liyubov/heterogeneous-dynamics-on-networks/blob/master/code_network_heterogen_models/spreading_SIR.py).
+
+The main take-away message from the SIR model simulations is that we observe so-called peak of epidemic, when the number of infected people reaches its maximum. This moment of when size of epidemic outbreak is maximal depends on SIR model parameters: probability of epidemic transmission and recovery from the disease. 
+
+Another model, which has been proven to be much more realistic for some epidemics spreading models is **SEIR model** [1]. 
+The main idea of this model is that for many important infections there is a significant incubation period during which individuals have been infected but are not yet infectious themselves. During this period the individual is in a special state E (exposed), additional state to three states of parts of population in SIR model. 
+
+The SEIR model studies number of people between four states: susceptible (S), exposed (E), infected (I), and resistant (R) , each being the number of people in those groups. There are several model parameters, which partially control how fast people move from being susceptible to exposed, from exposed to infected, and from infected to resistant. This model can have additional parameters; one is the background mortality, which is unaffected by disease-state, while the other is vaccination. The vaccination moves people from the susceptible to resistant directly, without becoming exposed or infected.
+The SEIR model is the most widely used tool for predicting epidemics and acting to suppress them. In 2020, the model was further refined by Richard Neuer [3].
+
+
+References:
+1. [Maslov et al. "Window of Opportunity for Mitigation to Prevent Overflow of ICU capacity in Chicago by COVID-19"](https://arxiv.org/abs/2003.09564)
+2. [Pastor-Satoras et al. "Epidemic processes in complex networks"](https://arxiv.org/abs/1408.2701)
+3. [COVID model by Neuer](https://neherlab.org/covid19/)
+
 In SIR model we study the number of people in each of the compartments, denoted by variable S, I and R correspondingly. SIR system can be  expressed by the set of ordinary differential equations proposed by [O. Kermack and Anderson Gray McKendrick](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology). 
 The simulations of SIR model are shown in the python script [here](https://github.com/Liyubov/heterogeneous-dynamics-on-networks/blob/master/code_network_heterogen_models/spreading_SIR.py).
 
 The main take-away message from the SIR model simulations is that we observe so-called peak of epidemic, when the number of infected people reaches its maximum. This moment of when size of epidemic outbreak is maximal depends on SIR model parameters: probability of epidemic transmission and recovery from the disease. 
+
