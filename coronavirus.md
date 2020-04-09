@@ -91,9 +91,5 @@ References:
 1. [Maslov et al. "Window of Opportunity for Mitigation to Prevent Overflow of ICU capacity in Chicago by COVID-19"](https://arxiv.org/abs/2003.09564)
 2. [Pastor-Satoras et al. "Epidemic processes in complex networks"](https://arxiv.org/abs/1408.2701)
 3. [COVID model by Neuer](https://neherlab.org/covid19/)
-
-In SIR model we study the number of people in each of the compartments, denoted by variable S, I and R correspondingly. SIR system can be  expressed by the set of ordinary differential equations proposed by [O. Kermack and Anderson Gray McKendrick](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology). 
-The simulations of SIR model are shown in the python script [here](https://github.com/Liyubov/heterogeneous-dynamics-on-networks/blob/master/code_network_heterogen_models/spreading_SIR.py).
-
-The main take-away message from the SIR model simulations is that we observe so-called peak of epidemic, when the number of infected people reaches its maximum. This moment of when size of epidemic outbreak is maximal depends on SIR model parameters: probability of epidemic transmission and recovery from the disease. 
-
+4. [O. Kermack and Anderson Gray McKendrick](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology)
+5. Simulations of SIR and SEIR models [here](https://github.com/Liyubov/heterogeneous-dynamics-on-networks/blob/master/code_network_heterogen_models/spreading_SIR.py)
