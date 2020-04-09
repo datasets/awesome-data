@@ -100,12 +100,9 @@ Data source: https://github.com/cedricguadalupe/FRANCE-COVID-19
 
 Data information: 
 Data is updated daily according to the main sources of information: 
+Agence Regionale de Sante;    Santé Publique France : https://www.santepubliquefrance.fr/;   Geodes: https://geodes.santepubliquefrance.fr/#c=indicator&view=map2
 
-    Agence Regionale de Sante
-    Santé Publique France : https://www.santepubliquefrance.fr/
-    Geodes : https://geodes.santepubliquefrance.fr/#c=indicator&view=map2
-
-The repository contains three main files with confirmed cases, number of death and number of recovered people.
+The github repository wih data contains three main files with confirmed cases, number of death and number of recovered people.
 
     france_coronavirus_time_series-confirmed.csv
 	france_coronavirus_time_series-deaths.csv 	
