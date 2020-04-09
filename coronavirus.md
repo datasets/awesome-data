@@ -116,7 +116,8 @@ There are three main types of compartmental models in epidemiology based on whic
      Susceptible-Infected-Recovered (SIR), where each person can be  in one of three states, susceptible (S), infected (I) or recovered (R).
      
 
-In **SIR model** one can study the number of people in each of the compartments, denoted by variable S, I and R correspondingly. SIR system can be  expressed by the set of ordinary differential equations proposed by [O. Kermack and Anderson Gray McKendrick](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology). 
+In **SIR model** one can study the number of people in each of three compartments: susceptible, infected and recovered, denoted by variable S, I and R correspondingly. SIR system can be  expressed by the set of ordinary differential equations proposed by [O. Kermack and Anderson Gray McKendrick](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology). 
+
 The simulations of SIR model are shown in the python script [here](https://github.com/Liyubov/heterogeneous-dynamics-on-networks/blob/master/code_network_heterogen_models/spreading_SIR.py).
 
 The main take-away message from the SIR model simulations is that we observe so-called peak of epidemic, when the number of infected people reaches its maximum. This moment of when size of epidemic outbreak is maximal depends on SIR model parameters: probability of epidemic transmission and recovery from the disease. 
