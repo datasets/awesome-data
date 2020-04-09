@@ -62,10 +62,54 @@ Coming soon ...
 
 ### Italy
 
+Data source: https://github.com/pcm-dpc/COVID-19
+
+
+Data information:
+In order to inform citizens and make available the data collected, useful only for communication and information purposes, the Civil Protection Department has developed an interactive geographical dashboard that can be reached at http://arcg.is/C1unv (desktop version) and http://arcg.is/081a51 (mobile version) and makes available, under license CC-BY-4.0, the following information updated daily at 6:30 p.m. (following the press conference of the Head of Department):
+
+    National trend
+    Json data
+    Provinces data
+    Regions data
+    Summary sheets
+    Areas
+    Notes
+
 ### United Kingdom
+
+Data source: https://github.com/tomwhite/covid-19-uk-data
+
+
+Data information: 
+The following CSV files are available:
+
+    data/covid-19-cases-uk.csv: daily counts of confirmed cases for (upper tier) local authorities in England, health boards in Scotland and Wales, and local government district for Northern Ireland.
+        Note that prior to 18 March 2020 Wales data was broken down by local authority, not heath board, and prior to 27 March 2020 there were no breakdowns by area for Northern Ireland.
+    data/covid-19-totals-uk.csv: daily counts of tests, confirmed cases, deaths for the whole of the UK
+    data/covid-19-totals-england.csv: daily counts of tests, confirmed cases, deaths for England
+    data/covid-19-totals-northern-ireland.csv: daily counts of tests, confirmed cases, deaths for Northern Ireland
+    data/covid-19-totals-scotland.csv: daily counts of tests, confirmed cases, deaths for Scotland
+    data/covid-19-totals-wales.csv: daily counts of tests, confirmed cases, deaths for Wales
+    data/covid-19-indicators-uk.csv: daily counts of tests, confirmed cases, deaths for the whole of the UK and individual countries in the UK (England, Scotland, Wales, Northern Ireland). This is a tidy-data version of covid-19-totals-*.csv combined into one file.
 
 ### France
 
+Data source: https://github.com/cedricguadalupe/FRANCE-COVID-19
+
+
+Data information: 
+Data is updated daily according to the main sources of information: 
+
+    Agence Regionale de Sante
+    Santé Publique France : https://www.santepubliquefrance.fr/
+    Geodes : https://geodes.santepubliquefrance.fr/#c=indicator&view=map2
+
+The repository contains three main files with confirmed cases, number of death and number of recovered people.
+
+    france_coronavirus_time_series-confirmed.csv
+	france_coronavirus_time_series-deaths.csv 	
+	france_coronavirus_time_series-recovered.csv
 
 ## Models
 There are various types of models in epidemiology, which are used for prediction of prevalence (total number of infected) or the duration of an epidemic spreading processes. One of the most commonly used types is compartmental models, where population is divided into compartments of people with the same properties, e.g. people who are susceptible to virus, who are recovered etc.
