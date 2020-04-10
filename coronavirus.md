@@ -62,10 +62,51 @@ Coming soon ...
 
 ### Italy
 
+Data source: https://github.com/pcm-dpc/COVID-19
+
+
+Data information:
+In order to inform citizens and make available the data collected, useful only for communication and information purposes, the Civil Protection Department has developed an interactive geographical dashboard that can be reached at http://arcg.is/C1unv (desktop version) and http://arcg.is/081a51 (mobile version) and makes available, under license CC-BY-4.0, the following information updated daily at 6:30 p.m. (following the press conference of the Head of Department):
+
+    National trend
+    Json data
+    Provinces data
+    Regions data
+    Summary sheets
+    Areas
+    Notes
+
 ### United Kingdom
+
+Data source: https://github.com/tomwhite/covid-19-uk-data
+
+
+Data information: 
+The following CSV files are available:
+
+    data/covid-19-cases-uk.csv: daily counts of confirmed cases for (upper tier) local authorities in England, health boards in Scotland and Wales, and local government district for Northern Ireland.
+        Note that prior to 18 March 2020 Wales data was broken down by local authority, not heath board, and prior to 27 March 2020 there were no breakdowns by area for Northern Ireland.
+    data/covid-19-totals-uk.csv: daily counts of tests, confirmed cases, deaths for the whole of the UK
+    data/covid-19-totals-england.csv: daily counts of tests, confirmed cases, deaths for England
+    data/covid-19-totals-northern-ireland.csv: daily counts of tests, confirmed cases, deaths for Northern Ireland
+    data/covid-19-totals-scotland.csv: daily counts of tests, confirmed cases, deaths for Scotland
+    data/covid-19-totals-wales.csv: daily counts of tests, confirmed cases, deaths for Wales
+    data/covid-19-indicators-uk.csv: daily counts of tests, confirmed cases, deaths for the whole of the UK and individual countries in the UK (England, Scotland, Wales, Northern Ireland). This is a tidy-data version of covid-19-totals-*.csv combined into one file.
 
 ### France
 
+Data source: https://github.com/cedricguadalupe/FRANCE-COVID-19
+
+
+Data information: 
+Data is updated daily according to the main sources of information: 
+Agence Regionale de Sante;    Santé Publique France : https://www.santepubliquefrance.fr/;   Geodes: https://geodes.santepubliquefrance.fr/#c=indicator&view=map2
+
+The github repository wih data contains three main files with confirmed cases, number of death and number of recovered people.
+
+    france_coronavirus_time_series-confirmed.csv
+	france_coronavirus_time_series-deaths.csv 	
+	france_coronavirus_time_series-recovered.csv
 
 ## Models
 There are various types of models in epidemiology, which are used for prediction of prevalence (total number of infected) or the duration of an epidemic spreading processes. One of the most commonly used types is compartmental models, where population is divided into compartments of people with the same properties, e.g. people who are susceptible to virus, who are recovered etc.
@@ -75,7 +116,8 @@ There are three main types of compartmental models in epidemiology based on whic
      Susceptible-Infected-Recovered (SIR), where each person can be  in one of three states, susceptible (S), infected (I) or recovered (R).
      
 
-In **SIR model** one can study the number of people in each of the compartments, denoted by variable S, I and R correspondingly. SIR system can be  expressed by the set of ordinary differential equations proposed by [O. Kermack and Anderson Gray McKendrick](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology). 
+In **SIR model** one can study the number of people in each of three compartments: susceptible, infected and recovered, denoted by variable S, I and R correspondingly. SIR system can be  expressed by the set of ordinary differential equations proposed by [O. Kermack and Anderson Gray McKendrick](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology). 
+
 The simulations of SIR model are shown in the python script [here](https://github.com/Liyubov/heterogeneous-dynamics-on-networks/blob/master/code_network_heterogen_models/spreading_SIR.py).
 
 The main take-away message from the SIR model simulations is that we observe so-called peak of epidemic, when the number of infected people reaches its maximum. This moment of when size of epidemic outbreak is maximal depends on SIR model parameters: probability of epidemic transmission and recovery from the disease. 
@@ -91,9 +133,5 @@ References:
 1. [Maslov et al. "Window of Opportunity for Mitigation to Prevent Overflow of ICU capacity in Chicago by COVID-19"](https://arxiv.org/abs/2003.09564)
 2. [Pastor-Satoras et al. "Epidemic processes in complex networks"](https://arxiv.org/abs/1408.2701)
 3. [COVID model by Neuer](https://neherlab.org/covid19/)
-
-In SIR model we study the number of people in each of the compartments, denoted by variable S, I and R correspondingly. SIR system can be  expressed by the set of ordinary differential equations proposed by [O. Kermack and Anderson Gray McKendrick](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology). 
-The simulations of SIR model are shown in the python script [here](https://github.com/Liyubov/heterogeneous-dynamics-on-networks/blob/master/code_network_heterogen_models/spreading_SIR.py).
-
-The main take-away message from the SIR model simulations is that we observe so-called peak of epidemic, when the number of infected people reaches its maximum. This moment of when size of epidemic outbreak is maximal depends on SIR model parameters: probability of epidemic transmission and recovery from the disease. 
-
+4. [O. Kermack and Anderson Gray McKendrick](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology)
+5. Simulations of SIR and SEIR models [here](https://github.com/Liyubov/heterogeneous-dynamics-on-networks/blob/master/code_network_heterogen_models/spreading_SIR.py)
