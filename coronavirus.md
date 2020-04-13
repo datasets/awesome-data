@@ -56,9 +56,15 @@ Additional background is available in the [CSSE blog](https://systems.jhu.edu/re
 
 For now see https://datahub.io/core/covid-19 as that includes aggregate figures by country.
 
-Coming soon ...
 
 ### US
+
+Data sources: COVID Tracking Project in USA https://covidtracking.com/  
+Data source from New York Times https://github.com/nytimes/covid-19-data 
+
+
+Data information: 
+Information comes from state/district/territory public health authorities—or, occasionally, from trusted news reporting, official press conferences, or (very occasionally) tweets or Facebook updates from state public health authorities or governors.
 
 ### Italy
 
