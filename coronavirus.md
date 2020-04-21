@@ -54,11 +54,23 @@ Additional background is available in the [CSSE blog](https://systems.jhu.edu/re
 
 ## Cases By Country
 
-For now see https://datahub.io/core/covid-19 as that includes aggregate figures by country.
+For now see https://datahub.io/core/covid-19 as that includes aggregate figures by country. For additional sources (verified and crowd-sourced) https://github.com/open-covid-19/data
 
-Coming soon ...
 
 ### US
+
+Data sources: COVID Tracking Project in USA https://covidtracking.com/  
+New York Times data from https://github.com/nytimes/covid-19-data 
+
+
+Data information: 
+COVID Tracking Project in USA provides the information from state/district/territory public health authorities—or, occasionally, from trusted news reporting, official press conferences, or (very occasionally) tweets or Facebook updates from state public health authorities or governors.
+Data from New York Times is State-Level Data
+
+State-level data can be found in the states.csv file. (Raw CSV file here.)
+
+date,state,fips,cases,deaths
+2020-01-21,Washington,53,1,0
 
 ### Italy
 
