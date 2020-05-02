@@ -47,6 +47,9 @@ The upstream dataset currently lists the following upstream datasources:
 - European Centre for Disease Prevention and Control (ECDC): https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases
 - Ministry of Health Singapore (MOH): https://www.moh.gov.sg/covid-19
 - Italy Ministry of Health: http://www.salute.gov.it/nuovocoronavirus
+- ECDC dataset https://www.ecdc.europa.eu/en/coronavirus
+- Metadata on publications about coronavirus https://github.com/nties/COVID19-open-research-dataset 
+- Open data resources for fighting COVID https://arxiv.org/abs/2004.06111v1
 
 Additional background is available in the [CSSE blog](https://systems.jhu.edu/research/public-health/ncov/), and in the [Lancet paper](https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(20)30120-1/fulltext) ([DOI](https://doi.org/10.1016/S1473-3099(20)30120-1)), which includes this figure:
 
@@ -141,7 +144,7 @@ The SEIR model studies number of people between four states: susceptible (S), ex
 The SEIR model is the most widely used tool for predicting epidemics and acting to suppress them. In 2020, the model was further refined by Richard Neuer [3].
 
 
-References:
+## References:
 1. [Maslov et al. "Window of Opportunity for Mitigation to Prevent Overflow of ICU capacity in Chicago by COVID-19"](https://arxiv.org/abs/2003.09564)
 2. [Pastor-Satoras et al. "Epidemic processes in complex networks"](https://arxiv.org/abs/1408.2701)
 3. [COVID model by Neuer](https://neherlab.org/covid19/)
