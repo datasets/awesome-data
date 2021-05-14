@@ -8,7 +8,9 @@ https://datahub.io/awesome
 
 ## Collections
 
+* [Air Pollution data](https://datahub.io/awesome/air-pollution)
 * [Bibliographic data](https://datahub.io/awesome/bibliographic-data)
+* [Broadband data](https://datahub.io/awesome/broadband-data)
 * [Climate Change](https://datahub.io/awesome/climate-change)
 * [Demographics (population)](https://datahub.io/awesome/demographics)
 * [Economic Data and Indicators](https://datahub.io/awesome/economic-data)
