@@ -1,7 +1,7 @@
 ---
 title: Air Pollution Data
 description: Air pollution datasets and other sources of related data.
-keywords: DBLP data
+keywords: air pollution data
 date: 2018-07-17
 modified: 2020-03-20
 ---
