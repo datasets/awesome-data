@@ -4,8 +4,6 @@ The awesome section presents collections of high quality datasets organized by t
 
 Home page for awesome collections is located in the [frontend](https://github.com/datahq/frontend) repo and should be modified from there. See the live page here:
 
-https://datahub.io/awesome
-
 ## Collections
 
 * [Air Pollution data](https://datahub.io/collections/air-pollution)
