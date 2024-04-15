@@ -49,7 +49,7 @@ The World Bank has a wide array of high quality data and much of it is [open dat
 [open data]: https://opendefinition.org/
 [featured indicators page]:https://data.worldbank.org/indicator?tab=featured
 
-[[toc]]
+## Table of contents
 
 ## Data
 
