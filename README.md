@@ -8,7 +8,7 @@ Home page for awesome collections is located in the [frontend](https://github.co
 
 * [Air Pollution data](https://datahub.io/collections/air-pollution)
 * [Bibliographic data](https://datahub.io/collections/bibliographic-data)
-* [Broadband data](https://datahub.io/collections/broadband-data)
+* [Broadband data](https://datahub.io/collections/broadband)
 * [Climate Change](https://datahub.io/collections/climate-change)
 * [Demographics (population)](https://datahub.io/collections/demographics)
 * [Economic Data and Indicators](https://datahub.io/collections/economic-data)
