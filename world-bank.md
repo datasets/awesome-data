@@ -101,11 +101,11 @@ One of the major open ones are the [World Development Indicators][] which provid
 
 Some of the most popular world-bank indicators featured on our website:
 
-* Total population of various world regions based on the de facto definition of population, which counts all residents regardless of legal status or citizenship. The values shown are midyear estimates https://datahub.io/world-bank/sp.pop.totl
+* Total population of various world regions based on the de facto definition of population, which counts all residents regardless of legal status or citizenship. The values shown are midyear estimates https://datahub.io/core/world-development-indicators/indicators/sp.pop.totl
 
-* Cause of death, by non-communicable diseases (cancer, diabetes mellitus, cardiovascular diseases, digestive diseases, skin diseases, musculoskeletal diseases, and congenital anomalies) https://datahub.io/world-bank/sh.dth.ncom.zs
+* Cause of death, by non-communicable diseases (cancer, diabetes mellitus, cardiovascular diseases, digestive diseases, skin diseases, musculoskeletal diseases, and congenital anomalies) https://datahub.io/core/world-development-indicators/indicators/sh.dth.ncom.zs
 
-* Prevalence of HIV, female (% ages 15-24) https://datahub.io/world-bank/sh.hiv.1524.fe.zs
+* Prevalence of HIV, female (% ages 15-24) https://datahub.io/core/world-development-indicators/indicators/sh.hiv.1524.fe.zs
 
 ## API
 
