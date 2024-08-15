@@ -13,8 +13,6 @@ What is reference data? Here is the quote from Wikipedia that answers that quest
 
 > Reference data are data that define the set of permissible values to be used by other data fields. Reference data gain in value when they are widely re-used and widely referenced. Typically, they do not change overly much in terms of definition, apart from occasional revisions. Reference data are often defined by standards organizations, such as country codes as defined in ISO 3166-1... [read full article](https://en.wikipedia.org/wiki/Reference_data)
 
-[[toc]]
-
 ## The most popular datasets
 
 In this section, we have included the datasets that are most popular among our users.
