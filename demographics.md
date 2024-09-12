@@ -29,4 +29,4 @@ The population data starts from -1000000 BC to 1990 with the average number of p
 
 Population growth estimates and projections:
 
-[core/population-growth-estimates-and-projections](/core/population-growth-estimates-and-projections)
+[core/population-growth-estimates-and-projections](https://datahub.io/core/population-growth-estimates-and-projections)
