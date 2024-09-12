@@ -9,8 +9,6 @@ image: war-and-peace.png
 
 Data on inter-state conflicts, international relations and other correlates of war including war-related deaths and injuries.
 
-[[toc]]
-
 ## Uppsala Conflict Data Program (UCDP) dataset
 
 A whole variety of datasets on armed conflicts 1946-present

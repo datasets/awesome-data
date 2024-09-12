@@ -7,8 +7,6 @@ modified: 2018-06-07
 image: geojson.png
 ---
 
-[[toc]]
-
 ## European NUTS boundaries as GeoJSON at 1:60m
 
 Geo Boundaries for NUTS administrative levels 1, 2 and 3 edition 2013:

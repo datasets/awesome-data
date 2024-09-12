@@ -7,8 +7,6 @@ modified: 2018-06-07
 image: stock-market-data.png
 ---
 
-[[toc]]
-
 ## S&P 500 companies
 
 List of companies in the S&P 500 (Standard and Poor’s 500). The S&P 500 is a free-float, capitalization-weighted index of the top 500 publicly listed stocks in the US (top 500 by market cap). The dataset includes a list of all the stocks contained therein:

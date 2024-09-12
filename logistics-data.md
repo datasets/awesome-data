@@ -9,8 +9,6 @@ image: logistics-data.png
 
 Summary list of datasets available on DataHub that are related to Logistics.
 
-[[toc]]
-
 ## List of countries
 
 ISO 3166-1-alpha-2 English country names and code elements. This list states

@@ -9,8 +9,6 @@ image: economic-data.png
 
 On this page, we summarize all available economic data (or economic statistics) on DataHub. Users can find various examples of economic indicators or explore data by country. The page is curated and updated on regular basis so don't forget to bookmark it!
 
-[[toc]]
-
 ## Basic economic data
 
 Following datasets can be considered as basic economic indicators:
