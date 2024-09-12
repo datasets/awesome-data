@@ -11,10 +11,10 @@ image: healthcare-data.png
 
 DNA Sequencing Costs:
 
-[core/genome-sequencing-costs](/core/genome-sequencing-costs)
+[core/genome-sequencing-costs](https://datahub.io/core/genome-sequencing-costs)
 
 ## Pharmaceutical Drug Spending by countries (data analytics)
 
 Pharmaceutical Drug Spending by countries with indicators such as a share of total health spending, in USD per capita (using economy-wide PPPs) and as a share of GDP. Plus, total spending by each countries in the specific year:
 
-[core/pharmaceutical-drug-spending](/core/pharmaceutical-drug-spending)
+[core/pharmaceutical-drug-spending](https://datahub.io/core/pharmaceutical-drug-spending)
