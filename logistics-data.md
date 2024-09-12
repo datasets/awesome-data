@@ -15,7 +15,7 @@ ISO 3166-1-alpha-2 English country names and code elements. This list states
 the country names (official short names in English) in alphabetical order as
 given in [ISO 3166-1][] and the corresponding ISO 3166-1-alpha-2 code elements:
 
-[core/country-list](/core/country-list)
+[core/country-list](https://datahub.io/core/country-list)
 
 [ISO 3166-1]: http://www.iso.org/iso/home/standards/country_codes.htm
 
@@ -23,31 +23,31 @@ given in [ISO 3166-1][] and the corresponding ISO 3166-1-alpha-2 code elements:
 
 Airport codes from around the world:
 
-[core/airport-codes](/core/airport-codes)
+[core/airport-codes](https://datahub.io/core/airport-codes)
 
 ## Country codes
 
 Comprehensive country code information, including ISO 3166 codes, ITU dialing codes, ISO 4217 currency codes, and many others:
 
-[core/country-codes](/core/country-codes)
+[core/country-codes](https://datahub.io/core/country-codes)
 
 ## Continent codes
 
 A list of the seven continents with English names and short, unique and permanent identifying codes:
 
-[core/continent-codes](/core/continent-codes)
+[core/continent-codes](https://datahub.io/core/continent-codes)
 
 ## UN Locode
 
 The United Nations Code for Trade and Transport Locations is a code list maintained by UNECE, United Nations agency, to facilitate trade:
 
-[core/un-locode](/core/un-locode)
+[core/un-locode](https://datahub.io/core/un-locode)
 
 ## ISO 6346 Container Type Codes
 
 Coded list of ISO 6346 shipping containers, used in international trade and electronic shipping messages:
 
-[core/iso-container-codes](/core/iso-container-codes)
+[core/iso-container-codes](https://datahub.io/core/iso-container-codes)
 
 ## World cities
 
