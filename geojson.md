@@ -31,4 +31,4 @@ Geodata data package providing geojson polygons for the largest administrative s
 
 Geodata data package providing geojson polygons for the states in the USA:
 
-[core/geo-admin1-us](/core/geo-admin1-us)
+[core/geo-admin1-us](https://datahub.io/core/geo-admin1-us)
