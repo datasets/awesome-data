@@ -9,8 +9,6 @@ image: climate-change.png
 
 What are the most important "general" datasets to have on climate change?
 
-[[toc]]
-
 ## Policy
 
 * Country or sub-region commitments (e.g. emission amounts, cuts, temperature targets)

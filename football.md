@@ -13,8 +13,6 @@ A collection of awesome football datasets including national teams, clubs, match
 
 Note: :octocat: stands for the GitHub page, :gem: stands for the RubyGems page and :datahub: stands for dataset on DataHub.
 
-[[toc]]
-
 # Football Data Guides / Articles
 
 _Where's the open football data?_
