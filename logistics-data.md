@@ -53,4 +53,4 @@ Coded list of ISO 6346 shipping containers, used in international trade and elec
 
 List of major cities in the world that have above 15,000 inhabitants. Each city is associated with its country and subcountry to reduce the number of ambiguities. Subcountry can be the name of a state (eg in United Kingdom or the United States of America) or the major administrative section (eg ‘‘region’’ in France’’):
 
-[core/world-cities](/core/world-cities)
+[core/world-cities](https://datahub.io/core/world-cities)
