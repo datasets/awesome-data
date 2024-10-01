@@ -2,7 +2,7 @@
 
 The awesome section presents collections of high quality datasets organized by topic.
 
-Home page for awesome collections is located in the [frontend](https://github.com/datahq/frontend) repo and should be modified from there. See the live page here:
+Home page for awesome collections is located in the [awesome-data](https://github.com/datasets/awesome-data) repository on github and should be modified from there. See the live page here:
 
 ## Collections
 
@@ -24,7 +24,6 @@ Home page for awesome collections is located in the [frontend](https://github.co
 * [Open Corporates](https://datahub.io/collections/opencorporates)
 * [Property Prices](https://datahub.io/collections/property-prices)
 * [Reference Data](https://datahub.io/collections/reference-data)
-
 * [Stock Market Data](https://datahub.io/awesome/stock-market-data)
 * [War and Peace](https://datahub.io/awesome/war-and-peace)
 * [Wealth, Income and Inequality](https://datahub.io/awesome/wealth-income-and-inequality)
