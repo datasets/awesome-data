@@ -22,6 +22,7 @@ Home page for awesome collections is located in the [awesome-data](https://githu
 * [Machine Learning / Statistical](https://datahub.io/collections/machine-learning-data)
 * [Movies and TV](https://datahub.io/collections/movies-and-tv)
 * [Open Corporates](https://datahub.io/collections/opencorporates)
+* [Postal Codes Datasets](https://datahub.io/collections/postal-codes-datasets)
 * [Property Prices](https://datahub.io/collections/property-prices)
 * [Reference Data](https://datahub.io/collections/reference-data)
 * [Stock Market Data](https://datahub.io/awesome/stock-market-data)
