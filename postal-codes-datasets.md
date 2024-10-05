@@ -75,9 +75,9 @@ schema:
 
 <FlatUiTable
   data={{
-    csv: "a,b\n1,2"
+    "url": "https://postal.datahub.io/fr.csv"
   }}
-  />
+/>
 
 ## Version control and storage
 
