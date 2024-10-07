@@ -14,62 +14,21 @@ Postal codes are essential for various applications like mail delivery, location
 
 This schema specifies each column's name, title, description, and type, following a format compatible with the W3C's tabular data standard.
 
-```yml
-schema:
-  fields:
-    - name: country_code
-      title: Country Code
-      description: ISO 3166-1 alpha-2 code for the country.
-      type: string
-    - name: postal_code
-      title: Postal Code
-      description: Postal code for the location.
-      type: string
-    - name: place_name
-      title: Place Name
-      description: Name of the city, town, or place.
-      type: string
-    - name: admin_name1
-      title: Administrative Name 1
-      description: Primary administrative division (e.g., state, region).
-      type: string
-    - name: admin_code1
-      title: Administrative Code 1
-      description: Code for the primary administrative division.
-      type: string
-    - name: admin_name2
-      title: Administrative Name 2
-      description: Secondary administrative division (e.g., county, district).
-      type: string
-    - name: admin_code2
-      title: Administrative Code 2
-      description: Code for the secondary administrative division.
-      type: string
-    - name: admin_name3
-      title: Administrative Name 3
-      description: Tertiary administrative division (e.g., municipality, borough).
-      type: string
-    - name: admin_code3
-      title: Administrative Code 3
-      description: Code for the tertiary administrative division.
-      type: string
-    - name: latitude
-      title: Latitude
-      description: Latitude coordinate of the place.
-      type: number
-    - name: longitude
-      title: Longitude
-      description: Longitude coordinate of the place.
-      type: number
-    - name: accuracy
-      title: Accuracy
-      description: Accuracy level of the latitude and longitude coordinates.
-      type: integer
-    - name: alternativeCityName
-      title: Alternative City Name
-      description: Alternative name(s) for the city or place.
-      type: string
-```
+| Name                 | Title                    | Description                                                | Type    |
+|----------------------|--------------------------|------------------------------------------------------------|---------|
+| country_code         | Country Code             | ISO 3166-1 alpha-2 code for the country.                   | string  |
+| postal_code          | Postal Code              | Postal code for the location.                              | string  |
+| place_name           | Place Name               | Name of the city, town, or place.                          | string  |
+| admin_name1          | Administrative Name 1    | Primary administrative division (e.g., state, region).     | string  |
+| admin_code1          | Administrative Code 1    | Code for the primary administrative division.              | string  |
+| admin_name2          | Administrative Name 2    | Secondary administrative division (e.g., county, district).| string  |
+| admin_code2          | Administrative Code 2    | Code for the secondary administrative division.            | string  |
+| admin_name3          | Administrative Name 3    | Tertiary administrative division (e.g., municipality, borough).| string  |
+| admin_code3          | Administrative Code 3    | Code for the tertiary administrative division.             | string  |
+| latitude             | Latitude                 | Latitude coordinate of the place.                          | number  |
+| longitude            | Longitude                | Longitude coordinate of the place.                         | number  |
+| accuracy             | Accuracy                 | Accuracy level of the latitude and longitude coordinates.  | integer |
+| alternativeCityName  | Alternative City Name    | Alternative name(s) for the city or place.                 | string  |
 
 ### Sample data France
 
