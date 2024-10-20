@@ -12,8 +12,6 @@ Coronavirus disease 2019 (COVID-19) time series listing confirmed cases, reporte
 [covid]: https://en.wikipedia.org/wiki/Coronavirus_disease_2019
 [sars2]: https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2
 
-[[toc]]
-
 ## Cases, Deaths and Recoveries
 
 Primary Dataset: https://datahub.io/core/covid-19
