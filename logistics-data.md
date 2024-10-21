@@ -3,7 +3,7 @@ title: Logistics Data
 description: Ready-to-use logistics datasets - explore, download and use in your tool!
 keywords: Logistics Data, Reference Data
 date: 2018-06-06
-modified: 2018-06-06
+modified: 2024-10-21
 image: logistics-data.png
 ---
 
@@ -36,6 +36,12 @@ Comprehensive country code information, including ISO 3166 codes, ITU dialing co
 A list of the seven continents with English names and short, unique and permanent identifying codes:
 
 [core/continent-codes](https://datahub.io/core/continent-codes)
+
+## Postal codes
+
+Comprehensive collection of postal codes datasets from around the world:
+
+[collections/postal-codes-datasets](https://datahub.io/collections/postal-codes-datasets)
 
 ## UN Locode
 
