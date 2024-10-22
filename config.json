@@ -1,6 +1,6 @@
 {
   "showEditLink": true,
   "contentExclude": [
-    "/notes",
+    "/notes"
   ]
 }
