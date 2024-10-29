@@ -46,7 +46,7 @@ Economic indicators for the United Kingdom:
 
 World Bank is a one of the best sources of different datasets including economic data. Please, read the following article about World Bank data collections, API and more:
 
-[awesome/world-bank](https://datahub.io/awesome/world-bank)
+[awesome/world-bank](https://datahub.io/world-bank)
 
 ## International Monetary Fund (IMF)
 
