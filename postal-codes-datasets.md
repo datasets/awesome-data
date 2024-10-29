@@ -3,7 +3,7 @@ title: Postal Codes Datasets
 description: Comprehensive collection of postal codes datasets from around the world.
 keywords: postal codes, postal code datasets, geolocation data, zip codes, worldwide postal codes
 date: 2024-10-01
-modified: 2024-10-01
+modified: 2024-10-29
 ---
 
 ## Overview
