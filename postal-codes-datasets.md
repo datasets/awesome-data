@@ -503,9 +503,9 @@ Postal codes are essential for various applications like mail delivery, location
     {
       _id: 5021133803,
       metadata: {
-        country: 'Côte d'Ivoire',
-        title: 'Postal Codes Dataset for Côte d'Ivoire, CI',
-        description: 'Postal Codes Dataset for Côte d'Ivoire, CI including name of the city, town, or place, various administrative divisions and alternative city names.'
+        country: "Côte d'Ivoire",
+        title: "Postal Codes Dataset for Côte d'Ivoire, CI",
+        description: "Postal Codes Dataset for Côte d'Ivoire, CI including name of the city, town, or place, various administrative divisions and alternative city names."
       },
       url_path: '/logistics/postal-codes-ci'
     },
