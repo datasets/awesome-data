@@ -1070,9 +1070,9 @@ Postal codes are essential for various applications like mail delivery, location
     {
       _id: 6110034004,
       metadata: {
-        country: 'Korea, Democratic People's Republic of',
-        title: 'Postal Codes Dataset for Korea, Democratic People's Republic of, KP',
-        description: 'Postal Codes Dataset for Korea, Democratic People's Republic of, KP including name of the city, town, or place, various administrative divisions and alternative city names.'
+        country: "Korea, Democratic People's Republic of",
+        title: "Postal Codes Dataset for Korea, Democratic People's Republic of, KP",
+        description: "Postal Codes Dataset for Korea, Democratic People's Republic of, KP including name of the city, town, or place, various administrative divisions and alternative city names."
       },
       url_path: '/logistics/postal-codes-kp'
     },
