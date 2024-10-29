@@ -147,7 +147,7 @@ Coded list of ISO 6346 shipping containers, used in international trade and elec
 
 International Commercial Terms (‘Incoterms’) are internationally recognised standard trade terms used in sales contracts:
 
-[core/icc-incoterms](https://datahub.io/core/icc-incoterms)
+[core/ICC-Incoterms](https://datahub.io/core/ICC-Incoterms)
 
 ### DAC and CRS code lists
 
