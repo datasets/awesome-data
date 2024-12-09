@@ -3,15 +3,11 @@ title: Football Data
 description: A collection of awesome football datasets including national teams, clubs, match schedules, players, stadiums, etc.
 keywords: football data and API, world cup, stadium data, football apps
 date: 2017-12-13
-modified: 2018-06-12
+modified: 2024-12-09
 image: football.png
 ---
 
-A collection of awesome football datasets including national teams, clubs, match schedules, players, stadiums, etc.
-
 *Contributions welcome. Anything missing? Send in a pull request. Thanks.*
-
-Note: :octocat: stands for the GitHub page, :gem: stands for the RubyGems page and :datahub: stands for dataset on DataHub.
 
 # Football Data Guides / Articles
 
@@ -22,13 +18,13 @@ _Where's the open football data?_
 
 # Football Datasets
 
-## Football datasets on DataHub
+## Football datasets on DataHub ⚽
 
-- [sports-data/english-premier-league :datahub:](https://datahub.io/sports-data/english-premier-league)
-- [sports-data/spanish-la-liga :datahub:](https://datahub.io/sports-data/spanish-la-liga)
-- [sports-data/italian-serie-a :datahub:](https://datahub.io/sports-data/italian-serie-a)
-- [sports-data/german-bundesliga :datahub:](https://datahub.io/sports-data/german-bundesliga)
-- [sports-data/french-ligue-1 :datahub:](https://datahub.io/sports-data/french-ligue-1)
+- [core/english-premier-league](https://datahub.io/core/english-premier-league)
+- [core/spanish-la-liga](https://datahub.io/core/spanish-la-liga)
+- [core/italian-serie-a](https://datahub.io/core/italian-serie-a)
+- [core/german-bundesliga](https://datahub.io/core/german-bundesliga)
+- [core/french-ligue-1](https://datahub.io/core/french-ligue-1)
 
 ## World Cup
 
