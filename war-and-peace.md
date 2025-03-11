@@ -37,7 +37,7 @@ Dataset on old datahub https://old.datahub.io/dataset/cow (from 2007!)
 ### Data
 
 * http://www.correlatesofwar.org/data-sets/COW-war
-  * CSV http://www.correlatesofwar.org/data-sets/COW-war/intra-state-war-data-v4-1/at_download/file
+  * CSV https://correlatesofwar.org/wp-content/uploads/Intra-StateWarData_v4.1.csv
 * Lots of code books!
 
 ### License: Not OPEN
@@ -55,8 +55,8 @@ Data is under click-wrap with a bunch of restrictions that mean this is **not** 
 
 Conflict Catalog:(Violent Conflicts 1400 A.D. to the Present in Different Regions of the World) Authors: Peter Brecke Contents: 3708 conflicts, data on parties, fatalities, date and duration.
 
-* http://www.cgeh.nl/sites/default/files/Conflict%20Catalog%2018%20vars.xls
-* Notes: http://www.cgeh.nl/sites/default/files/Notes%20about%20Conflict%20Catalog.pdf
-* Homepage: http://www.cgeh.nl/data#conflict
+* https://brecke.inta.gatech.edu/wp-content/uploads/sites/19/2018/09/Conflict-Catalog-18-vars.xlsx
+* Notes: https://brecke.inta.gatech.edu/wp-content/uploads/sites/19/2018/09/Notes-about-Conflict-Catalog.pdf
+* Homepage: https://brecke.inta.gatech.edu/research/conflict
 
 TODO: data package!
